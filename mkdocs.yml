@@ -1,0 +1,6 @@
+site_name: RFID_M0
+site_url:  https://example.com/
+nav:
+    - Home: home.md
+    - About: about.md
+theme: readthedocs
