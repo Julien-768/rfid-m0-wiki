@@ -1,6 +1,20 @@
 site_name: RFID_M0
 site_url:  https://example.com/
 nav:
-    - Home: home.md
-    - About: about.md
+    - Home: index.md
+
+    - Developper section:
+      - TODO liste: 0.0.-TODO-liste.md
+      - Check liste: 0.1.-Check-list.md
+
+      - Liste des composants: Liste-des-composants.md
+      - Pinout: Pinouts.md
+      - Power Supply:
+        - General view: Power-supply.md 
+        - Li-Ion battery: Power-supply-Li-Ion.md
+        - 12V battery: Power-supply-12V.md
+    - User section:
+      - Configuration du programme: Configuration-du-programme.md
+    - About:
+      - MIBE: about.md
 theme: readthedocs

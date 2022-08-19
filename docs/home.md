@@ -1,16 +1,5 @@
 # Home
 
-### Dispositif 2022
-
-- [TODO liste](/0.0.-TODO-liste)
-- [Check liste](/0.1.-Check-list)
-- [Configuration du programme](/Configuration-du-programme)
-- [Liste des composants](/Liste-des-composants)
-- [Pinout](/Pinouts)
-- [Power Supply](/Power-supply)
-- [Power Supply Li-Ion](/Power-supply-Li-Ion)
-- [Power Supply 12V](/Power-supply-12V)
-
 ## Nichoir 2021 </summary>
 
 - [contexte](Stage/contexte)
@@ -58,4 +47,4 @@ Pour le développement du programme informatique.
 
 Un debugger
 
-[Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx](uploads/a56c5ae2038a9a6447f9fe94b2979012/Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx
+TODO [Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx](uploads/a56c5ae2038a9a6447f9fe94b2979012/Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx
