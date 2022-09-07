@@ -66,3 +66,7 @@ A venir...
 <!--
 TODO: [Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx](uploads/a56c5ae2038a9a6447f9fe94b2979012/Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx
 -->
+
+<!--
+TODO: Enlever / mettre à jour les fichiers du nichoir 2021
+-->
