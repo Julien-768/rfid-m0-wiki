@@ -20,6 +20,5 @@ nav:
         - 12V battery: Power-supply-12V.md
     - User section:
       - Configuration du programme: Configuration-du-programme.md
-    - About:
-      - MIBE:
+
 theme: readthedocs
