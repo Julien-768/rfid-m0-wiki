@@ -18,6 +18,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## mkdocs.yml layout
 
+```yml
 site_name: RFID_M0 *The name displayed at the top of your tab in the navigator*
 site_url:  'https://rfid_m0.pages.in2p3.fr/Doc_M0/'
 nav:
@@ -29,6 +30,7 @@ nav:
         - Title4: page4.md
 
 theme: readthedocs
+```
 
 ## Gitlab CI / CD
 
