@@ -2,7 +2,7 @@
 
 Le nichoir prévu pour accueillir le système se rapproche d'un cylindrique en béton de 33.5cm de haut et 15cm de diamètre. Il est composé de deux parties, le bâti par lequel on attache le nichoir (en marron sur la photo ci-dessous) et une porte dans laquelle est percée un trou pour permettre aux oiseaux de rentrer et sortir (en beige). Pour bloquer la sortie d'un oiseau capturé, on peut créer une nouvelle pièce à placer à coté du trou de la porte pour y bloquer la circulation, ou on peut créer une pièce qui remplace la porte entièrement.
 
-![image](uploads/7782cd9fceb337eb6b9dd27fa04d8f03/image.png)
+LINK REMOVED image
 
 
 # Prototype V1

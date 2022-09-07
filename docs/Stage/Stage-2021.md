@@ -24,4 +24,4 @@ Les tâches à effectuer pour mener à bien le projet:
 
 Voici le diagramme de Gantt du projet pour en repérer l'avancement par rapport au temps :
 
-[Diagramme_de_Gantt_-_Projet_nichoir_à_oiseau_.xlsx](uploads/4f265f89f20d24a268361dbf8af309c3/Diagramme_de_Gantt_-_Projet_nichoir_à_oiseau_.xlsx)
+LINK REMOVED Diagramme_de_Gantt_-_Projet_nichoir_à_oiseau_.xlsx

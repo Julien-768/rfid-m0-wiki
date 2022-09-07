@@ -6,20 +6,20 @@ nav:
     - Developper section:
       - TODO liste: 0.0.-TODO-liste.md
       - Check liste: 0.1.-Check-list.md
-      - Instructions de montage: 
+      - Instructions de montage:
         - Mecanique: Mecanique.md
         - Electronique: Electronique.md
         - Informatique: Informatique.md
-        - Questions pour Pauline: Questions.md
+        - Questions pour Pauline: Question.md
 
       - Liste des composants: Liste-des-composants.md
       - Pinout: Pinouts.md
       - Power Supply:
-        - General view: Power-supply.md 
+        - General view: Power-supply.md
         - Li-Ion battery: Power-supply-Li-Ion.md
         - 12V battery: Power-supply-12V.md
     - User section:
       - Configuration du programme: Configuration-du-programme.md
     - About:
-      - MIBE: about.md
+      - MIBE:
 theme: readthedocs
