@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://rfid_m0.pages.in2p3.fr/Doc_M0/Stage/Manuel-d%27assemblage/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Manuel d'assemblage - RFID_M0</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Manuel d\u0027assemblage";
+        var mkdocs_page_input_path = "Stage\\Manuel-d\u0027assemblage.md";
+        var mkdocs_page_url = "/Doc_M0/Stage/Manuel-d%27assemblage/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> RFID_M0
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developper section</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../0.0.-TODO-liste/">TODO liste</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../0.1.-Check-list/">Check liste</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Instructions de montage</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Mecanique/">Mecanique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Electronique/">Electronique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Informatique/">Informatique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Question/">Questions pour Pauline</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Liste-des-composants/">Liste des composants</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Pinouts/">Pinout</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Power Supply</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Power-supply/">General view</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Power-supply-Li-Ion/">Li-Ion battery</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Power-supply-12V/">12V battery</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User section</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuration-du-programme/">Configuration du programme</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">RFID_M0</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Manuel d'assemblage</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Ce manuel a pour fonction d'indiquer les étapes d'assemblage du système.</p>
+<h2 id="soudures-montage-electronique">Soudures montage électronique</h2>
+<p>Un fois la carte imprimée reçue ou fabriquée, il faudra y souder les embases femelle ou mâles selon les capteurs et les transistors. Comme le module RFiD n'est pas attaché à la carte, il faudra aussi souder des connecteurs sur la carte pour y connecter ce capteur. Il faudra aussi souder les pins du port microUSB à un petit câble microUSB pour pouvoir faire la connexion avec la carte de chargement solaire. Il faudra aussi réaliser un cable pour relier le powerboost à la carte Feather.</p>
+<p>Les autres modifications à apporter aux composants sont détaillées dans la nomenclature.</p>
+<h2 id="boitier">Boitier</h2>
+<p>On assemble d'abord le servo moteur et l'axe de la trappe. Un filetage permet de fixer une vis dans l'axe du servo moteur, et on peut coller la vis à l'axe de la trappe. On peut ensuite placer ce sous assemblage dans le boitier principal. Le maintient en position du servomoteur se fait avec la pièce supplémentaire qui vient continuer le conduit. On y enroule préalablement la bobine RFiD et on y place les LEDs et phototransistors avec un point de colle. On peut ensuite assembler cette pièce avec une vis. Le module RFiD se coince dans la rainure prévue à cette effet. On vis le port USB, et ensuite on place la carte électronique. Cette dernière se vis à l'aide des pignons prévus. La batterie se place entre la carte électronique et le conduit, on pourra ajouter une bande de velcro pour la maintenir en place. On peut finalement fermer le système avec le capot en y plaçant de la colle à étanchéité.</p>
+<p><img src="uploads/0313be8ef8e103cbdaf81b97b8a35660/Capture8.PNG" width="350"></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

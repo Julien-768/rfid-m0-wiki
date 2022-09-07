@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://rfid_m0.pages.in2p3.fr/Doc_M0/Power-supply-Li-Ion/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Li-Ion battery - RFID_M0</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Li-Ion battery";
+        var mkdocs_page_input_path = "Power-supply-Li-Ion.md";
+        var mkdocs_page_url = "/Doc_M0/Power-supply-Li-Ion/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> RFID_M0
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developper section</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../0.0.-TODO-liste/">TODO liste</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../0.1.-Check-list/">Check liste</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Instructions de montage</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Mecanique/">Mecanique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Electronique/">Electronique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Informatique/">Informatique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Question/">Questions pour Pauline</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Liste-des-composants/">Liste des composants</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Pinouts/">Pinout</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Power Supply</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Power-supply/">General view</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Li-Ion battery</a>
+    <ul class="current">
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Power-supply-12V/">12V battery</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User section</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Configuration-du-programme/">Configuration du programme</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">RFID_M0</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Developper section &raquo;</li>
+          <li>Power Supply &raquo;</li>
+      <li>Li-Ion battery</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="schema-general">Schéma général</h1>
+<p><img alt="Power_schematic_Solar" src="../uploads/cc060599fc783c6a9b7c883c04c23b48/Power_schematic_Solar.png" /></p>
+<h1 id="gestion-electronique-et-informatique">Gestion électronique et informatique</h1>
+<h2 id="schema-carte-electronique-power">schéma carte électronique power</h2>
+<p>Réalisation du routage de la carte sur fritzing.</p>
+<p><img alt="Nichoir_power_schéma" src="../uploads/81bacffe2d04e76404eac895cc852ee1/Nichoir_power_sch%C3%A9ma.png" /></p>
+<h2 id="lecture-batterie">Lecture batterie</h2>
+<p>La tension d'une batterie LiPo ou de 3 piles AA en série peut aller jusqu'à 4.2V. Les pins de l'adalogger n'accepte pas plus de 3.3V. 
+On réalise donc un pont diviseur composé de deux résistances de 100k (R1 et R2), et pour stabiliser la tension de la batterie on ajoute les condensateurs C2 et C4.</p>
+<p>Au niveau informatique, une lecture batterie est effectuée à chaque boucle. La tension de la batterie est enregistrée sur la carte SD si celle-ci a baissé d'au moins 0.1V par rapport au dernier enregistrement. </p>
+<h2 id="mise-hors-tension-du-systeme">Mise hors tension du système</h2>
+<p>La mise hors tension du système peut se faire de 2 manières:
+- En coupant totalement l'accès à l'alimentation. Option intéressante à garder par sécurité.
+- En avertissant le microprocesseur que l'on souhaite éteindre le système. Cela permet une mise hors-tension contrôlée et évite par exemple de corrompre la carte SD.</p>
+<p>Pour cette dernière méthode nous nous sommes inspiré de ce <a href="https://github.com/craic/arduino_power/blob/master/PowerOnPowerOff.md">tuto_mise_hors_tension</a></p>
+<p><img alt="power_on_power_off_cycle" src="../uploads/dbb5399d875f8005a4195ebcb86efcf1/power_on_power_off_cycle.png" /></p>
+<p>Grâce à cette électronique, le software peut commander l'éteignage du dispositif (par exemple lorsque la lecture de la batterie est inférieure à un certain seuil). </p>
+<h1 id="materiel">Matériel</h1>
+<h2 id="power-boost-1000">Power Boost 1000</h2>
+<p>Le boost 5v sert à convertir la tension variable en sortie du chargeur solaire pour la fixer à 5v. Ce boost fonctionne à partir d'une entrée de 1.8v et peut délivrer jusqu'à 1A de courant.</p>
+<table>
+<thead>
+<tr>
+<th>Vin (Min) (V)</th>
+<th>Vin (Max) (V)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.8</td>
+<td>5.5</td>
+</tr>
+</tbody>
+</table>
+<p><img src="uploads/0029515fed85eaf8461fe78d5a7cb2dc/image.png" width="250"></p>
+<p><a href="https://learn.adafruit.com/adafruit-powerboost-1000-basic">tutorial adafruit</a></p>
+<p><a href="https://www.ti.com/product/TPS61090">datasheet du composant</a></p>
+<h2 id="chargeur-solaire">Chargeur solaire</h2>
+<p>Cette carte permet de charger la batterie LiPo 3.7v. Elle s'arrête lorsque la batterie est pleine et s'adapte particulièrement à l'alimentation très instable qu'apporte un panneau solaire. Lorsque le panneau est ensoleillé, il se peut qu'au lieu de charger la batterie le courant soit directement utilisé pour alimenter le système en aval. La tension en sortie de la carte peut donc fluctuer entre 3.7v et 5v car ici nous utilisons un panneau 5v. Le connecteur Jack prend beaucoup de place, il sera donc dé-soudé et on utilisera l'entrée microUSB.</p>
+<p><img src="uploads/12ecee4b00c4c12b1f16219b8650330b/image.png" width="250"></p>
+<p><a href="TODO">page produit adafruit</a></p>
+<p><a href="https://learn.adafruit.com/adafruit-bq24074-universal-usb-dc-solar-charger-breakout/overview">tutorial adafruit</a></p>
+<h2 id="panneau-solaire">Panneau solaire</h2>
+<p>Ce panneau solaire a une puissance de 2.5W, il peut délivrer un courant jusqu'à 5V et de 500mAh. Il a des dimensions de 130cm x 150cm.</p>
+<p><img src="uploads/bf29a7820a5c6480eda9644d8de9b0cd/image.png" width="250"></p>
+<h2 id="batterie">Batterie</h2>
+<p>La batterie utilisé est une batterie Li Polymer de 3.7v et de 1.5Ah. Ces batteries ont la particularité de présenter une tension de 4.2v en charge maximale, puis elles descendent rapidement à 3.7v. Elles sont déchargées quand la tension tombe à 3v.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Power-supply/" class="btn btn-neutral float-left" title="General view"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Power-supply-12V/" class="btn btn-neutral float-right" title="12V battery">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Power-supply/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Power-supply-12V/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
