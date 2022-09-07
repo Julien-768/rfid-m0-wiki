@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://rfid_m0.pages.in2p3.fr/Doc_M0/0.0.-TODO-liste/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>TODO liste - RFID_M0</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "TODO liste";
+        var mkdocs_page_input_path = "0.0.-TODO-liste.md";
+        var mkdocs_page_url = "/Doc_M0/0.0.-TODO-liste/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> RFID_M0
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developper section</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">TODO liste</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../0.1.-Check-list/">Check liste</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Instructions de montage</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Mecanique/">Mecanique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Electronique/">Electronique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Informatique/">Informatique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Question/">Questions pour Pauline</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Liste-des-composants/">Liste des composants</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Pinouts/">Pinout</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Power Supply</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Power-supply/">General view</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Power-supply-Li-Ion/">Li-Ion battery</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Power-supply-12V/">12V battery</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User section</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Configuration-du-programme/">Configuration du programme</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">RFID_M0</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Developper section &raquo;</li>
+      <li>TODO liste</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Liste des choses à faire <strong>indispensables</strong> ou de l'ordre de l'amélioration.</p>
+<h1 id="informatique">informatique</h1>
+<ul>
+<li><strong>Gestion du temps</strong></li>
+<li>
+<p><strong>Gestion de la milliseconde</strong>
+J'ai ajouté une gestion de la ms. Elle n'est pas encore parfaite car par exemple les cas 40.914s , 40.230s, 40.734s, 41.238s peuvent se produire mais la différence de temps entre les événements est correcte. elle ne sert qu'à l'enregistrement pour l'instant, elle n'est pas implémentée dans le comptage des délais.</p>
+</li>
+<li>
+<p><strong>Le fichier de configuration</strong> n'est pas bien lu et écrasé par la configuration en dur du code. Problème toujours présent lors de tests le 26 juillet 2022.</p>
+</li>
+<li>
+<p><strong>Ajout filtrage software lecture batterie</strong> Suite à un premier test d'autonomie, le système s'est arrêté (seuil fixé en dessous de 3V), alors que la tension batterie mesuré au multimètre est de 3.16V. EDIT: FONCTIONNALITE AJOUTEE. A TESTER SUR LONG TEST D AUTONOMIE</p>
+</li>
+<li>
+<p><strong>Mode_day_only pas utilisable pour une activation de nuit</strong> qui serait très pratique pour le suivi des hamsters. Modifier la condition</p>
+</li>
+</ul>
+<p><code>if (hours_current &lt; config.start_time or hours_current &gt; config.stop_time)</code></p>
+<p>par une heure de démarrage et une durée (unixtime).</p>
+<ul>
+<li>
+<p><strong>Lecture de la température</strong> ne fonctionne plus/pas avec nouveau programme/nouvelle carte? </p>
+</li>
+<li>
+<p>mode Interruption plutôt qu'une lecture IR, pour connaitre sens passage</p>
+</li>
+</ul>
+<h1 id="electronique">Electronique</h1>
+<ul>
+<li>
+<p><strong>Test réel d'autonomie</strong>
+Premier test réalisé avec une batterie 10Ah Li-Ion qui a permis au système d'antenne terrier de tourner pendant 5.6jours </p>
+</li>
+<li>
+<p><strong>Cartes Power modif à apporter :</strong> </p>
+</li>
+<li>Une piste de la carte power doit être coupée: celle qui connecte la tension batterie au power boost. Normalement un interrupteur d'arrêt doit permettre de couper l'alimentation entre batterie et le reste du système. Or cette piste fait une connexion permanente. [EDIT: Modif déjà apportée sur fritzing le 04/08/2022]</li>
+<li>Position des trous: 2 sont trop proches du chargeur solaire (court circuit avec les vis), un trop proche du condensateur (court circuit) et nu trop proche du bornier à vis.</li>
+</ul>
+<p><img alt="Capture" src="../uploads/5731c03aeda2a199d05f4a89327e14f5/Capture.PNG" /></p>
+<ul>
+<li>
+<p>Mesures consommation des composants</p>
+</li>
+<li>
+<p>Test avec panneau solaire ( et amélioration de programmation associée)</p>
+</li>
+<li>
+<p>Protection contre la surchauffe: Avec l'aide d'un capteur de temérature, un arrêt logiciel de décharge de la batterie en cas de surchauffe a été programmé.  ( A VERIFIER, TESTER). Amélioration: envisager peut être une protection électronique interne et ne pas dépendre du bon fonctionnement du logiciel ?</p>
+</li>
+<li>
+<p><strong>Routage d'une carte Power 12V</strong> Le schéma électronique et un premier câblage sur breadboard fonctionnel a déjà été réalisé.</p>
+</li>
+</ul>
+<h1 id="mecanique">Mécanique</h1>
+<ul>
+<li>
+<p><strong>Version robuste à l'extérieure</strong>
+A vérifier l'étanchéité du flexible de conduit au niveau des raccords.</p>
+</li>
+<li>
+<p><strong>Bouton poussoir à changer</strong> les BP momentanée (SW) et stable (PW) doivent être remplacés pour être compatibles avec des capuchons de protection étanches à la poussière ET à l'eau.</p>
+</li>
+<li>
+<p><strong>Maintien cartes élec dans valise</strong></p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../0.1.-Check-list/" class="btn btn-neutral float-right" title="Check liste">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../0.1.-Check-list/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

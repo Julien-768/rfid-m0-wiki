@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://rfid_m0.pages.in2p3.fr/Doc_M0/Configuration-du-programme/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Configuration du programme - RFID_M0</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Configuration du programme";
+        var mkdocs_page_input_path = "Configuration-du-programme.md";
+        var mkdocs_page_url = "/Doc_M0/Configuration-du-programme/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> RFID_M0
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Developper section</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../0.0.-TODO-liste/">TODO liste</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../0.1.-Check-list/">Check liste</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Instructions de montage</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Mecanique/">Mecanique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Electronique/">Electronique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Informatique/">Informatique</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Question/">Questions pour Pauline</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Liste-des-composants/">Liste des composants</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Pinouts/">Pinout</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Power Supply</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Power-supply/">General view</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Power-supply-Li-Ion/">Li-Ion battery</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Power-supply-12V/">12V battery</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User section</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Configuration du programme</a>
+    <ul class="current">
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">RFID_M0</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>User section &raquo;</li>
+      <li>Configuration du programme</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>Le programme du microcontrôleur possède des paramètres configurables. Un fichier de configuration au format texte présent sur la carte SD : "CONFIG.txt" permet d'y avoir accès. L'utilisateur peut ainsi personnaliser son programme.</p>
+<h2 id="fichier-de-configuration">Fichier de configuration</h2>
+<table>
+<thead>
+<tr>
+<th>nom variable</th>
+<th>fonctionnalité contrôlé</th>
+<th>valeurs possibles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>opt_IR_1</td>
+<td>activation du faisceau infrarouge 1</td>
+<td>{true , false}</td>
+</tr>
+<tr>
+<td>opt_IR_2</td>
+<td>activation du faisceau infrarouge 2</td>
+<td>{true , false}</td>
+</tr>
+<tr>
+<td>opt_temp_prec</td>
+<td>activation du capteur de température</td>
+<td>{true , false}</td>
+</tr>
+<tr>
+<td>opt_servo</td>
+<td>activation de la porte de capture</td>
+<td>{true , false}</td>
+</tr>
+<tr>
+<td>delay_loop</td>
+<td>temps de repos avant de vérifier données capteurs</td>
+<td>xx</td>
+</tr>
+<tr>
+<td>tag_type</td>
+<td>type de TAG supporté</td>
+<td>{"FDX", "EM4102"}</td>
+</tr>
+<tr>
+<td>rfid_attempts</td>
+<td>combien de fois la RFID va vérifier la présence d'un TAG après un évènement IR</td>
+<td>[1..xx]</td>
+</tr>
+<tr>
+<td>delay_tag_save</td>
+<td>temps en secondes pour enregistrer un TAG sur l'antenne</td>
+<td>[1..xx]</td>
+</tr>
+<tr>
+<td>delay_temp</td>
+<td>période en secondes pour l'enregistrement de la température</td>
+<td>[1..xx]</td>
+</tr>
+<tr>
+<td>mode_day_only</td>
+<td>mise en sommeil durant la nuit</td>
+<td>{true ; false}</td>
+</tr>
+<tr>
+<td>start_time</td>
+<td>heure de démarrage du système en mode_day_only</td>
+<td>[0..23]</td>
+</tr>
+<tr>
+<td>stop_time</td>
+<td>heure de mise en veille du système en mode_day_only</td>
+<td>[1..24]</td>
+</tr>
+<tr>
+<td>mode_capture</td>
+<td>sélection du mode de capture</td>
+<td>{1,2,3,4}</td>
+</tr>
+<tr>
+<td>delay_loop</td>
+<td>temps minimal en millisecondes avant interrogation des capteurs</td>
+<td>[1..10000]</td>
+</tr>
+<tr>
+<td>servo_bird_release_time</td>
+<td>temps en secondes avant le relaché d'un oiseau par sécurité</td>
+<td>[0..xx]</td>
+</tr>
+<tr>
+<td>tag_1</td>
+<td>tag à capturer en capture mode 3</td>
+<td></td>
+</tr>
+<tr>
+<td>tag_2</td>
+<td>tag à capturer en capture mode 3</td>
+<td></td>
+</tr>
+<tr>
+<td>tag_3</td>
+<td>tag à capturer en capture mode 3</td>
+<td></td>
+</tr>
+<tr>
+<td>tag_4</td>
+<td>tag à capturer en capture mode 3</td>
+<td></td>
+</tr>
+<tr>
+<td>tag_5</td>
+<td>tag à capturer en capture mode 3</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="les-4-modes-de-fonctionnement">Les 4 modes de fonctionnement</h2>
+<h3 id="1-enregistrement-des-passages-des-individus">1 : Enregistrement des passages des individus</h3>
+<p>Suivant un événement sur le capteur infrarouge , lecture RFID. Aucune Capture.</p>
+<h3 id="2-capture-de-tout-individu">2 : Capture de tout individu</h3>
+<p>Suivant un événement sur le capteur infrarouge, fermeture de la porte</p>
+<h3 id="3-capture-de-certains-individus">3 : Capture de certains individus</h3>
+<p>Suivant un événement sur le capteur infrarouge , lecture RFID. Si reconnaissance du TAG RFID, fermeture de la porte</p>
+<h3 id="4-capture-des-individus-non-taggues">4 : Capture des individus non taggués</h3>
+<p>Suivant un événement sur le capteur infrarouge , lecture RFID. Si non détection de TAG, fermeture de la porte.</p>
+<h2 id="manipulation-du-boitier">Manipulation du boitier</h2>
+<p>Le système s'enlève pour récupérer un oiseau comme on enlèverai la porte originelle, en soulevant le boitier et en tirant vers soi. La carte SD est accessible en dévissant le bouchon sur la surface inférieur. Un port USB étanche est également présent sur cette surface pour y placer le power bank ou la panneau solaire.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Power-supply-12V/" class="btn btn-neutral float-left" title="12V battery"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Power-supply-12V/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
