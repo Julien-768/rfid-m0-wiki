@@ -1,5 +1,5 @@
 site_name: RFID_M0
-site_url:  https://rfid_m0.pages.in2p3.fr/Doc_M0/
+site_url:  https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki
 nav:
     - Home: index.md
 
