@@ -7,10 +7,10 @@ nav:
       - TODO liste: 0.0.-TODO-liste.md
       - Check liste: 0.1.-Check-list.md
       - Instructions de montage:
-        - Mecanique: Mecanique.md
+        - Antenne Hamster: Antenne.md
+        - Malette: Malette.md
         - Electronique: Electronique.md
         - Informatique: Informatique.md
-        - Questions pour Pauline: Question.md
 
       - Liste des composants: Liste-des-composants.md
       - Pinout: Pinouts.md
@@ -20,5 +20,8 @@ nav:
         - 12V battery: Power-supply-12V.md
     - User section:
       - Configuration du programme: Configuration-du-programme.md
+
+markdown_extensions:
+  - attr_list
 
 theme: readthedocs

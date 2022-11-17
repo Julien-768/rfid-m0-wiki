@@ -11,14 +11,14 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+  mkdocs.yml    # The configuration file.
+  docs/
+      index.md  # The documentation homepage.
+      ...       # Other markdown pages, images and other files.
 
 ## mkdocs.yml layout
 
-  ```yml
+```yml
   site_name: RFID_M0 *The name displayed at the top of your tab in the navigator*
   site_url:  'https://rfid_m0.pages.in2p3.fr/Doc_M0/'
   nav:
@@ -30,7 +30,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
           - Title4: page4.md
 
   theme: readthedocs
-  ```
+```
 
 ## Gitlab CI / CD
 
@@ -86,7 +86,7 @@ Pour le développement du programme informatique.
 A venir...
 
 <!--
-TODO: [Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx](uploads/a56c5ae2038a9a6447f9fe94b2979012/Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx
+TODO: [Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx](./uploads/a56c5ae2038a9a6447f9fe94b2979012/Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx
 -->
 
 <!--
