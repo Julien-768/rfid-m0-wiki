@@ -71,8 +71,8 @@ pour relié la partie Antenne de la malette étanche.
 |Blanc/Bleu                         | Emetteur IR 2                     |
 |Marron                             | 3.3V                              |
 |Blanc/Marron                       | GND                               |
-|Orange                             | Antenne +                         |
-|Blanc/Orange                       | Antenne -                         |
+|Blanc/Orange                       | Antenne +                         |
+|Orange                             | Antenne -                         |
 |Blindage                           | Câblé au GND                      |
 
 - **Préparation câble Ethernet**: Dénuder et étamer les deux
