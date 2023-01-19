@@ -1,72 +1,24 @@
-# Electronique
+# Montage des cartes électroniques
 
-## Circuit général
+Positionner les composants selon l'implantation donnée par la représentation du PCB et la nomenclature de chaque carte. Commencer par souder les composants les plus petit / les moins haut sur les cartes.
 
-Voir wiki sur Gitlab
+## Carte d'acquisition
 
-## Consommation
+![PCB main.png](./media/PCB main.png)
 
-### Mesures
+[Consulter la nomenclature](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/blob/master/sch%C3%A9ma%20202206/Nomenclature.xlsx)
 
-Test consommation effectué avec une alimentation programmable (KEYSIGHT
-N6705C).
+[Consulter le projet CAO](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/blob/master/sch%C3%A9ma%20202206/Fritzing%20Files/Nichoir_main.fzz)
 
-Alimentation 5V du Feather M0 + RTC + RFID en acquisition
+## Carte d'alimentation 12V
 
-![D:\\screencapture2.gif](./media/image10.gif)
+[Consulter la nomenclature](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/blob/master/sch%C3%A9ma%20202206/Nomenclature.xlsx)
 
-![Tableau courants](./media/image11.emf)
+<!-- TODO
+[Consulter le projet CAO]() -->
 
-Puis test avec l'alim à la place de la batterie en 3.6V branchée sur le
-PowerBoost
+## Carte d'alimentation Lithium
 
-Tout compris RFID au repos
+[Consulter la nomenclature](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/blob/master/sch%C3%A9ma%20202206/Nomenclature.xlsx)
 
-![D:\\screencapture3.gif](./media/image12.gif)
-
-Tout compris RFID en acquisition
-
-![D:\\screencapture4.gif](./media/image13.gif)
-
-|                          |                 |                          |
-|--------------------------|-----------------|--------------------------|
-| Carte Feather M0 + RTC   |                 | <14mA>                     |
-| Carte RFID Tectus + antenne   | Allumée au repos| <15mA>                     |
-|                          | En acquisition  | 100mA sur 150ms          |
-| Système Total            | RFID éteinte    | <0.18W>                    |
-|                          | RFID au repos   | <0.26W>                    |
-|                          | Acquisition (10 lectures RFID) | <0.38W>           |
-
-Système Total:
-
-* Carte Feather M0 + RTC
-* Carte RFID Tectus + antenne
-* 2 barrières IR
-* Power Boost
-
-### Calcul Autonomie
-
-![Tableau autonomie](./media/image14.emf)
-
-### Carte moyenne Puissance
-
-Dakota 2010-0 TLB-30-BB LF
-
-\\Projets\\RFID Tectus
-
-![Clipboard - 23 février 2022 11_25](./media/image21.png)
-
-## IR module
-
-### Exemples/Tuto
-
-* Comptage par franchissement d'une barrière infrarouge avec Arduino
-UNO
-<http://makerspace56.org/comptage-par-franchissement-dune-barriere-infrarouge/>
-
-* Youtube la grotte du geek, code écrit par l\'environnement
-STM32CubeIDE
-<https://www.youtube.com/watch?v=\_tcBtZZDsCE>
-
-* Adafruit "Using an Infrared Library on Arduino"
-<https://learn.adafruit.com/using-an-infrared-library/sending-ir-codes>
+[Consulter le projet CAO](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/blob/master/sch%C3%A9ma%20202206/Fritzing%20Files/Nichoir_power.fzz)
