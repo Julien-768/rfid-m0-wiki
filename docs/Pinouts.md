@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD033 -->
 # Electronique
 
 ## Circuit général
@@ -31,7 +32,7 @@ Alimentation 5V du Feather M0 + RTC + RFID en acquisition
 
 ![D:\\screencapture2.gif](./media/image10.gif)
 
-![Tableau courants](./media/image11.emf)
+<object id="current" data="../media/current.htm" width="600" height="250"></object>
 
 Puis test avec l'alim à la place de la batterie en 3.6V branchée sur le
 PowerBoost
@@ -62,7 +63,7 @@ Système Total:
 
 ### Calcul Autonomie
 
-![Tableau autonomie](./media/image14.emf)
+<object id="consumption" data="../media/consumption.htm" width="600" height="250"></object>
 
 ### Carte moyenne Puissance
 

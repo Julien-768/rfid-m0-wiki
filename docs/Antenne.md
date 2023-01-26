@@ -58,8 +58,6 @@ Extrait de la nomenclature mécanique :
 
 - **Préparation de la plaquette** : Utiliser du fil gainé Téflon, diamètre TODO, longueur 30cm, en respectant les couleurs de fil de l'image.
 
-![schéma de la plaquette](./media/plaquette_annoté.png){: style="width:400px"}
-
 Un câble type « ethernet », de 3 paires de fils torsadés, est utilisé
 pour relié la partie Antenne de la malette étanche.
 
