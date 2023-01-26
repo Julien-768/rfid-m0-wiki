@@ -40,9 +40,10 @@ extra:
                target="_blank" rel="noopener">sending us your feedback</a>
               #TODO fill if not using google analytics
 
-# versionning
-   version:
-      provider: mike # TODO
+# # versionning
+#    version:
+#       provider: mike # TODO
+
 # Configuration
 theme:
    name: material
@@ -94,6 +95,7 @@ nav:
 
     - User section:
       - Configuration du programme: Configuration-du-programme.md
+
     - Developper section:
       - TODO liste: 0.0.-TODO-liste.md
       - Check liste: 0.1.-Check-list.md
@@ -109,3 +111,9 @@ nav:
         - General view: Power-supply.md
         - Li-Ion battery: Power-supply-Li-Ion.md
         - 12V battery: Power-supply-12V.md
+
+      - Programmation: Programmation.md
+      - JLINK-bootloader: JLINK-bootloader.md
+
+      - Electronic boards:
+        - Manufacturing files: Elec_Manufacturing.md
