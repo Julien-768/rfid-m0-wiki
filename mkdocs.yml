@@ -6,7 +6,7 @@ site_description: >-
 
 # Repository
 repo_name: rfid_m0/rfid_m0.code
-repo_url: https://gitlab.in2p3.fr/Julien/rfid_m0.code
+repo_url: https://gitlab.in2p3.fr/rfid_m0/rfid_m0.code
 # Copyright
 copyright: Copyright &copy; 2017 - 2023 IPHC's technical platform MIBE
 
@@ -93,12 +93,12 @@ extra_javascript:
 nav:
     - Home: index.md
 
-    - User section:
+    - User:
       - Configuration du programme: Configuration-du-programme.md
 
-    - Developper section:
-      - TODO liste: 0.0.-TODO-liste.md
-      - Check liste: 0.1.-Check-list.md
+    - Developper:
+      - TODO liste: TODO-liste.md
+      - Check liste: Check-list.md
       - Instructions de montage:
         - Antenne: Antenne.md
         - Malette: Malette.md
@@ -117,3 +117,4 @@ nav:
 
       - Electronic boards:
         - Manufacturing files: Elec_Manufacturing.md
+        - Mods for next revision: Elec_boards_TODO.md
