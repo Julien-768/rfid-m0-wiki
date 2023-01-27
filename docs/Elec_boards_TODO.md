@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Electronique
 
 ## Main board 12V

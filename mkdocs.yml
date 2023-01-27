@@ -56,6 +56,8 @@ theme:
      - navigation.tabs
      - navigation.footer
 
+   custom_dir: overrides
+
    palette:
       # Palette toggle for light mode
       - media: "(prefers-color-scheme: light)"
