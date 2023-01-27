@@ -47,7 +47,7 @@ extra:
 # Configuration
 theme:
    name: material
-   logo: assets/image/logo_MIBE.png
+   logo: assets/images/logo_MIBE.png
    favicon: assets/favicon.ico
    collapse_navigation: false
    features:

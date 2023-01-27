@@ -12,4 +12,4 @@ Le feather M0 est protégé par défaut. Il faudra [écrire un mot pour ôter la
 
 ## Pin out J-LINK SWD
 
-![image](/assets/image/TO_SORT/SWD_pin.png)
+![image](/assets/images/TO_SORT/SWD_pin.png)

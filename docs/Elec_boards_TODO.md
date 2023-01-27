@@ -18,7 +18,7 @@ comments: true
 * Une piste de la carte power doit être coupée: celle qui connecte la tension batterie au power boost. Normalement un interrupteur d'arrêt doit permettre de couper l'alimentation entre batterie et le reste du système. Or cette piste fait une connexion permanente. [EDIT: Modif déjà apportée sur fritzing le 04/08/2022]
 * La position des 4 trous est à changer. Deux sont trop proches du chargeur solaire (court circuit avec les vis), l'un trop proche du condensateur (court circuit) et l'autre trop proche du bornier à vis.
 
-![Capture](./assets/image/TODO/Power_board%205V%20trous.png){: style="width:400px"}
+![Capture](./assets/images/TODO/Power_board%205V%20trous.png){: style="width:400px"}
 
 ## Power board 12V
 
