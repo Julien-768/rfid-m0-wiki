@@ -16,7 +16,8 @@ test:
 pages:
   stage: deploy
   script:
-  - mkdocs build --strict --verbose
+  #- mkdocs build --strict --verbose
+  - mkdocs gh-deploy --force
   - mv site public
   artifacts:
     paths:
