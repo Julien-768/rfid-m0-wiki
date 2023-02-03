@@ -1,4 +1,4 @@
-# Liste des Composants
+# Materials
 
 ## Carte de développement
 
@@ -46,7 +46,7 @@ Le capteur RTD lit la température ambiante grâce à une résistance variable s
 
 [tutorial adafruit](TODO)
 
-## Barrière infrarouge new version
+## Barrière infrarouge
 
 Cette barrière infrarouge modulé à 36kHz filtre les rayonnements infrarouges ambiants naturels, et s'affranchit de la luminosité de l'environnement.
 

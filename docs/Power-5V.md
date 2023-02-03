@@ -31,7 +31,7 @@ Pour cette dernière méthode nous nous sommes inspiré de ce [tuto_mise_hors_te
 
 Grâce à cette électronique, le software peut commander l'éteignage du dispositif (par exemple lorsque la lecture de la batterie est inférieure à un certain seuil).
 
-## Matériel
+## Materials 
 
 ### Power Boost 1000
 
@@ -57,4 +57,4 @@ Ce panneau solaire a une puissance de 2.5W, il peut délivrer un courant jusqu'�
 
 ### Batterie
 
-La batterie utilisée est une batterie Li Polymer de 3.7v et de 1.5Ah. Ces batteries ont la particularité de présenter une tension de 4.2v en charge maximale, puis elles descendent rapidement à 3.7v. La tension de décharge est de 3v.
+La batterie utilisée est une batterie Li Polymer de 3.7v et de 1.5Ah. Ces batteries ont la particularité de présenter une tension de 4.2v en charge maximale, puis elles descendent rapidement à 3.7v.

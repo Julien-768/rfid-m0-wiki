@@ -16,7 +16,7 @@
 <img src="../assets/images/rfid.elec.schematic/Main_board TOP.jpeg" width="200">
 </a>
 
-## Power supply board 12V version
+## Power supply board 12V
 
 <a href="../assets/images/rfid.elec.schematic/Power_12v%20schematic.png">
 <img src="../assets/images/rfid.elec.schematic/Power_12v%20schematic.png" width="400">
@@ -26,7 +26,7 @@
 <img src="../assets/images/rfid.elec.schematic/Power_board_12V%20TOP.jpeg" width="300">
 </a>
 
-## Power supply board 5V version
+## Power supply board 5V
 
 <a href="../assets/images/rfid.elec.schematic/Power_board_5V%20schematic.png">
 <img src="../assets/images/rfid.elec.schematic/Power_board_5V%20schematic.png" width="400">

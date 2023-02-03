@@ -5,7 +5,9 @@
 
 ## Pinout feather M0 Adalogger
 
-![Pinout_Feather_M0](./uploads/27c35323531a6092eb5c8f3a0b34f158/Pinout_Feather_M0.png)
+<a href="../assets/images/TODO/Pinout_Feather_M0.png">
+<img src="../assets/images/TODO/Pinout_Feather_M0.png" width="800">
+</a>
 
 ## Schéma du circuit d'acquisition
 
@@ -72,18 +74,3 @@ Dakota 2010-0 TLB-30-BB LF
 \\Projets\\RFID Tectus
 
 ![Clipboard - 23 février 2022 11_25](./media/image21.png)
-
-## IR module
-
-### Exemples/Tuto
-
-* Comptage par franchissement d'une barrière infrarouge avec Arduino
-UNO
-<http://makerspace56.org/comptage-par-franchissement-dune-barriere-infrarouge/>
-
-* Youtube la grotte du geek, code écrit par l\'environnement
-STM32CubeIDE
-<https://www.youtube.com/watch?v=\_tcBtZZDsCE>
-
-* Adafruit "Using an Infrared Library on Arduino"
-<https://learn.adafruit.com/using-an-infrared-library/sending-ir-codes>

@@ -40,10 +40,6 @@ extra:
                target="_blank" rel="noopener">sending us your feedback</a>
               #TODO fill if not using google analytics
 
-# # versionning
-#    version:
-#       provider: mike # TODO
-
 # Configuration
 theme:
    name: material
@@ -107,14 +103,15 @@ nav:
         - Electronique: Electronique.md
         - Informatique: Informatique.md
 
-      - Liste des composants: Liste-des-composants.md
       - Pinout: Pinouts.md
-      - Power Supply:
-        - General view: Power-supply.md
-        - Li-Ion battery: Power-supply-Li-Ion.md
-        - 12V battery: Power-supply-12V.md
 
-      - Programmation: Programmation.md
+      - Electronic boards:
+        - Liste des composants: Main_board_Materials.md
+        - General view: Power-supply.md
+        - 5V power supply board: Power-5V.md
+        - 12V power supply board: Power-12V.md
+
+      - Infrared: Infrared.md
       - JLINK-bootloader: JLINK-bootloader.md
 
       - Electronic boards:

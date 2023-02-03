@@ -1,13 +1,5 @@
 # Home
 
-## Nichoir 2021 </summary>
-
-- [contexte](Stage/contexte)
-- [Stage-2021](Stage/Stage-2021)
-- [Boitier](Stage/Boitier)
-- [Liste des composants](Stage/composants)
-- [Manuel d'assemblage](Stage/Manuel-d'assemblage)
-
 Un même projet pour deux applications:
 
 - un nichoir "intelligent" pour mésanges
