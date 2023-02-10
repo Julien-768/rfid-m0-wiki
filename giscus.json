@@ -1,5 +1,8 @@
 {
     "origins": ["https://gitlab.in2p3.fr/rfid_m0/rfid_m0.wiki",
-                "https://gitlab.in2p3.fr/rfid_m0/rfid_m0.wiki/-/blob/master/"],
+                "https://gitlab.in2p3.fr/rfid_m0/rfid_m0.wiki/-/blob/master/",
+                "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki/",
+                "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki",
+                "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki.vercel.app"],
     "originsRegex": ["http://localhost:[0-9]+"]
   }
