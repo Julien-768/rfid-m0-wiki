@@ -1,4 +1,5 @@
 {
-    "origins": ["https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki"],
+    "origins": ["https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki",
+                "https://gitlab.in2p3.fr/rfid_m0/rfid_m0.wiki/-/blob/master/"],
     "originsRegex": ["http://localhost:[0-9]+"]
   }
