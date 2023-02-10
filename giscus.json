@@ -1,5 +1,6 @@
 {
     "origins": ["https://gitlab.in2p3.fr",
+                "https://rfid_m0.pages.in2p3.fr"
                 "file:///C:/Users/Julien/Documents/Source/Repos/RFID_M0/rfid_m0.wiki/site/Elec_boards_TODO/index.html",
                 "file://",
                 "https://gitlab.in2p3.fr/rfid_m0/rfid_m0.wiki",
