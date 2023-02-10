@@ -17,6 +17,7 @@ pages:
   stage: deploy
   script:
   - mkdocs build --strict --verbose --site-dir public
+  - cp giscus.json public
   artifacts:
     paths:
     - public
