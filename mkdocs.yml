@@ -5,8 +5,8 @@ site_description: >-
                   Provide information to set up and use the rfid_m0.code
 
 # Repository
-repo_name: rfid_m0/rfid_m0.code
-repo_url: https://gitlab.in2p3.fr/rfid_m0/rfid_m0.code
+repo_name: rfid_m0
+repo_url: https://gitlab.in2p3.fr/rfid_m0
 # Copyright
 copyright: Copyright &copy; 2017 - 2023 IPHC's technical platform MIBE
 
