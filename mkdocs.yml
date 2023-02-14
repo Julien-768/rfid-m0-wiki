@@ -94,6 +94,9 @@ nav:
     - User:
       - Configuration du programme: Configuration-du-programme.md
 
+    - Hardware:
+      - Burrow: Antenna_Burrow.md
+      - Nest Box: Antenna_schwegler.md
     - Developper:
       - TODO liste: TODO-liste.md
       - Check liste: Check-list.md
