@@ -25,7 +25,7 @@ The read range is 500 mm (typical values) with a EM4102 transponders (1.7 mm Ø)
 
 ### Dimension
 
-TODO 50 *40* 10 mm
+The antenna is an oval of TODO * TODO mm Ø by TODO mm height. You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/tree/master/antenna_Schwegler)
 
 ### 3D preview
 
@@ -35,8 +35,8 @@ TODO 50 *40* 10 mm
 
 ## Electronic specifications
 
-The antenna inductance is around 192µH to be compliant to the Tectus RFID reader TITAN 4004. It is suitable with the 125 - 134 kHz frequency range.
+The antenna inductance is around 192µH to be compliant to the Tectus RFID reader TITAN 4004. It is suitable with the 125 - 134 kHz frequency range. It requires TODO m of enamelled copper wire which would make TODO spires.
 
 ## Assembling instructions
 
-Please refer to the [Developper section of the project for assembling instructions](./Assembling_antenna_nest.md).
+Please refer to the [Developper section of the project for assembling instructions](./Assembling_antenna.md).

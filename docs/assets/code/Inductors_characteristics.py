@@ -10,13 +10,13 @@ import math
 #################################################
 
 # mean radius in m
-RADIUS = 50e-3
+RADIUS = 52.5e-3
 
 # Length / thickness in m
-COIL_LENGHT = 5e-3
+COIL_LENGHT = 4e-3
 
 # number of spires
-NB_SPIRES = 29
+NB_SPIRES = 20
 
 #################################################
 
