@@ -93,7 +93,8 @@ nav:
     - Home: index.md
 
     - User:
-      - Configuration du programme: Configuration-du-programme.md
+      - Software configuration: Software_configuration.md
+      - Checking procedure: Checking_procedure.md
 
     - Hardware:
       - Burrow: Antenna_Burrow.md
