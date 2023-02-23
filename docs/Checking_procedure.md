@@ -9,10 +9,10 @@ This page describes a simple procedure to check your hardware, either on the fie
 
 <!-- markdownlint-disable MD033 -->
 <a href="../media/Procedure_battery_connection_illustration.png">
-<img src="../media/Procedure_battery_connection_illustration.png" alt= "battery connection" width="400">
+<img src="../media/Procedure_battery_connection_illustration.png" alt= "battery connection" width="375">
 </a>
 <a href="../media/Procedure_external_component_illustration.png">
-<img src="../media/Procedure_external_component_illustration.png" alt= "external component illustration" width="400">
+<img src="../media/Procedure_external_component_illustration.png" alt= "external component illustration" width="375">
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -27,7 +27,7 @@ We are going to check the SD card and the RTC are ok by checking the LEDs of the
 1. Press the On/Off button (button pressed = On)
 2. Press the switch button until the external red LED turns on. Once done, release the switch button. The external red LED should turn OFF after the startup of the device.
     * If the external red LED does not light up at all, check that the battery connector well plugged-in
-    * If the external red LED does not turn OFF, open your device and check the internal red led
+    * If the external red LED does not turn OFF, open your device and check the internal red led :
         * If it is blinking 2 times, the memory card is not found or is faulty, reinsert it or replace it.
         * If it is ON and fixed, the RTC battery might be faulty, replace it.
 
@@ -41,14 +41,20 @@ We are going to check the SD card and the RTC are ok by checking the LEDs of the
 
 We are going to check if the infrared beams are working by checking the LED of the RFID reader. Indeed the RFID reader only reads tags (so its LED blinks) after an infrared event was detected.
 
-1. Once the device started and the external red LED is off, pass your hand through the antenna. Check that the RFID reader lights turn on for a few seconds (flashing red light)
-2. After a few seconds, remove the hand from the antenna Check that the RFID reader lights turn on for a few seconds (flashing red light)
+1. Once the device started and the external red LED is off, set your finger on one infrared receiver. Check that the RFID reader lights turn on for a few seconds (flashing red light)
+2. After a few seconds, remove your finger and check that the RFID reader lights turn on for a few seconds (flashing red light)
+3. Repeat the same operation with the second infrared receiver
 
-*NOTE* As the angle of the IR cells is wide, it's important that the obstacle was quite large (hand, wrist - no small object)
+*NOTE* As the angle of the IR cells is wide, it's important to well covered the infrared receiver.
+
+It's possible to differentiate tke IR receiver from the emitter as the receiver has a bigger diameter than the emitter. In addition, it's (normally) mounted on the right side of the antenna.
 
 <!-- markdownlint-disable MD033 -->
 <a href="../media/Procedure_RFID_led_illustration.png">
 <img src="../media/Procedure_RFID_led_illustration.png" alt= "RFID led" height="250">
+</a>
+<a href="../media/Procedure_IR_receiver_illustration.png">
+<img src="../media/Procedure_IR_receiver_illustration.png" alt= "IR receiver" width="300">
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -56,12 +62,17 @@ We are going to check if the infrared beams are working by checking the LED of t
 
 We are going to check if the RFID reader is able to detect and read a RFID tag, by passing a tag into the antenna and check the led of the device.
 
-1. Once the device started and the red LED is off, pass your hand with RFID tag through the antenna
+1. Pass your hand with RFID tag through the antenna
 2. Check that the external LED flashes briefly
 
-*NOTE This test must be performed within 5 minutes after the system power-on. After this delay, the external red LED will be disables for energy saving reasons.*
+*NOTE This test must be performed within 5 minutes after the system power-on. After this delay, the external red LED will be disabled for energy saving reasons.*
 
-&nbsp;
+### Device shutdown
+
+1. Maintain the switch button pressed until the red LED stops blinking and remains On
+2. Release the switch button
+3. Press the On/Off button (button released = Off)
+4. Disconnect the battery
 
 ### SD card content and date / time
 
@@ -70,17 +81,11 @@ We are going to check if the SD card is correctly working (write data) and if th
 1. Once the previous tests done, turn off the device and insert the SD memory card into a computer.
 2. Check for a text file nammed with the current date (date format : YY_MM_DD.TXT). If it's the case, open it
 3. In the file, check that the different events of the tests are present and that the associated time is correct.  
-   At least 7 events should be present in the file :
+   At least 9 events should be present in the file :
       * "System start"
-      * 2 events during infrared test : "broken beam" and "beam restored"
+      * 2 events for infrared cell IR1 : "broken beam" and "beam restored"
+      * 2 events for infrared cell IR2 : "broken beam" and "beam restored"
       * 3 events during RFID test : "broken beam", RFIG tag value and "beam restored"
       * "Shut Down Button"
 
 *NOTE* The time base is expressed at UTC+1 in summer mode (no shift in winter)
-
-## Device shutdown
-
-1. Maintain the switch button pressed until the red LED stops blinking and remains On
-2. Release the switch button
-3. Press the On/Off button (button released = Off)
-4. Disconnect the battery
