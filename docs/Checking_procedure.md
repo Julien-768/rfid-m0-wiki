@@ -33,7 +33,7 @@ We are going to check the SD card and the RTC are ok by checking the LEDs of the
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Procedure/Led_difference.png">
-<img src="../assets/images/Procedure/Led_difference.png" alt= "led difference" width="400">
+<img src="../assets/images/Procedure/Led_difference.png" alt= "led difference" width="500">
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -84,11 +84,11 @@ We are going to check if the SD card is correctly working (write data) and if th
 
 <details>
     <summary>Click to see the file content</summary>
-
-    2023-2-24;9:25:54.107;System; Start;        
-    2023-2-24;9:25:54.107;System; RTC is ok;  
-    2023-2-24;9:26:10.895;IR 1 ; broken beam ; 
-    2023-2-24;9:26:14.435;IR 1 ; beam restored ; 
+    ```
+    2023-2-24;9:25:54.107;System; Start;
+    2023-2-24;9:25:54.107;System; RTC is ok;
+    2023-2-24;9:26:10.895;IR 1 ; broken beam ;
+    2023-2-24;9:26:14.435;IR 1 ; beam restored ;
     2023-2-24;9:26:17.211;IR 2 ; broken beam ;
     2023-2-24;9:26:21.254;IR 2 ; beam restored ;
     2023-2-24;9:26:55.319;IR 1 ; broken beam ;
@@ -97,7 +97,7 @@ We are going to check if the SD card is correctly working (write data) and if th
     2023-2-24;9:26:55.838;IR 1 ; beam restored ;
     2023-2-24;9:26:55.850;IR 2 ; beam restored ;
     2023-2-15;12:54:5.553;System; Shut Down Button;
-
+    ```
 </details>
 
 *NOTE* The time base is expressed at UTC+1 in summer mode (no shift in winter)
