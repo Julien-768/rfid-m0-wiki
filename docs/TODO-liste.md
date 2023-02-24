@@ -11,6 +11,27 @@
 * Test avec panneau solaire ( et amélioration de programmation associée)
 * Protection contre la surchauffe: Avec l'aide d'un capteur de température, un arrêt logiciel de décharge de la batterie en cas de surchauffe a été programmé.  ( A VERIFIER, TESTER). Amélioration: envisager peut être une protection électronique interne et ne pas dépendre du bon fonctionnement du logiciel ?
 
+### Power board 12V
+
+* Remplacer les connecteurs P3 /P4 par des bornier à vis de pas 2.54mm
+* Indiquer le + et le – pour le connecteur PWR_5V
+* Corriger la piste en contact avec le plan de masse (pin EN --> Q2)
+* Déplacer la dénomination Q1 pour la rendre visible une fois le composant installé et replié
+
+### Main board
+
+* Remonter les descriptions sur la face supérieure du circuit (connecteur IR, led, servo et RFID, PW_mng) pour meilleure visibilité
+* Ajouter dénomination +/- sur le connecteur PW_5V
+* Déplacer les dénominations Q12, Q13, C1, C3 et R8 pour les rendre visible une fois les composants installés
+* Eloigner le connecteur PW_mng de Q12 pour faciliter la manipulation du connecteur
+* Ne pas déplacer C1 mais indiquer dans le montage de le souder avec assez de longueur de pattes pour permettre de le plier (meilleure intégration mécanique)
+* Inverser le sens de montage pour permettre de voir sa référence une fois le composant monté et plié
+
+
+### Interface board
+
+* Corriger le schéma : Diodes inversées
+
 ### Système complet
 
 * Test réel d'autonomie
