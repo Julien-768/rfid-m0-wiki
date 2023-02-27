@@ -89,6 +89,11 @@ markdown_extensions:
 extra_javascript:
   - javascripts/feedback.js
 
+plugins:
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - search
+
 nav:
     - Home: index.md
 
