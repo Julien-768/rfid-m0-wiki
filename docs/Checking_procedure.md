@@ -29,7 +29,7 @@ We are going to check the SD card and the RTC are ok by checking the LEDs of the
     * If the external red LED does not light up at all, check that the battery connector well plugged-in
     * If the external red LED does not turn OFF, open your device and check the internal red led :
         * If it is blinking 2 times, the memory card is not found or is faulty, reinsert it or replace it.
-        * If it is ON and fixed, the RTC battery might be faulty, replace it.
+        * If it is blinking 4 times, the RTC battery might be faulty, replace it.
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Procedure/Led_difference.png">
@@ -45,7 +45,7 @@ We are going to check if the infrared beams are working by checking the LED of t
 2. After a few seconds, remove your finger and check that the RFID reader lights turn on for a few seconds (flashing red light)
 3. Repeat the same operation with the second infrared receiver
 
-*NOTE* As the angle of the IR cells is wide, it's important to well covered the infrared receiver.
+*NOTE* As the angle of the IR cells is wide, it's important to well cover the infrared receiver.
 
 It's possible to differentiate tke IR receiver from the emitter as the receiver has a bigger diameter than the emitter. In addition, it's (normally) mounted on the right side of the antenna.
 
