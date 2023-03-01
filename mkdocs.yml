@@ -116,8 +116,8 @@ nav:
       - Pinout: Pinouts.md
 
       - Electronic boards:
-        - Liste des composants: Main_board_Materials.md
         - General view: Power-supply.md
+        - Main board: Main_board_Materials.md
         - 5V power supply board: Power-5V.md
         - 12V power supply board: Power-12V.md
 

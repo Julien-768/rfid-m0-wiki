@@ -1,6 +1,22 @@
-# Materials
+# Main board
 
-## Carte de développement
+## Schéma du circuit d'acquisition
+
+Le système électronique est constitué de composants fonctionnant à différentes tensions:
+
+* 5v (rouge) pour le servomoteur, le module RFiD, le feather M0 et un régulateur 3V3
+* 3V3 provenant du feather (marron) qui alimente de manière permanente la RTC
+* 3V3 provenant du régulateur (orange) qui alimente émetteurs et récepteurs IR, et le module MAX31865
+
+On distingue les IO en bleu, l'alimentation de la carte en 5V en rouge, et la masse en noir. Plusieurs pins de communication de la carte Feather M0 sont utilisés, notamment les pins de communication I2C pour le RTC, SPI pour le RTD et UART pour le module RFiD.
+
+![Nichoir_main_schéma](./uploads/7d0519200c182f8dde2e305f0a5f2c08/Nichoir_main_schéma.png)
+
+Pour l'alimentation de cette carte d'acquisition se référer à la section [Overview](./Overview.md)
+
+## Materials
+
+### Carte de développement
 
 ![Picture Feather M0 Adalogger](./uploads/ab0a254de9223f1644c0fdddce3d70b9/image.png){: style="width:250px"}
 
@@ -8,7 +24,7 @@ La Feather M0 Adalogger de Adafruit est une carte de développement de type Ardu
 
 [tutorial adafruit](https://learn.adafruit.com/adafruit-feather-m0-adalogger/pinouts)
 
-## Servomoteur
+### Servomoteur
 
 ![Picture servomoteur](./uploads/bb7554ebf1d3a945e45b4c43df6ee853/image.png){: style="width:200px"}
 
@@ -16,7 +32,7 @@ Le servomoteur HS-53 de Hitec est adapté pour des systèmes miniaturisés ou é
 
 [Datasheet](https://asset.conrad.com/media10/add/160267/c1/-/gl/001081926ML01/mode-demploi-1081926-mini-servomoteur-analogique-hitec-hs-53-112053-1-pcs.pdf)
 
-## Module RTC
+### Module RTC
 
 ![Picture Module RTC](./uploads/660ba6c3c82931b67449b63d54a7ff72/image.png){: style="width:200px"}
 
@@ -26,7 +42,7 @@ Ce capteur conserve la date, l'heure, les minutes et les secondes grâce à sa p
 
 [tutorial adafruit](https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads)
 
-## Module RFiD
+### Module RFiD
 
 ![Picture RFID Board](./uploads/cc3bd4627da03c6eb6b14b72dc5d9966/carte_RFiD.png){: style="width:300px"}
 
@@ -36,7 +52,7 @@ La carte RFID de tectus supporte les protocoles HDX, FDX et EM4102. Associée à
 
 [manuel de communication scotty.v1.4_TLB-30-Commands_.pdf](./uploads/651a3e69d9c31fa0e2970c75e4627ca0/scotty.v1.4_TLB-30-Commands_.pdf)
 
-## Capteur RTD
+### Capteur RTD
 
 ![Picture RTD](./uploads/a9d3760123072bac216f86adc6a7d2b9/image.png){: style="width:200px"}
 
@@ -46,15 +62,15 @@ Le capteur RTD lit la température ambiante grâce à une résistance variable s
 
 [tutorial adafruit](TODO)
 
-## Barrière infrarouge
+### Barrière infrarouge
 
 Cette barrière infrarouge modulé à 36kHz filtre les rayonnements infrarouges ambiants naturels, et s'affranchit de la luminosité de l'environnement.
 
-### Description
+#### Description
 
 La barrière infrarouge utilise le principe et les composants destinés aux télécommandes infrarouges. En effet, on émet une lumière pulsée infrarouge à une certaine fréquence (36kHz). En face on place un photo détecteur qui passe à l'état bas seulement si il détecte un rayonnement IR à cette fréquence. Ainsi Ces capteurs infrarouge fonctionnent en tout ou rien. On ne peut pas régler la distance de détection. Plus le rayonnement Infrarouge est intense plus la barrière infrarouge peut être grande (plusieurs mètres).
 
-### Émetteur Infrarouge
+#### Émetteur Infrarouge
 
 ![Picture IR emitter](./uploads/faf76029d4c4bf6ed90eff264ebd9dab/image.png){: style="width:200px"}
 
@@ -66,7 +82,7 @@ Librairie utilisé [Arduino SAMD21 turbo PWM](https://github.com/ocrdu/Arduino_S
 
 ![IR_pulse_code](./uploads/2c382b5486b75d76924971f6a84affcd/IR_pulse_code.PNG)
 
-### Phototransistor TSOP34536
+#### Phototransistor TSOP34536
 
 ![phototransistor](./uploads/9e841f54ce27092b014421e1b7e74c72/phototransistor.png){: style="width:300px"}
 

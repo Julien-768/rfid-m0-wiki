@@ -25,12 +25,12 @@ The read range is 500 mm (typical values) with a EM4102 transponders (1.7 mm Ø)
 
 ### Dimension
 
-The antenna is an oval of TODO * TODO mm Ø by TODO mm height. You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/tree/master/antenna_Schwegler)
+The antenna is an circle of 37.5 mm Ø. You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/tree/master/antenna_schwegler)
 
 ### 3D preview
 
 <!-- markdownlint-disable MD033 -->
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgitlab.in2p3.fr%2Frfid_m0%2Frfid_m0.meca%2F-%2Fraw%2Fmaster%2Fantenna_schwegler%2FAssembly.stl%3Finline%3Dfalse&orientation=bottom&bgcolor=transparent" style="border:0;margin:0;width:100%;height:400px;"></iframe>
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/raw/master/antenna_schwegler/Assembly.stl?inline=false%3Finline%3Dfalse&orientation=bottom&bgcolor=transparent" style="border:0;margin:0;width:100%;height:400px;"></iframe>
 <!-- markdownlint-enable MD033 -->
 
 ## Electronic specifications

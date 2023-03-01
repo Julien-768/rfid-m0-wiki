@@ -22,11 +22,11 @@ This page describes a simple procedure to check your hardware, either on the fie
 
 ### SD card and Real-Time Clock
 
-We are going to check the SD card and the RTC are ok by checking the LEDs of the device.
+We are going to check the SD card and the RTC are in order by checking the LEDs of the device.
 
-1. Press the main switch (pressed = On)
-2. Press the switch button until the external red LED turns on. Once done, release the switch button. The external red LED should turn OFF after the startup of the device.
-    * If the external red LED does not light up at all, check that the battery connector well plugged-in
+1. Press the main switch (with power symbol, pressed = On)
+2. Press the switch button until the external red LED turns on. Once done, release it. The external red LED should turn OFF after the startup of the device.
+    * If the external red LED does not light up at all, check that the battery connector is well plugged-in
     * If the external red LED does not turn OFF, open your device and check the internal red led:
         * If it is blinking 2 times, the memory card is not found or is faulty, reinsert it or replace it.
         * If it is blinking 4 times, the RTC battery might be faulty, replace it.
@@ -39,15 +39,15 @@ We are going to check the SD card and the RTC are ok by checking the LEDs of the
 
 ### Infrared beam
 
-We are going to check if the infrared beams are working by checking the LED of the RFID reader. Indeed the RFID reader only try to read tags (so its LED blinks) after an infrared event is detected.
+We are going to check if the infrared beams are working by checking the RFID reader's LED. The RFID reader only tries to read tags after an infrared event is detected, and this causes its LED to blink.
 
-1. Once the device started and the external red LED is off, set your finger on one infrared receiver. Check that the RFID reader lights turn on for a few seconds (flashing red light)
-2. After a few seconds, remove your finger and check that the RFID reader lights turn on for a few seconds (flashing red light)
+1. Once the device is started and the external red LED is off, set your finger on one of the infrared receivers. Check that the RFID reader lights turn on for a few seconds (flashing red light)
+2. After a few seconds, remove your finger and check that the RFID reader lights stay on for a few seconds (flashing red light)
 3. Repeat the same operation with the second infrared receiver
 
-*NOTE* As the angle of the IR cells is wide, it's important to well cover the infrared receiver.
+*NOTE* As the angle of the IR cells is wide, it is important to properly cover the infrared receiver.
 
-It's possible to differentiate the bigger diameter of the IR receiver from the emitter. In addition, The receiver is mounted on the right side of the antenna.
+It is possible to differentiate the bigger diameter of the IR receiver from the emitter. In addition, The receiver is mounted on the right side of the antenna.
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Procedure/RFID_led.png">
@@ -60,16 +60,16 @@ It's possible to differentiate the bigger diameter of the IR receiver from the e
 
 ### RFID reader
 
-We are going to check if the RFID reader is able to detect and read a RFID tag, by passing a tag into the antenna and check the led of the device.
+We are going to check if the RFID reader is able to detect and read a RFID tag, by passing one into the antenna and checking the external led.
 
 1. Pass your hand with a tag through the antenna
 2. Check that the external LED flashes briefly
 
-*NOTE* This test must be performed within 5 minutes after the system power-on. After this delay, the external red LED will be disabled for energy saving reasons.
+*NOTE* This test must be performed within 5 minutes after the system power-on. After this delay, the external LED will be disabled for energy saving reasons.
 
 ### Device shutdown
 
-1. Maintain the switch button pressed until the external red LED stops blinking and remains on
+1. Maintain the switch button pressed until the external LED stops blinking and remains on
 2. Release the switch button
 3. Press main switch (released = Off)
 4. Disconnect the battery
@@ -78,9 +78,9 @@ We are going to check if the RFID reader is able to detect and read a RFID tag, 
 
 We are going to check if the SD card is correctly working (write data) and if the real-time clock is up-to-date by checking the content of the saved files.
 
-1. Once the previous tests done, turn off the device and insert the SD card into a computer.
-2. Check for a text file nammed with the current date (date format : YY_MM_DD.TXT). If it's the case, open it
-3. In the file, check that the different events of the tests are present and that the associated time is correct.
+1. Once the previous tests are done, turn off the device and insert the SD card into a computer
+2. Check for a text file nammed with the current date (date format : YY_MM_DD.TXT). If it is the case, open it
+3. In the file, check that the different events of the tests are present and that the associated time is correct
 
 ??? "File content"
 
