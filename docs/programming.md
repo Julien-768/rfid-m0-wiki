@@ -11,5 +11,5 @@
 
 1. Open the code folder in Visual Studio Code. Give some time for the dependencies to be automatically downloaded once the code repository is cloned if it is a first time use.
 2. Connect the Feather M0 to the computer using a USB cable
-3. Cick on [PlatformIO : Upload](https://docs.platformio.org/en/stable/integration/ide/vscode.html#platformio-toolbar)
-4. Cick on 'PlatformIO : Serial Monitor' to check the initialisation messages
+3. Cick on [PlatformIO: Clean](https://docs.platformio.org/en/stable/integration/ide/vscode.html#platformio-toolbar) or Clean via the [PIO Menu](https://docs.platformio.org/en/stable/_images/platformio-ide-vscode-task-explorer-refresh.png). This will refresh the compilation date to update the RTC if needed.
+4. Cick on 'PlatformIO: Upload' and then open the 'PlatformIO: Serial Monitor' or 'Upload and Monitor' via the [PIO Menu](https://docs.platformio.org/en/stable/_images/platformio-ide-vscode-task-explorer-refresh.png) to view the initialisation messages
