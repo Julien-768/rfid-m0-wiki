@@ -107,16 +107,16 @@ nav:
     - Developper:
       - TODO liste: TODO-liste.md
       - Check liste: Check-list.md
-      - Instructions de montage:
-        - Antenne: Antenne.md
-        - Malette: Malette.md
-        - Electronique: Electronique.md
-        - Informatique: Informatique.md
+      - Assembling instructions:
+        - Antenna: Antenna.md
+        - Case: Malette.md
+        - Electronics: Electronique.md
+        - Programming: programming.md
 
       - Pinout: Pinouts.md
 
       - Electronic boards:
-        - General view: Power-supply.md
+        - Overview: Overview.md
         - Main board: Main_board_Materials.md
         - 5V power supply board: Power-5V.md
         - 12V power supply board: Power-12V.md

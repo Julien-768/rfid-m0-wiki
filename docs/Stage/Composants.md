@@ -17,11 +17,6 @@ Le projet sera mené avec une carte Adafruit Feather M0 Adalogger, qui offre un 
 
 ## Notes d'utilisations
 
-### Mise en place de l'IDE Arduino
-
-Les cartes Feather M0 ne sont pas des cartes officielles Arduino, elles nécessitent donc l'installation de packages et de driver pour être reconnues par l'IDE Arduino. On précisera dans les Préférences de l'application un URL Gestionnaire de carte supplémentaire : https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
-. Cela nous permettra de récupérer le package adapté aux cartes Feather M0 dans le Gestionnaire de carte. Si le projet est réalisé sous Windows 7 ou 8, il faudra également installer un driver pour que le système d'exploitation reconnaisse la carte comme un périphérique valable. Voir le lien suivant pour les références de package et le téléchargement du driver : https://learn.adafruit.com/adafruit-feather-m0-adalogger/using-with-arduino-ide .
-
 ### Reconnaissance et conversion d'une carte sous Python
 
 Les cartes Feather M0 ont la possibilité d'être développées sous Python, en y installant une version de CircuitPython. Si c'est le cas, la carte branchée apparaîtra comme une disque externe dans l'explorateur de fichier de l'ordinateur, et n’apparaîtra pas comme étant connecté à un port COM dans l'IDE Arduino. Pour désinstaller CircuitPython et continuer le développement sur l'IDE Arduino, il faudra connecter la carte à l'ordinateur et double cliquer sur le bouton reset de la carte jusqu'à ce que la carte apparaisse dans l'IDE. On peut alors y téléverser un programme et l'utiliser sous Arduino. Voir ce lien pour plus de détails : https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uninstalling-circuitpython .
