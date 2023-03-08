@@ -98,6 +98,7 @@ nav:
     - Home: index.md
 
     - User:
+      - Device description: Device_description.md
       - Software configuration: Software_configuration.md
       - Checking procedure: Checking_procedure.md
 

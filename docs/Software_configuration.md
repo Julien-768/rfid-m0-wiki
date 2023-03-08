@@ -1,4 +1,6 @@
-The microcontroller program has some parameters that can be configured. User can then personnalize his program.
+# Software configuration
+
+The microcontroller program has some parameters that can be configured by a configuration file. User can then personnalize its program.
 The file is located into the SD card ("CONFIG.txt") and respects the [JSON format](http://json.com/).
 
 ---
@@ -31,6 +33,7 @@ The file is located into the SD card ("CONFIG.txt") and respects the [JSON forma
 ## Edit parameters
 
 To change the values of the parameters :
+
 1. Insert the SD card into a computer
 2. Check for CONFIG.txt file and open it
 3. Change the value of the required parameters
@@ -83,10 +86,10 @@ Following an event on the infrared sensor, RFID reading. If the tag is one of th
 
 Following an event on the infrared sensor, RFID reading. If there is no tag, closing the door.
 
-*NOTE* For each capture mode, a security timeout opens the door afteer a capture duration (release_time parameter)
+*NOTE* For each modes, a security timeout opens the door after a certain duration (parameter release_time)
 
 ---
 
-## Manipulation du boitier
+## Parameters incompatibility
 
-Le système s'enlève pour récupérer un oiseau comme on enlèverai la porte originelle, en soulevant le boitier et en tirant vers soi. La carte SD est accessible en dévissant le bouchon sur la surface inférieur. Un port USB étanche est également présent sur cette surface pour y placer le power bank ou la panneau solaire.
+Be careful to specify a mode compatible with the rest of the configuration. The mode 2 and 4 requires at least one infrared sensor activated (opt_IR_1 or opt_IR_2 set to true).

@@ -1,55 +1,32 @@
 # Home
 
-## Nichoir 2021 </summary>
+## System purpose
 
-* [contexte](Stage/contexte)
-* [Stage-2021](Stage/Stage-2021)
-* [Boitier](Stage/Boitier)
-* [Manuel d'assemblage](Stage/Manuel-d'assemblage)
+The purpose of this system is to monitor and capture certain individuals.
+A circular antenna, equipped with sensors and placed at the entrance of a burrow, can detect the passage of individuals and read their RFID tags (if existing).
+All this data is collected on an memory card with timestamp.
 
-Un même projet pour deux applications:
+Depending on the system setting, it is also possible to capture individuals who have crossed the antenna.
+Several capture modes are available:
 
-* un nichoir "intelligent" pour mésanges
-* une antenne terrier pour Hamsters sauvages
+* No capture
+* Capture of all individuals
+* Capture individuals with a specific tag
+* Capture of individuals without tags
 
-Chaque application possède sa propre conception mécanique. Mais la programmation et l'électronique sont partagées.
+The entire system is contained in a case for easy transport and installation.
 
-## Description du fonctionnement en commun
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/User_description/Complete_system.jpg">
+<img src="../assets/images/User_description/Complete_system.jpg" alt= "Complete system" height="300">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-Les deux systèmes ont en commun :
+## Technical specifications
 
-* Système embarqué à placer en milieu naturel (forêt, champs)
-* 1 ou 2 détections IR pour détecter la présence d'un animal
-* une antenne RFID pour la lecture d'un transpondeur dans l'animal
-* l'enregistrement des données sur une carte SD
-* Gestion de la batterie pour un fonctionnement avec panneau solaire
-
-## Les outils de développement
-
-### Mécanique
-
-* Antenne terrier sur Siemens NX
-* Nichoir sur Top Solid
-
-## Carte Electronique
-
-* Schéma et routage des cartes sur fritzing.
-* Schémas plus générals sur EasyEDA, Projet "Nichoir_RFID".
-
-## Programmation
-
-### Plateform IO sur VSCode
-
-Pour le développement du programme informatique.
-
-### Utilisation de JLink sur Plateform IO
-
-A venir...
-
-<!--
-TODO: [Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx](./uploads/a56c5ae2038a9a6447f9fe94b2979012/Installer_JLink_sur_Arduino_Feather_M0_avec_VScode_et_platform_IO.docx
--->
-
-<!--
-TODO: Enlever / mettre à jour les fichiers du nichoir 2021
--->
+* Autonomy: 7 days
+* Power source: 4.2v Li-ion battery or 12V lead battery (a solar panel can be added in Li-ion version)
+* Compatible tag: FDX/ EM4102
+* Case dimensions: 210 x 170 x 100 mm
+* Memory type : Micro-SD card
+* 24h operation or according to an hourly schedule
