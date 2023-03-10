@@ -1,47 +1,12 @@
 # Software configuration
 
-The microcontroller program has some parameters that can be configured by a configuration file. User can then personnalize its program.
-The file is located into the SD card ("CONFIG.txt") and respects the [JSON format](http://json.com/).
+The software is customizable by the user to active sensors, working time and behavior.
 
----
+## Configuration file
 
-## Parameters description
+The software options are editable in the configuration file "CONFIG.txt" located on the SD card.
 
-| Parameter name | Associated feature | Values |
-| ------ | ------ | ------ |
-| opt_IR_1 | activation of infrared beam 1 | {true , false}
-| opt_IR_2 | activation of infrared beam 2 | {true , false}
-| opt_temp_prec | activation of temperature sensor | {true , false}
-| delay_temp | delay (in second) between two consecutive temperature sensor checks | [1..xx]
-| tag_type | TAG type supported | {"FDX", "EM4102"}
-| rfid_attempts | how many times the RFID will check for the presence of a TAG after an IR event | [1..xx]
-| delay_tag_save | delay (in second) between two consecutives records of the same TAG on the antenna | [1..xx]
-| mode_time_period | activation only between start_time and stop_time hours | {true ; false}
-| start_time | start hour of the system in mode_day_only | [0..23]
-| stop_time | stop of the system in mode_day_only  | [0..23]
-| delay_loop | delay (in millisecond) between two consecutive sensor checks | [1..10000]
-| release_time | time in seconds for a release after capture (security) | [0..xx]
-| mode_capture | capture mode selection | {1,2,3,4}
-| tag_1 | tag to captur in mode 3 (National Identification Code format) |
-| tag_2 | tag to captur in mode 3 (National Identification Code format) |
-| tag_3 | tag to captur in mode 3 (National Identification Code format) |
-| tag_4 | tag to captur in mode 3 (National Identification Code format) |
-| tag_5 | tag to captur in mode 3 (National Identification Code format) |
-
----
-
-## Edit parameters
-
-To change the values of the parameters :
-
-1. Insert the SD card into a computer
-2. Check for CONFIG.txt file and open it
-3. Change the value of the required parameters
-4. Save your modifications and insert the SD card into the device
-
-*NOTE* If the CONFIG.txt file is not present into the SD card, the device will automatically create it with default values
-
-??? "File content example with default values"
+??? "Configuration file with default values"
 
     ```
     {
@@ -66,30 +31,54 @@ To change the values of the parameters :
     }
     ```
 
----
+The file is written as a [JSON string](https://developers.squarespace.com/what-is-json), take care to keep quotes and commas intacts when modifying the file.
 
-## The 4 operating modes
+## How to edit
 
-### 1 : Recording of passages
+To change the configuration file:
 
-Following an event on the infrared sensor, RFID reading. No capture.
+1. Take the SD card from the device and insert it into a computer
+2. Look for CONFIG.txt file and open it
+3. Change the value of the required parameters
+4. Save your modifications and insert back the SD card into the device
 
-### 2 : Capture everyone
+*NOTE* If the CONFIG.txt file is not present into the SD card, the device will automatically create it with default values
 
-Following an event on the infrared sensor, closing the door.
+## Parameters description
 
-### 3 : Capture of specific tags
+Here is an explanation of the parameters you can tune, possible values to change in the configuration file are described.
 
-Following an event on the infrared sensor, RFID reading. If the tag is one of them described in parameters, closing the door.
+| Parameter name   | Associated feature                                                                | Values            |
+| ---------------- | --------------------------------------------------------------------------------- | ----------------- |
+| opt_IR_1         | activation of infrared beam 1                                                     | {true , false}    |
+| opt_IR_2         | activation of infrared beam 2                                                     | {true , false}    |
+| opt_temp_prec    | activation of temperature sensor                                                  | {true , false}    |
+| delay_temp       | delay (in second) between two consecutive temperature sensor checks               | [1..xx]           |
+| tag_type         | TAG type supported                                                                | {"FDX", "EM4102"} |
+| rfid_attempts    | how many times the RFID will check for the presence of a TAG after an IR event    | [1..xx]           |
+| delay_tag_save   | delay (in second) between two consecutives records of the same TAG on the antenna | [1..xx]           |
+| mode_time_period | activation only between start_time and stop_time hours                            | {true ; false}    |
+| start_time       | start hour of the system in mode_day_only                                         | [0..23]           |
+| stop_time        | stop of the system in mode_day_only                                               | [0..23]           |
+| delay_loop       | delay (in millisecond) between two consecutive sensor checks                      | [1..10000]        |
+| release_time     | time in seconds for a release after any capture (security)                        | [0..xx]           |
+| mode_capture     | capture mode selection                                                            | {1,2,3,4}         |
+| tag_1            | part of the tag number for the capture of specific individuals                    |                   |
+| tag_2            | part of the tag number for the capture of specific individuals                    |                   |
+| tag_3            | part of the tag number for the capture of specific individuals                    |                   |
+| tag_4            | part of the tag number for the capture of specific individuals                    |                   |
+| tag_5            | part of the tag number for the capture of specific individuals                    |                   |
 
-### 4 : Capture untagged individuals
+## The capture mode selection
 
-Following an event on the infrared sensor, RFID reading. If there is no tag, closing the door.
+Be aware only advanced user should activate the capture mode! The mode_capture option can take a number from 1 to 4.
 
-*NOTE* For each modes, a security timeout opens the door after a certain duration (parameter release_time)
+1. *Recording of passages* Following an event on the infrared sensor, RFID reading. No capture.
+2. *Capture any individual* Following an event on the infrared sensor, closing the door.
+3. *Capture of specific tags* Following an event on the infrared sensor, RFID reading. If the tag is one of them described in parameters, closing the door.
+4. *Capture untagged individuals* Following an event on the infrared sensor, RFID reading. If there is no tag, closing the door.
 
----
+Notes
 
-## Parameters incompatibility
-
-Be careful to specify a mode compatible with the rest of the configuration. The mode 2 and 4 requires at least one infrared sensor activated (opt_IR_1 or opt_IR_2 set to true).
+* For each modes, a security timeout opens the door after a certain duration (parameter release_time)
+* Be careful to specify a mode compatible with the rest of the configuration. Modes 2 and 4 require at least one infrared sensor activated (opt_IR_1 or opt_IR_2 set to true).

@@ -98,13 +98,14 @@ nav:
     - Home: index.md
 
     - User:
-      - Device description: Device_description.md
+      - Device for rodent species:
+        - Overview: Device_description.md
+        - Checking procedure: Checking_procedure.md
       - Software configuration: Software_configuration.md
-      - Checking procedure: Checking_procedure.md
 
     - Hardware:
-      - Burrow: Antenna_Burrow.md
-      - Nest Box: Antenna_schwegler.md
+      - Burrow antenna: Antenna_Burrow.md
+      - Nest box antenna: Antenna_schwegler.md
     - Developper:
       - TODO liste: TODO-liste.md
       - Check liste: Check-list.md
