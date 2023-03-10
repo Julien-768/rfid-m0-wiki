@@ -11,22 +11,6 @@ Ancien emplacement : index.md
 * [Boitier](Stage/Boitier)
 * [Manuel d'assemblage](Stage/Manuel-d'assemblage)
 
-Un même projet pour deux applications:
-
-* un nichoir "intelligent" pour mésanges
-* une antenne terrier pour Hamsters sauvages
-
-Chaque application possède sa propre conception mécanique. Mais la programmation et l'électronique sont partagées.
-
-## Description du fonctionnement en commun
-
-Les deux systèmes ont en commun :
-
-* Système embarqué à placer en milieu naturel (forêt, champs)
-* 1 ou 2 détections IR pour détecter la présence d'un animal
-* une antenne RFID pour la lecture d'un transpondeur dans l'animal
-* l'enregistrement des données sur une carte SD
-* Gestion de la batterie pour un fonctionnement avec panneau solaire
 
 ## Les outils de développement
 
