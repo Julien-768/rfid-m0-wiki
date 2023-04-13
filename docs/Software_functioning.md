@@ -1,15 +1,17 @@
 
 # Functioning of the system
 
-The system checks at regular intervals if the infrared barriers have been broken or restored. If an infrared event has occurred, the RFID sensor is read a number of times (**rfid_attempts** option). The data (IR event and tag) are then stored on the SD card
+The system checks at regular intervals if the infrared barriers have been broken or restored. If an infrared event has occurred, the RFID sensor is read a number of times (**rfid_attempts** option).
 
 Following this event, and according to the configuration (**mode_capture** option), a capture can be decided.
 
-In case the infrared sensors are disabled, (**opt_IR_1** & **opt_IR_2** options set to false), the RFID reading is continuously done (Caution: this mode consumes a lot of battery).
+In case the infrared sensors are disabled, (**opt_IR_1** and **opt_IR_2** options set to false), the RFID reading is continuously done (Caution: this mode consumes a lot of battery).
 
 If the temperature is required (**opt_temp_prec** option set to true), the system measures and records it at regular intervals (**delay_temp** option) only if it has varied by more than 0.02°c since the last record.
 
 The battery voltage is also measured and recorded it if it has varied by more than 0.1V since the last record.
+
+The system can operate all the day or according to an hourly schedule (**start_time** and **stop_time** options). The data (IR event, RFID tag, temperature...) are stored on the SD card with timestamp (UTC time).
 
 ## The capture mode
 

@@ -58,8 +58,8 @@ Here is an explanation of the parameters you can tune, possible values to change
 | rfid_attempts    | how many times the RFID will check for the presence of a TAG after an IR event    | [1..xx]           |
 | delay_tag_save   | delay (in second) between two consecutives records of the same TAG on the antenna | [1..xx]           |
 | mode_time_period | activation only between start_time and stop_time hours                            | {true ; false}    |
-| start_time       | start hour of the system in mode_day_only                                         | [0..23]           |
-| stop_time        | stop of the system in mode_day_only                                               | [0..23]           |
+| start_time       | start hour of the system in mode_day_only (UTC time)                              | [0..23]           |
+| stop_time        | stop of the system in mode_day_only (UTC time)                                    | [0..23]           |
 | delay_loop       | delay (in millisecond) between two consecutive sensor checks                      | [1..10000]        |
 | release_time     | time in seconds for a release after any capture (security)                        | [0..xx]           |
 | mode_capture     | capture mode selection                                                            | {1,2,3,4}         |
