@@ -1,6 +1,6 @@
 # Programming procedure
 
-## prerequisites
+## Prerequisites
 
 1. Download [Visual Studio Code](https://code.visualstudio.com/download)
 2. Install [PlatfomIO](https://docs.platformio.org/en/stable/integration/ide/vscode.html#installation)
