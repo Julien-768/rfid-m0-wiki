@@ -123,3 +123,5 @@ La Pelicase sous le carton est noire.
 ![Thermomètre sans contact URGO](./media/image8.jpeg)
 
 ![Valises de 3 couleurs différentes au soleil](./media/image9.jpeg)
+
+TODO Faire une note sur la version de logiciel 2.0.0-rc.1
