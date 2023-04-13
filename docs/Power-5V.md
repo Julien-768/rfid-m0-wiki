@@ -2,7 +2,7 @@
 
 ## Schéma général
 
-![Power_schematic_Solar](./uploads/cc060599fc783c6a9b7c883c04c23b48/Power_schematic_Solar.png)
+TODO Power_schematic_Solar ./uploads/cc060599fc783c6a9b7c883c04c23b48/Power_schematic_Solar.png
 
 ### schéma carte électronique power
 

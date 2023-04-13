@@ -14,7 +14,7 @@ Les 3 câbles de données [EN;SW;Vbat] entre les 2 cartes servent à :
 - SW: passe à l'état haut si le bouton marche/arrêt est appuyé.
 - Vbat: renvoie l'information de la tension de la batterie entre 0 et 3.3V à l'aide d'un pont diviseur
 
-![Power_schematic_géné](./uploads/53b2525b21db5eaeaf2a90db03fd7f05/Power_schematic_géné.png)
+TODO Power_schematic_géné "/uploads/53b2525b21db5eaeaf2a90db03fd7f05/Power_schematic_géné.png"
 
 Il a été conçu 2 types de carte Power:
 
