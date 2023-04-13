@@ -1,4 +1,9 @@
 {
-    "origins": ["https://rfid_m0.pages.in2p3.fr"],
-    "originsRegex": ["http://localhost:[0-9]+"]
+    "origins": [
+                "https://rfid_m0.pages.in2p3.fr",
+                "https://rfid_m0.pages.in2p3.fr//rfid_m0.wiki"
+    ],
+    "originsRegex": [
+        "http://localhost:[0-9]+"
+    ]
   }
