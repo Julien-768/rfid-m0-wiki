@@ -24,6 +24,11 @@ La Feather M0 Adalogger de Adafruit est une carte de développement de type Ardu
 
 [tutorial adafruit](https://learn.adafruit.com/adafruit-feather-m0-adalogger/pinouts)
 
+
+<a href="../assets/images/TODO/Pinout_Feather_M0.png">
+<img src="../assets/images/TODO/Pinout_Feather_M0.png" width="800">
+</a>
+
 ### Servomoteur
 
 ![Picture servomoteur](./uploads/bb7554ebf1d3a945e45b4c43df6ee853/image.png){: style="width:200px"}

@@ -1,13 +1,31 @@
+# Technical specifications
+
+The system is designed to be integrated into a [1150 hard case Pelicase](https://www.peli.com/eu/fr/product/cases/protector/1150) (210 x 170 x 100 mm).
+
 <!-- markdownlint-disable MD033 -->
-# Electronique
-
-## Circuit général
-
-## Pinout feather M0 Adalogger
-
-<a href="../assets/images/TODO/Pinout_Feather_M0.png">
-<img src="../assets/images/TODO/Pinout_Feather_M0.png" width="800">
+<a href="../assets/images/User_description/1150_pelicase.jpg">
+<img src="../assets/images/User_description/1150_pelicase.jpg" alt= "1150 Pelicase" width="350">
 </a>
+<!-- markdownlint-enable MD033 -->
+
+The operating tempererature range is 0°c to 50°c.
+
+## Memory
+
+The system stores its data on a Micro-SD card. The maximal supported size is 32GB (SD and SDHC card supported).
+
+## Powering
+
+Several powering options are proposed :
+
+1. 4.2v Li-ion battery
+2. 12v Lead battery
+3. 4.2v Li-ion battery and solar panel
+
+## Consumption & Autonomy
+
+TO DO : Ajouter autonomie + indiquer dans quel mode (24h ou période) + détail des consommations
+
 
 ## Consommation
 

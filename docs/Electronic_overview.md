@@ -6,7 +6,7 @@ La "carte Power" assure la conversion et la gestion de la batterie, pour envoyer
 
 - L'interrupteur général coupe l'alimentation en entrée du convertisseur VBAT / 5V.
 - Le bouton marche arrêt ou Switch, permet par un appui prolongé, l'allumage ou l'éteignage du système par le software.
-- La recharge par panneau solaire est optionnel.
+- La recharge par panneau solaire est optionnelle.
 
 Les 3 câbles de données [EN;SW;Vbat] entre les 2 cartes servent à :
 
