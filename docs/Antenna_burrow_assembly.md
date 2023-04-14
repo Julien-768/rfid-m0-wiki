@@ -1,107 +1,136 @@
-# Réalisation de l'antenne et de sa gaine métallique
+# Make the coil antenna and its metal sheath
 
-L'antenne se compose de deux pièces
+The antenna consists of two parts :
 
-- Une pièce qui forme les bords intérieurs. On y insert les capteurs IR et on y câble directement l'antenne. Pièce **« Socle.stl »**
+- One part that forms the inner edges : IR sensors are inserted inside and the antenna is cabled **« Socle.stl »**
 
-- Une pièce qui forme les bords extérieurs et vient se visser sur la première, avec un joint étanche pour assurer l'étanchéité entre les 2. Pièce **« Socle_couvercle.stl »**
+- One part that forms the outer edges and screws into the first, with a waterproof seal to ensure the seal between the parts **« Socle_couvercle.stl »**
 
-## Nomenclature Mécanique
+## Bill of material
 
-Extrait de la nomenclature mécanique :
+|#| Description              | Designation                                                    | Dealer         | Reference    |
+|-|--------------------------|----------------------------------------------------------------|----------------|--------------|
+|1| Short pipe               | Short pipe to screw M12x17 for copper tube                     | Leroy Merlin   | 65814385     |
+|2| Large nut                | Locking-nuts to screw M12x17 for copper tube                   | Leroy Merlin   | 65816345     |
+|3| Long pipe                | Straight adapter Legris Male 1/2 - 3/8                         | RS PRO         | 3108781      |
+|4| Brass nut                | Brass nut for Norgren tube serie 22 G3/8                       | RS PRO         | 226-763      |
+|5| O-ring                   | O-ring 18x14x2mm                                               | RS PRO         | 1964872      |
+|6| Stainless steel sheath   | Stainless steel hose Ff15x21 L800 mm - DN8                     | Leroy Merlin   | 84420925     |
+|7| Ethernet cable           | Ethernet cable RJ45 male to male SFTP Cat7 5m                  | Farnell        | 3003062      |
+|8| Silicon                  | LOCTITE SI 595 Superflex transparent                           | RS PRO         | 423-6758     |
 
-|#| Description|Désignation|Fournisseur|Référence|
-|------|-----------------|----------------------------------------------------------------|-------|----|
-|1| Mamelons court  | mamelons réduits à visser laiton M 12 x 17 pour tube en cuivre | Leroy Merlin |65814385 |
-|2| écrou large | contre-écrous à visser laiton M 12 x 17 pour tube en cuivre | Leroy Merlin |65816345|
-|3| Mamelon Long | Adaptateur Laiton Droit Legris R Mâle 1/2pouce - Mâle 3/8pouce  | RS PRO |3108781|
-|4| écrou laiton | Écrou de tube Norgren série 22 G 3/8 Laiton | RS PRO |226-763|
-|5| joint torique |  joint torique support gaine | RS PRO |1964872 |
-|6| Gaine Inox | Flexible Inox Ff15x21 Longueur 800 Mm - Dn8 | Leroy Merlin |84420925|
+Epoxy resin for pour :
 
-- **Impression 3D** du « Socle.stl » et du **« Socle_couvercle.stl »** en ABS
+- References : RENCAST FC 52 Polyol / RENCAST FC 52/53 Isocyanate (quick-setting resin)
+- Weight ratio for preparation : 1 resin - 1 hardener
 
-- **Première couche de résine époxy d'imprégnation** sur les parois qui
-    recevront la coulée. Prendre une résine prise longue (par ex 24h)
-    pour avoir le temps d'étaler la résine au pinceau sur les parois.
-    (Exemple Araldite DBF et son durcisseur HY956)
+Epoxy resin for impregnation :
 
-## Socle
+- References : Araldite DBF and HY956 hardener (24h setting resin)
+- Weight ratio for preparation : 5 resin - 1 hardener
 
-![Picture Socle câblé](./media/socle_annoté.png){: style="width:400px"}
+## Step 1 : Make the antenna base
 
-- **Câblage Antenne** pour une impédance de 190uH (+ ou - 29 spires)
+- **3D print** the part « Socle.stl »
+- Apply a **first coat of epoxy resin** for impregnation on the inside walls that will receive the resin casting. Use the long-setting resin (24h) to have time to spread resin into the walls
+- [Cable a coil antenna](./Assembling_antenna.md) for a 190uH impedance (+/- 29 spires) around the antenna base
+- **Cable the IR** emitters and receivers (provide 15cm of wire) by ensuring to [respect the cable colors](./assets/images/rfid.elec.schematic/Interface_board schematic.png)
+- **Stick the IR** into the antenna :
+    - Position the IR emitter on the left side, seated in the hole and block it with glue gun
+    - Position the IR receiver on the right side, face to the hole and block it with glue gun.
+    - Apply a polyurethane glue coat in the IR receiver hole (Araldite 2028-1 Spray Gun) to **form a bulb** on the inside of the antenna. This bulb will avoid mud accumulation before sensor.
 
-- **Câblage IR** (récepteurs et led émetrices)
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Antennas/burrow_ant_base.png">
+<img src="../assets/images/Antennas/burrow_ant_base.png" alt="Burrow antenna base" height="400" >
+</a>
+<!-- markdownlint-enable MD033 -->
 
-- **Collage (étanche) des IR sur Socle**
+## Step 2 : Make the antenna cover
 
-  - LED IR à emmancher de force + colle chaude pour être sûre
+- 3D print the part « Socle_couvercle.stl »
+- **Machine two flats** on the brass large nut
 
-  - Récepteur IR à maintenir en position par colle chaude
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Antennas/burrow_ant_nut.png">
+<img src="../assets/images/Antennas/burrow_ant_nut.png" alt="Burrow antenna nut" width="300" >
+</a>
+<!-- markdownlint-enable MD033 -->
 
-  - Couche de colle polyuréthane (Araldite 2028-1 au pistolet ) pour
-        former un bulbe sur la partie intérieur (et éviter la terre de
-        s'accumuler au passage des hamsters).
+- **Screw** the brass pipe + O-ring with nut on cover
 
-## Couvercle
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Antennas/burrow_ant_cover.png">
+<img src="../assets/images/Antennas/burrow_ant_cover.png" alt="Burrow antenna cover" height="400" >
+</a>
+<!-- markdownlint-enable MD033 -->
 
-![Picture Couvercle avec joint](./media/couvercle_detail_annoté.png){: style="width:400px"}
+## Step 3 : Wire the antenna
 
-- **Usiner deux méplats** sur l'écrou large en laiton.
+- **Connect the antenna wires** to the interface board by ensuring to respect the wire position into the terminal block
 
-- **Visser** mamelons laitons + joint torique avec l'écrou large sur le couvercle.
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Antennas/Burrow_ant_cable.jpg">
+<img src="../assets/images/Antennas/Burrow_ant_cable.jpg" alt="Burrow antenna wire" width="500" >
+</a>
+<!-- markdownlint-enable MD033 -->
 
-## Assemblage
+- **Prepare the Ethernet cable**: Strip and tin both ends of wires
+- **Screw wires** to the terminal block by respecting the following color association :
 
-![Picture antenne assemblée](./media/image7.jpeg){: style="width:400px"}
-
-- **Préparation de la plaquette** : Utiliser du fil gainé Téflon, diamètre TODO, longueur 30cm, en respectant les couleurs de fil de l'image.
-
-Un câble type « ethernet », de 3 paires de fils torsadés, est utilisé
-pour relié la partie Antenne de la malette étanche.
-
-| Couleur                           | Fonction                          |
+| Color                             | Function                          |
 |-----------------------------------|-----------------------------------|
-| Vert                              | Récepteur IR 1                    |
-|Blanc/Vert                         | Récepteur IR 2                    |
-|Bleu                               | Emetteur IR 1                     |
-|Blanc/Bleu                         | Emetteur IR 2                     |
-|Marron                             | 3.3V                              |
-|Blanc/Marron                       | GND                               |
-|Blanc/Orange                       | Antenne +                         |
-|Orange                             | Antenne -                         |
-|Blindage                           | Câblé au GND                      |
+|Green                              | Receiver IR 1                     |
+|White/Green                        | Receiver IR 2                     |
+|Blue                               | Emitter IR 1                      |
+|White/Blue                         | Emitter IR 2                      |
+|Brown                              | +3.3V                             |
+|White/Brown                        | GND                               |
+|White/Orange                       | Antenna +                         |
+|Orange                             | Antenna -                         |
+|Shield                             | Linked to GND                     |
 
-- **Préparation câble Ethernet**: Dénuder et étamer les deux
-    extrémités des fils.
+- **Check the antenna** by measuring the electrical resistance with multimeter:
 
-- **Visser les fils sur bornier à vis**
+|Side +            | Side -            | Electrical resistance [Ohm]    |
+|------------------|-------------------|--------------------------------|
+|Orange            |White/Orange       | ~ 6 Ohm                        |
+|Brown             |White/Brown        | ~ 6 MOhm                       |
+|Green             |White/Brown        | ~ 12 MOhm                      |
+|White/Green       |White/Brown        | ~ 12 MOhm                      |
+|Brown             |Blue               | ~ 18 MOhm                      |
+|Brown             |White/Blue         | ~ 18 MOhm                      |
 
-- **Vérifier fonctionnement de la partie antenne**
+- **Install the foam seal** inside the short pipe to ensure seal between cable and pipe
+- **Pass the cable** through the cover inlet (so into the seal + pipe + nut)
+- Pass the cable **in the stainless steel sheath**
+- **Screw** the stainless steel sheath into the pipe
 
-- **Installation joint** en mousse dans le mamelon qui assure étanchéité entre câble et mamelon.
+## Step 4 : Pour the resin
 
-- **Passer le câble** dans l'entrée du couvercle (donc dans le joint en mousse + mamelon + écrou)
+- **Apply silicone** (LOCTITE SI 595 Superflex transparent) over the entire base/cover junction
+- **Screw** the cover onto the base with self-tapping screws (6mm)
+- **Apply silicone** into the large nut
 
-- **Passage du câble Ethernet** dans gaine inox + mamelon long
+<!-- markdownlint-disable MD036 -->
+*Wait for complete drying before further handling*
+<!-- markdownlint-enable MD036 -->
 
-## Coulée
+- Apply special resin modelling clay to the IR transmitters and receivers (inner side of the coil) to prevent the resin from passing over the components
+- Ensure there is no cable protruding over the antenna. If it's the case, hold it inside with glue gun
+- Install the antenna on **flat position** and hold the cable high
 
-- **Application du Silicone** (LOCTITE SI 595 Superflex transparent
-    application à la seringue) sur toute la jonction socle/couvercle
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Antennas/burrow_ant_preparation.jpg">
+<img src="../assets/images/Antennas/burrow_ant_preparation.jpg" alt="Burrow antenna preparation" width="400" >
+</a>
+<!-- markdownlint-enable MD033 -->
 
-  - Visser le couvercle sur le socle à l'aide de vis
-        auto-taraudeuses (6mm)
+- **Pour a first 20g of epoxy** resin to check the tightness
+- **Check there is no leaks** between parts or over the sensors. If it's the case, clean immediatly
+- Once the resin dried, **pour a 130g resin** to complete the antenna
+- Let the resin dry a couple of hours. Then clean the antenna (remove modelling clay and excess of silicon)
 
-  - Attendre le séchage complet avant nouvelle manipulation
-
-- **Doubler l'étanchéité** à l'aide de pâte à fixe au niveau du
-    mamelon et partout où cela semble nécessaire
-
-- **Maintenir le câble** en hauteur et installer **la partie antenne
-    bien à plat**
-
-- **Couler la résine époxy** prise rapide et opaque dans l'antenne.
-    ( Rencast FC 52 Polyol + isocyanate chez Samaro OU chez Résine et
-    moulage : KIT RESINE EPOXY DE COULEE DIELECTRIQUE NOIRE 1060/68 )
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Antennas/burrow_ant_resin.jpg">
+<img src="../assets/images/Antennas/burrow_ant_resin.jpg" alt="Antenna resined" height="400" >
