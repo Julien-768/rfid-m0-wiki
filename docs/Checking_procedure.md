@@ -82,7 +82,7 @@ We are going to check if the SD card is correctly working (write data) and if th
 2. Check for a text file nammed with the current date (date format : YY_MM_DD.TXT). If it is the case, open it
 3. In the file, check that the different events of the tests are present and that the associated time is correct
     * If the time is not correct
-        * [Reprogram](./programming.md) the micro-controller to set up the time
+        * [Reprogram](./Programming.md) the micro-controller to set up the time
         * check the RTC battery
 
 ??? "File content"
