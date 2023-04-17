@@ -1,12 +1,18 @@
-# Préparation de la valise
+# Prepare the burrow case
 
-![Picture Valise et Antenne](./media/image2.jpeg){: style="width:400px"}
+- **Drill the left side** of the case according to the [plan provided](../assets/images/Case/Burrow_case_holes.pdf)
 
-- **Perçages** et fixation des différents composants en sortie de la malette. Se référer au plan de perçage.
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Case/Case_holes.jpg">
+<img src="../assets/images/Case/Case_holes.jpg" alt="Case with holes" width="400" >
+</a>
+<!-- markdownlint-enable MD033 -->
 
-- **Etanchéifier** avec un joint torique pour le mamelon en laiton, avec les joints toriques prévus pour les boutons.
+- **Install the antenna** in the Ø16.5mm hole. Ensure the seal is on the outside of the case and maintain the antenna by tightening the brass nut.
+- **Install the red led and the push-button** with their own seals and tight them.
 
-- **Collage écrou de la gaine** inox sur les 2 mamelons, côté antenne et malette, pour éviter que la gaine se dévisse. (Araldite 2028-1 au
-    pistolet) /!\\ Ne pas trop serré pour permettre à l'antenne de tourner sur elle-même
-
-- **Fixation des supports** de cartes dans malette
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Case/Case_with_components.jpg">
+<img src="../assets/images/Case/Case_with_components.jpg" alt="Case with external components" width="400" >
+</a>
+<!-- markdownlint-enable MD033 -->
