@@ -14,6 +14,8 @@ The operating tempererature range is 0°c to 50°c.
 
 The system stores its data on a Micro-SD card. The maximal supported size is 32GB (SD and SDHC card supported).
 
+TODO : Ajouter le nombre de passage enregistrable sur une carte SD 2Go
+
 ## Powering
 
 Several powering options are proposed :
@@ -24,8 +26,16 @@ Several powering options are proposed :
 
 ## Consumption & Autonomy
 
-TO DO : Ajouter autonomie + indiquer dans quel mode (24h ou période) + détail des consommations
+TO DO :
 
+- Indiquer la conso de tous les capteurs : Emetteur IR / Recepteur IR / RFID (Standby - Recherche tag - Lecture de tag)
+- Donner la consommation d'un capteur IR fonction de sa distance de détection
+- Indiquer la conso complète en mode : IR On + RFID standby / IR On + RFID recherche tag / IR On + RFID lecture / IR Off + RFID standby / IR Off + RFID recherche tag / IR Off + RFID lecture / Boitier en mode sleep
+- Ajouter calcul d'autonomie fonction du mode :
+  - IR On + RFID déclenché sur évenement + Fonctionnement 24/24
+  - IR Off + RFID actif tout le temps + Fonctionnement 24/24
+  - IR On + RFID déclenché sur évenement + Fonctionnement 12/24
+  - IR Off + RFID actif tout le temps + Fonctionnement 12/24
 
 ## Consommation
 
@@ -38,7 +48,9 @@ Alimentation 5V du Feather M0 + RTC + RFID en acquisition
 
 ![D:\\screencapture2.gif](./media/image10.gif)
 
+<!-- markdownlint-disable MD033 -->
 <object id="current" data="../media/current.htm" width="600" height="250"></object>
+<!-- markdownlint-enable MD033 -->
 
 Puis test avec l'alim à la place de la batterie en 3.6V branchée sur le
 PowerBoost
@@ -62,14 +74,16 @@ Tout compris RFID en acquisition
 
 Système Total:
 
-* Carte Feather M0 + RTC
-* Carte RFID Tectus + antenne
-* 2 barrières IR
-* Power Boost
+- Carte Feather M0 + RTC
+- Carte RFID Tectus + antenne
+- 2 barrières IR
+- Power Boost
 
 ### Calcul Autonomie
 
+<!-- markdownlint-disable MD033 -->
 <object id="consumption" data="../media/consumption.htm" width="600" height="250"></object>
+<!-- markdownlint-enable MD033 -->
 
 ### Carte moyenne Puissance
 

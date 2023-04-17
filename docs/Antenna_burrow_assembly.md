@@ -12,11 +12,11 @@ The antenna consists of two parts :
 |-|--------------------------|----------------------------------------------------------------|----------------|--------------|
 |1| Short pipe               | Short pipe to screw M12x17 for copper tube                     | Leroy Merlin   | 65814385     |
 |2| Large nut                | Locking-nuts to screw M12x17 for copper tube                   | Leroy Merlin   | 65816345     |
-|3| Long pipe                | Straight adapter Legris Male 1/2 - 3/8                         | RS PRO         | 3108781      |
-|4| Brass nut                | Brass nut for Norgren tube serie 22 G3/8                       | RS PRO         | 226-763      |
-|5| O-ring                   | O-ring 18x14x2mm                                               | RS PRO         | 1964872      |
-|6| Stainless steel sheath   | Stainless steel hose Ff15x21 L800 mm - DN8                     | Leroy Merlin   | 84420925     |
-|7| Ethernet cable           | Ethernet cable RJ45 male to male SFTP Cat7 5m                  | Farnell        | 3003062      |
+|3| O-ring                   | O-ring 18x14x2mm                                               | RS PRO         | 1964872      |
+|4| Ethernet cable           | Ethernet cable RJ45 male to male SFTP Cat7 5m                  | Farnell        | 3003062      |
+|5| Stainless steel sheath   | Stainless steel hose Ff15x21 L800 mm - DN8                     | Leroy Merlin   | 84420925     |
+|6| Long pipe                | Straight adapter Legris Male 1/2 - 3/8                         | RS PRO         | 3108781      |
+|7| Brass nut                | Brass nut for Norgren tube serie 22 G3/8                       | RS PRO         | 226-763      |
 |8| Silicon                  | LOCTITE SI 595 Superflex transparent                           | RS PRO         | 423-6758     |
 
 Epoxy resin for pour :
@@ -104,7 +104,17 @@ Epoxy resin for impregnation :
 - **Install the foam seal** inside the short pipe to ensure seal between cable and pipe
 - **Pass the cable** through the cover inlet (so into the seal + pipe + nut)
 - Pass the cable **in the stainless steel sheath**
-- **Screw** the stainless steel sheath into the pipe
+- **Screw** the stainless steel sheath into the short pipe
+- **Cut the ethernet cable** by letting 20cm of cable exceed
+- **Pass the cable** extremity through the long pipe and screw the stainless steel sheath on it
+- **Add the O-ring** on the long pipe, then the brass nut
+- **Weld** the end of the cables to male connectors. Ensure to respect the same order than in the terminal block. The male connectors have to be grouped by 4, in order to pass through the brass nut. The shield has to be linked to the ground wire.
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Antennas/Antenna_extremity.jpg">
+<img src="../assets/images/Antennas/Antenna_extremity.jpg" alt="Antenna extremity" width="500" >
+</a>
+<!-- markdownlint-enable MD033 -->
 
 ## Step 4 : Pour the resin
 
