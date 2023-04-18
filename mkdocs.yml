@@ -124,14 +124,14 @@ nav:
         - Antenna: Antenna_burrow_assembly.md
         - Electronic: Electronic_assembly.md
         - Burrow case: Burrow_case.md
-        - Programming: Programming.md
+        - Programming: programming.md
         - Final assembly: Burrow_case_assembly.md
 
       - Assembly a nest box:
         - Antenna: Antenna_nest_assembly.md
         - Electronic: Electronic_assembly.md
         - Nest box: Nest_box.md
-        - Programming: Programming.md
+        - Programming: programming.md
         - Final assembly: Nest_box_assembly.md
 
       - Manufacturing files: Elec_Manufacturing.md
