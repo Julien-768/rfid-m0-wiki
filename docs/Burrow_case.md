@@ -1,6 +1,6 @@
 # Prepare the burrow case
 
-- **Drill the left side** of the case according to the [plan provided](../assets/images/Case/Burrow_case_holes.pdf)
+- **Drill the left side** of the case according to the [plan provided](./assets/images/Case/Burrow_case_holes.pdf)
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Case/Case_holes.jpg">
