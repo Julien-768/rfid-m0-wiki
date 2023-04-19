@@ -2,7 +2,7 @@
 
 Ensure the Feather M0 is [already programmed](programming.md) and RTC is up-to-date.  
 
-In addition of the [electronic boards](Electronic_assembly.md) and the [case](Burrow_case.md), the following material is required :
+In addition of the [electronic boards](Electronic_assembling.md) and the [case](Burrow_case.md), the following material is required :
 
 |#| Description                    | Designation                                           | Quantity  | Dealer         | Reference       |
 |-|--------------------------------|-------------------------------------------------------|-----------|----------------|-----------------|
@@ -21,7 +21,7 @@ In addition of the [electronic boards](Electronic_assembly.md) and the [case](Bu
 
 ## Step 1 : Prepare the supports
 
-* 3D print the part [«RFID_support.stl»]](.\assets\images\Burrow_assembly\RFID_support.stl)
+* 3D print the part [«RFID_support.stl»]](.\assets\images\Burrow_assembling\RFID_support.stl)
 * Insert 2 x M2.5 nuts in the RFID support
 * Insert the RFID reader in its support. Be careful to respect the orientation
 
@@ -31,12 +31,12 @@ In addition of the [electronic boards](Electronic_assembly.md) and the [case](Bu
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Prepare the PVC fixation parts ["Support_inf"](.\assets\images\Burrow_assembly\Support_inf.pdf) and ["Support_PCB"](.\assets\images\Burrow_assembly\Support_PCB.pdf) according to their drawings
+* Prepare the PVC fixation parts ["Support_inf"](.\assets\images\Burrow_assembling\Support_inf.pdf) and ["Support_PCB"](.\assets\images\Burrow_assembling\Support_PCB.pdf) according to their drawings
 * Screw two angle brackets into the "Support_inf" plate with 4 self-tapping screws M3 x 6
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Burrow_assembly/Support_inf.jpg">
-<img src="../assets/images/Burrow_assembly/Support_inf.jpg" alt="Support inf" width="300" >
+<a href="../assets/images/Burrow_assembling/Support_inf.jpg">
+<img src="../assets/images/Burrow_assembling/Support_inf.jpg" alt="Support inf" width="300" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -50,8 +50,8 @@ In addition of the [electronic boards](Electronic_assembly.md) and the [case](Bu
 * Add 2 x M2.5 nuts and tight them
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Burrow_assembly/Support_PCB_noWire.jpg">
-<img src="../assets/images/Burrow_assembly/Support_PCB_noWire.jpg" alt="Support PCB assembly without wires" width="800" >
+<a href="../assets/images/Burrow_assembling/Support_PCB_noWire.jpg">
+<img src="../assets/images/Burrow_assembling/Support_PCB_noWire.jpg" alt="Support PCB assembling without wires" width="800" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -63,8 +63,8 @@ In addition of the [electronic boards](Electronic_assembly.md) and the [case](Bu
 * Connect the wire extremity to the "SWITCH" connector of the power board
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Burrow_assembly/Support_PCB_Wire.jpg">
-<img src="../assets/images/Burrow_assembly/Support_PCB_Wire.jpg" alt="Support PCB assembly with wires" width="800" >
+<a href="../assets/images/Burrow_assembling/Support_PCB_Wire.jpg">
+<img src="../assets/images/Burrow_assembling/Support_PCB_Wire.jpg" alt="Support PCB assembling with wires" width="800" >
 </a>
 <!-- markdownlint-enable MD033 -->
   
@@ -80,8 +80,8 @@ In addition of the [electronic boards](Electronic_assembly.md) and the [case](Bu
 * Screw the red led into the 2 ways screw terminal block of the main board
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Burrow_assembly/Terminal_wiring.jpg">
-<img src="../assets/images/Burrow_assembly/Terminal_wiring.jpg" alt="Terminal wiring" width="600" >
+<a href="../assets/images/Burrow_assembling/Terminal_wiring.jpg">
+<img src="../assets/images/Burrow_assembling/Terminal_wiring.jpg" alt="Terminal wiring" width="600" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -90,11 +90,11 @@ In addition of the [electronic boards](Electronic_assembly.md) and the [case](Bu
 * Prepare two power supply cables of 15cm, with lug at one extremity, and connect the other extremity in the "BAT 12V" connector of the power board
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Burrow_assembly/Final_wiring01.jpg">
-<img src="../assets/images/Burrow_assembly/Final_wiring01.jpg" alt="Final wiring" width="400" >
+<a href="../assets/images/Burrow_assembling/Final_wiring01.jpg">
+<img src="../assets/images/Burrow_assembling/Final_wiring01.jpg" alt="Final wiring" width="400" >
 </a>
-<a href="../assets/images/Burrow_assembly/Final_wiring02.jpg">
-<img src="../assets/images/Burrow_assembly/Final_wiring02.jpg" alt="Final wiring" width="400" >
+<a href="../assets/images/Burrow_assembling/Final_wiring02.jpg">
+<img src="../assets/images/Burrow_assembling/Final_wiring02.jpg" alt="Final wiring" width="400" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -103,7 +103,7 @@ In addition of the [electronic boards](Electronic_assembly.md) and the [case](Bu
 * Add the batteries and connect them with the dedicated lugs
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Burrow_assembly/Final_assembly.jpg">
-<img src="../assets/images/Burrow_assembly/Final_assembly.jpg" alt="Final assembly" width="400" >
+<a href="../assets/images/Burrow_assembling/Final_assembling.jpg">
+<img src="../assets/images/Burrow_assembling/Final_assembling.jpg" alt="Final assembling" width="400" >
 </a>
 <!-- markdownlint-enable MD033 -->

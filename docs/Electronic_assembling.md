@@ -53,8 +53,8 @@ Three boards have to be prepared :
 * Insert the CR1220 battery the corresponding slot of the RTC module
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Main_board/Final_assembly.jpg">
-<img src="../assets/images/Main_board/Final_assembly.jpg" alt="Main board final_assembly" width="400" >
+<a href="../assets/images/Main_board/Final_assembling.jpg">
+<img src="../assets/images/Main_board/Final_assembling.jpg" alt="Main board final_assembling" width="400" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
