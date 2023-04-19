@@ -6,29 +6,6 @@ The antenna consists of two parts :
 
 - One part that forms the outer edges and screws into the first, with a waterproof seal to ensure the seal between the parts **« Socle_couvercle.stl »**
 
-## Bill of material
-
-|#| Description              | Designation                                                    | Dealer         | Reference    |
-|-|--------------------------|----------------------------------------------------------------|----------------|--------------|
-|1| Short pipe               | Short pipe to screw M12x17 for copper tube                     | Leroy Merlin   | 65814385     |
-|2| Large nut                | Locking-nuts to screw M12x17 for copper tube                   | Leroy Merlin   | 65816345     |
-|3| O-ring                   | O-ring 18x14x2mm                                               | RS PRO         | 1964872      |
-|4| Ethernet cable           | Ethernet cable RJ45 male to male SFTP Cat7 5m                  | Farnell        | 3003062      |
-|5| Stainless steel sheath   | Stainless steel hose Ff15x21 L800 mm - DN8                     | Leroy Merlin   | 84420925     |
-|6| Long pipe                | Straight adapter Legris Male 1/2 - 3/8                         | RS PRO         | 3108781      |
-|7| Brass nut                | Brass nut for Norgren tube serie 22 G3/8                       | RS PRO         | 226-763      |
-|8| Silicon                  | LOCTITE SI 595 Superflex transparent                           | RS PRO         | 423-6758     |
-
-Epoxy resin for pour :
-
-- References : RENCAST FC 52 Polyol / RENCAST FC 52/53 Isocyanate (quick-setting resin)
-- Weight ratio for preparation : 1 resin - 1 hardener
-
-Epoxy resin for impregnation :
-
-- References : Araldite DBF and HY956 hardener (24h setting resin)
-- Weight ratio for preparation : 5 resin - 1 hardener
-
 ## Step 1 : Make the antenna base
 
 - **3D print** the part « Socle.stl »

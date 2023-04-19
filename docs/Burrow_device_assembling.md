@@ -2,22 +2,7 @@
 
 Ensure the Feather M0 is [already programmed](programming.md) and RTC is up-to-date.  
 
-In addition of the [electronic boards](Electronic_assembling.md) and the [case](Burrow_case.md), the following material is required :
-
-|#| Description                    | Designation                                           | Quantity  | Dealer         | Reference       |
-|-|--------------------------------|-------------------------------------------------------|-----------|----------------|-----------------|
-|1| PVC plate 4 mm                 | PVC plate 209 x 145 x 4 mm                            | 1         | -              | -               |
-|2| PVC plate 3 mm                 | PVC plate 145 x 82 x 3 mm                             | 1         | -              | -               |
-|3| M2.5 x 12                      | PCB of the main board                                 | 4         | -              | -               |
-|4| M2.5 x 20                      | Adafruit Feather M0 Adalogger                         | 2         | -              | -               |
-|5| M3.5 x 8                       | Adafruit Feather M0 Adalogger                         | 4         | -              | -               |
-|6| Self-tapping screws M3 x 6     | Self-tapping screws M3 x 6 mm                         | 8         | -              | -               |
-|7| M2.5 nuts                      | Nuts M2.5                                             | 8         | -              | -               |
-|8| M3 nuts                        | Nuts M3                                               | 4         | -              | -               |
-|9| M3 washer                      | Washer M3                                             | 4         | -              | -               |
-|10| Angle bracket                 | Angle bracket 32 x 32 x 15 x 2 white                  | 4         | Leroy Merlin   | 67554956        |
-|11| 6 mm thick sealing tape       | XX                  | 1         | XX        | XX              |
-|12| 3 mm thick sealing tape       | Sealing Tape Black 10 mm 3 mm x 10 m                  | 1         | Farnell        | 1516454         |
+In addition of the [electronic boards](Electronic_assembling.md) and the [case](Burrow_case.md), some material is required (Cf BOM).
 
 ## Step 1 : Prepare the supports
 
