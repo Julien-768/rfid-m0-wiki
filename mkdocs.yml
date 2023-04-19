@@ -116,9 +116,10 @@ nav:
       - Electronic boards:
         - Overview: Electronic_overview.md
         - Main board: Main_board.md
-        - 5V power supply board: Power-5V.md
-        - 12V power supply board: Power-12V.md
-        - Infrared: Infrared.md
+        - Power supply:
+          - Power management : Power_supply.md
+          - 5V board: Power-5V.md
+          - 12V board: Power-12V.md
 
       - Assembly a burrow case:
         - Antenna: Antenna_burrow_assembly.md
@@ -142,3 +143,4 @@ nav:
       - Check liste: Check-list.md
       - ToBeMoved: To_be_moved.md
       - JLINK-bootloader: JLINK-bootloader.md
+      - Modulated infrared: Infrared.md

@@ -1,96 +1,129 @@
 # Main board
 
-## Schéma du circuit d'acquisition
+## Schematic of the system
 
-Le système électronique est constitué de composants fonctionnant à différentes tensions:
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Main_board/Schematic.png">
+<img src="../assets/images/Main_board/Schematic.png" width="800">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-* 5v (rouge) pour le servomoteur, le module RFiD, le feather M0 et un régulateur 3V3
-* 3V3 provenant du feather (marron) qui alimente de manière permanente la RTC
-* 3V3 provenant du régulateur (orange) qui alimente émetteurs et récepteurs IR, et le module MAX31865
+The main board has different voltage levels :
 
-On distingue les IO en bleu, l'alimentation de la carte en 5V en rouge, et la masse en noir. Plusieurs pins de communication de la carte Feather M0 sont utilisés, notamment les pins de communication I2C pour le RTC, SPI pour le RTD et UART pour le module RFiD.
+* 5V : Provided by the PW connector, the 5V is distributed to the Feather M0, the RFID module, the servomotor and the 3.3V voltage regulator
+* 3V (permanent) : Provided by the internal Feather M0 regulator, this 3V powers the RTC module
+* 3V (piloted) : Provided by the 3.3V regulator, this voltage powers the IR emitter & receiver and the temperature sensor (RTD)
 
-![Nichoir_main_schéma](./uploads/7d0519200c182f8dde2e305f0a5f2c08/Nichoir_main_schéma.png)
+As the Feather is a 3V-logic level, all the inputs / outputs are **3V-logic based**.
 
-Pour l'alimentation de cette carte d'acquisition se référer à la section [Overview](./Electronic_overview.md)
+Several **communication modes** are used :
+
+* [I2C](https://en.wikipedia.org/wiki/I%C2%B2C) for the RTC module
+* [SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface) for the integrated SD card and the RTD module
+* [UART](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter) for the RFID reader
+
+For **power supply**, refers to the [Overview](./Electronic_overview.md) section.
 
 ## Materials
 
-### Carte de développement
+### Development board
 
-![Picture Feather M0 Adalogger](./uploads/ab0a254de9223f1644c0fdddce3d70b9/image.png){: style="width:250px"}
-
-La Feather M0 Adalogger de Adafruit est une carte de développement de type Arduino spécialement conçue pour des applications d'enregistrement de données. Elle dispose de 256KB de mémoire flash, ce qui lui permet d'avoir un code plus volumineux que la plupart des modèles équivalents. Son slot microSD permet de ne pas manquer d'espace de stockage pour les données recueillies. **Cette carte fonctionne en niveau logique 3.3v, il faut donc faire attention à sa compatibilité avec les capteurs qui fonctionnent en 5v.**
-
-[tutorial adafruit](https://learn.adafruit.com/adafruit-feather-m0-adalogger/pinouts)
-
-
-<a href="../assets/images/TODO/Pinout_Feather_M0.png">
-<img src="../assets/images/TODO/Pinout_Feather_M0.png" width="800">
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Main_board/Feather_M0.png">
+<img src="../assets/images/Main_board/Feather_M0.png" width="250">
 </a>
+<!-- markdownlint-enable MD033 -->
 
-### Servomoteur
+The Adafruit Feather M0 Adalogger is an Arduino-type development board specially designed for data recording applications. Its 256 kB of flash allows to have a larger memory than most equivalent models. The recorded data are stored into the integrated microSD slot.
+**This is a 3.3v-logic level board : Be careful to ensure the voltage compatibility when it's used with 5v-logic sensors**  
 
-![Picture servomoteur](./uploads/bb7554ebf1d3a945e45b4c43df6ee853/image.png){: style="width:200px"}
+More information about the board in the [Adafruit tutorial](https://learn.adafruit.com/adafruit-feather-m0-adalogger/overview)
 
-Le servomoteur HS-53 de Hitec est adapté pour des systèmes miniaturisés ou économes en énergie. Sa vitesse de rotation est légèrement supérieure à un tour par seconde. L'alimentation optimale est de 5v, et il est commandé par PWM. Il peut délivrer un couple maximale d'environ 1,5 kg.cm
+Description of the pinout used :  
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Main_board/Feather_M0_pinout.png">
+<img src="../assets/images/Main_board/Feather_M0_pinout.png" width="800">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-[Datasheet](https://asset.conrad.com/media10/add/160267/c1/-/gl/001081926ML01/mode-demploi-1081926-mini-servomoteur-analogique-hitec-hs-53-112053-1-pcs.pdf)
+### Servomotor
 
-### Module RTC
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Main_board/ServoMotor.png">
+<img src="../assets/images/Main_board/ServoMotor.png" width="200">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-![Picture Module RTC](./uploads/660ba6c3c82931b67449b63d54a7ff72/image.png){: style="width:200px"}
+The Hitec HS-53 servomotor is suitable for miniaturized or energy-saving systems. With a rotational speed of 1.2 rev/s, it can deliver a maximal torque of 1.5 kg.cm.
+5V power supply
 
-Ce capteur conserve la date, l'heure, les minutes et les secondes grâce à sa pile intégrée. Il nécessite donc une très faible alimentation. En cas de désynchronisation, une fonction du code permet de redéfinir l'instant présent pour l'horloge. Ce capteur communique en I2C. Ici aussi une alimentation 5v est recommandée, mais le capteur fonctionne aussi en 3.3v.
+For more details refers to the [datasheet](https://asset.conrad.com/media10/add/160267/c1/-/gl/001081926ML01/mode-demploi-1081926-mini-servomoteur-analogique-hitec-hs-53-112053-1-pcs.pdf)
 
-[page produit adafruit](https://www.adafruit.com/product/3013)
+### Real-Time-Clock (RTC) module
 
-[tutorial adafruit](https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/downloads)
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Main_board/RTC_module.png">
+<img src="../assets/images/Main_board/RTC_module.png" width="200">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-### Module RFiD
+This sensor keeps the date & time thanks to its internal battery and a very low power consumption (~110µA @ 3.6V in standby mode). This module communicates with an I2C link and can be resynchronized by software. Supply voltage from 2.3V to 5.5V  
+The internal battery is based on a [CR1220 3V lithium coin cell battery](https://www.adafruit.com/product/380)
 
-![Picture RFID Board](./uploads/cc3bd4627da03c6eb6b14b72dc5d9966/carte_RFiD.png){: style="width:300px"}
+More information about the board in the [Adafruit tutorial](https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/overview) and the [product specifications](https://www.adafruit.com/product/3013)
 
-La carte RFID de tectus supporte les protocoles HDX, FDX et EM4102. Associée à une antenne de 190µH, sa portée dépend surtout de la taille de l'antenne et du transpondeur utilisé.
+### RFID module
 
-[pinout Connection drawing.pdf](./uploads/81b7cef750505db74dd9b735ed8705fd/Connection_Drawing_TLB-30-SER.pdf)
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/RFID/RFID_module.png">
+<img src="../assets/images/RFID/RFID_module.png" width="300">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-[manuel de communication scotty.v1.4_TLB-30-Commands_.pdf](./uploads/651a3e69d9c31fa0e2970c75e4627ca0/scotty.v1.4_TLB-30-Commands_.pdf)
+The Tectus RFID board supports the HDX, FDX and EM4102 protocols. Linked to a 190µH external antenna, its range mainly depends of the antenna size and the type of transponder used.
 
-### Capteur RTD
+More information about the [connection pinout](./uploads/81b7cef750505db74dd9b735ed8705fd/Connection_Drawing_TLB-30-SER.pdf) and the [communication](./uploads/651a3e69d9c31fa0e2970c75e4627ca0/scotty.v1.4_TLB-30-Commands_.pdf)
 
-![Picture RTD](./uploads/a9d3760123072bac216f86adc6a7d2b9/image.png){: style="width:200px"}
+### Resistance-Temperature-Detector (RTD) sensor
 
-Le capteur RTD lit la température ambiante grâce à une résistance variable selon la chaleur. Sa plage de température est de 450 à -200 °C. Pour utiliser une sonde à deux fils, on soudera les pastilles *2/3 wire* et *2 wire* et on s'assurera de connecter les fils de l'antenne aux bornes *F+* et *F-*.
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Main_board/RTD_module.png">
+<img src="../assets/images/Main_board/RTD_module.png" width="200">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-[page produit adafruit](https://www.adafruit.com/product/3328)
+This sensor measures the ambiant temperature thanks to a resistor that varies according to the temperature. The temperature admissible range is -200°c to +450°c. Supply voltage from 3V to 5V  
+To use this sensor with two-wires probe, solder the *2/3 wire* et *2 wire* plugs and ensure the wires are connected on the *F+* et *F-* terminals.
 
-[tutorial adafruit](TODO)
+More information in the [Adafruit tutorial](https://learn.adafruit.com/adafruit-max31865-rtd-pt100-amplifier/overview)
 
-### Barrière infrarouge
+### Infrared barrier
 
-Cette barrière infrarouge modulé à 36kHz filtre les rayonnements infrarouges ambiants naturels, et s'affranchit de la luminosité de l'environnement.
+This 36kHz modulated infrared barrier filters out natural ambient infrared radiation, and frees itself from the brightness of the environment.
 
-#### Description
+#### Infrared emitter
 
-La barrière infrarouge utilise le principe et les composants destinés aux télécommandes infrarouges. En effet, on émet une lumière pulsée infrarouge à une certaine fréquence (36kHz). En face on place un photo détecteur qui passe à l'état bas seulement si il détecte un rayonnement IR à cette fréquence. Ainsi Ces capteurs infrarouge fonctionnent en tout ou rien. On ne peut pas régler la distance de détection. Plus le rayonnement Infrarouge est intense plus la barrière infrarouge peut être grande (plusieurs mètres).
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Main_board/IR_emitter.png">
+<img src="../assets/images/Main_board/IR_emitter.png" width="200">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-#### Émetteur Infrarouge
+The TSAL4400 emitter is an infrared diode that emits a light of 940nm wavelength.
+The cathode (-) is the shortest pin (no flat visible). Max admissible current : 100mA  
+To be compatible with the receiver, **this emitter has to emit a 36 kHz signal**. Refers to the [Infrared section](Infrared.md) to know how to create the modulation.
 
-![Picture IR emitter](./uploads/faf76029d4c4bf6ed90eff264ebd9dab/image.png){: style="width:200px"}
+For more information refers to the [datasheet](https://www.vishay.com/docs/81006/tsal4400.pdf)
 
-Cathode (-) patte la plus courte (pas de méplat visible)
+#### Infrared receiver
 
-#### Le code pour établir une PWM à 36kHz
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Main_board/IR_phototransistor.png">
+<img src="../assets/images/Main_board/IR_phototransistor.png" width="300">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-Librairie utilisé [Arduino SAMD21 turbo PWM](https://github.com/ocrdu/Arduino_SAMD21_turbo_PWM)
+The TSOP34536 infrared receiver is designed to work in very noisy environment and detects only a 36 kHz IR signal.
+With a very low power consumption, it can be powered from 2.5V to 5.5V
 
-![IR_pulse_code](./uploads/2c382b5486b75d76924971f6a84affcd/IR_pulse_code.PNG)
-
-#### Phototransistor TSOP34536
-
-![phototransistor](./uploads/9e841f54ce27092b014421e1b7e74c72/phototransistor.png){: style="width:300px"}
-
-Alimentation de 2.5V à 5.5V
-
-[datasheet.pdf](https://www.vishay.com/doc?82493)
+For more information refers to the [datasheet](https://www.vishay.com/doc?82490)

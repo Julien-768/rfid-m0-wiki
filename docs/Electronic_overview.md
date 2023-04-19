@@ -1,22 +1,40 @@
 # Overview
 
-L'alimentation de la carte Acquisition est en 5V.
+## Schematic of the system
 
-La "carte Power" assure la conversion et la gestion de la batterie, pour envoyer en sortie du 5V.
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/rfid.elec.schematic/General_schematic.png">
+<img src="../assets/images/rfid.elec.schematic/General_schematic.png" width="600">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-- L'interrupteur général coupe l'alimentation en entrée du convertisseur VBAT / 5V.
-- Le bouton marche arrêt ou Switch, permet par un appui prolongé, l'allumage ou l'éteignage du système par le software.
-- La recharge par panneau solaire est optionnelle.
+## Main board
 
-Les 3 câbles de données [EN;SW;Vbat] entre les 2 cartes servent à :
+The main board performs most of the system's functions :
 
-- EN: si cette entrée est mise à l'état haut, l'alimentation de l'acquisition est coupée.
-- SW: passe à l'état haut si le bouton marche/arrêt est appuyé.
-- Vbat: renvoie l'information de la tension de la batterie entre 0 et 3.3V à l'aide d'un pont diviseur
+* Sensor reading
+* Data recording
+* Time / Date management
+* Security management (temperature and battery monitoring)
 
-![Power_schematic_géné](./uploads/53b2525b21db5eaeaf2a90db03fd7f05/Power_schematic_géné.png)
+This board is **3.3V-logic level and powered in 5V** by one associated power board.
 
-Il a été conçu 2 types de carte Power:
+## Power board
 
-- [5V power supply board](./Power-5V.md) qui permet d'utiliser des batteries Li-Po ou Li-Ion avec l'option rechargement par panneau solaire ou par USB C.
-- [12V power supply board](./Power-12V.md) qui permet d'utiliser des batteries allant de 9V à 18V.
+The power board ensures the power and battery management to create a 5V.  
+Some components are plugged into it :
+
+* The SWITCH button that **connect / disconnect the battery** to the power board
+* The START button that permits the user to **safely switch On / Off** the system
+* An optional solar panel to reload the battery
+
+A 3-wire cable connect the main board to the power board :
+
+* EN : This line permits the main board to pilot the power supply (self-hold function)
+* SW : This line allow the main board to read the START button status (pressed / released)
+* VBAT : Battery voltage compatible with 3.3V-logic level
+
+To be compatible with different battery technologies, two power board are available :
+
+* [5V power supply board](./Power-5V.md) to use Li-Po or Li-Ion battery. A reload by USB-C or an optional solar panel is also possible.
+* [12V power supply board](./Power-12V.md) to use lead-battery from 9V to 18V.

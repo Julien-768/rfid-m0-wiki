@@ -8,38 +8,38 @@
 
 ## Main board
 
-<a href="../assets/images/rfid.elec.schematic/Main_board%20schematic.png">
-<img src="../assets/images/rfid.elec.schematic/Main_board%20schematic.png" width="400">
+<a href="../assets/images/rfid.elec.schematic/Main_board_schematic.png">
+<img src="../assets/images/rfid.elec.schematic/Main_board_schematic.png" width="400">
 </a>
 
-<a href="../assets/images/rfid.elec.schematic/Main_board TOP.jpeg">
-<img src="../assets/images/rfid.elec.schematic/Main_board TOP.jpeg" width="200">
+<a href="../assets/images/rfid.elec.schematic/Main_board_TOP.jpeg">
+<img src="../assets/images/rfid.elec.schematic/Main_board_TOP.jpeg" width="200">
 </a>
 
 ## Power supply board 12V
 
-<a href="../assets/images/rfid.elec.schematic/Power_12v%20schematic.png">
-<img src="../assets/images/rfid.elec.schematic/Power_12v%20schematic.png" width="400">
+<a href="../assets/images/rfid.elec.schematic/Power_board_12v_schematic.png">
+<img src="../assets/images/rfid.elec.schematic/Power_board_12v_schematic.png" width="400">
 </a>
 
-<a href="../assets/images/rfid.elec.schematic/Power_board_12V%20TOP.jpeg">
-<img src="../assets/images/rfid.elec.schematic/Power_board_12V%20TOP.jpeg" width="300">
+<a href="../assets/images/rfid.elec.schematic/Power_board_12V_TOP.jpeg">
+<img src="../assets/images/rfid.elec.schematic/Power_board_12V_TOP.jpeg" width="300">
 </a>
 
 ## Power supply board 5V
 
-<a href="../assets/images/rfid.elec.schematic/Power_board_5V%20schematic.png">
-<img src="../assets/images/rfid.elec.schematic/Power_board_5V%20schematic.png" width="400">
+<a href="../assets/images/rfid.elec.schematic/Power_board_5V_schematic.png">
+<img src="../assets/images/rfid.elec.schematic/Power_board_5V_schematic.png" width="400">
 </a>
 
-<a href="../assets/images/rfid.elec.schematic/Power_board_5V%20TOP.jpeg">
-<img src="../assets/images/rfid.elec.schematic/Power_board_5V%20TOP.jpeg" width="200">
+<a href="../assets/images/rfid.elec.schematic/Power_board_5V_TOP.jpeg">
+<img src="../assets/images/rfid.elec.schematic/Power_board_5V_TOP.jpeg" width="200">
 </a>
 
 ## Interface board for burrow antenna
 
-<a href="../assets/images/rfid.elec.schematic/Interface_board%20schematic.png">
-<img src="../assets/images/rfid.elec.schematic/Interface_board%20schematic.png" width="400">
+<a href="../assets/images/rfid.elec.schematic/Interface_board_schematic.png">
+<img src="../assets/images/rfid.elec.schematic/Interface_board_schematic.png" width="400">
 </a>
 
 <!-- <a href="../assets/images/rfid.elec.schematic/Interface_board%20schematic.png">
