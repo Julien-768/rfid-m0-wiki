@@ -102,4 +102,4 @@ We are going to check if the SD card is correctly working (write data) and if th
     2023-2-15;12:54:5.553;System; Shut Down Button;
     ```
 
-*NOTE* The time base is expressed at UTC+1 in summer mode (no shift in winter)
+*NOTE* The time base is expressed in UTC time period

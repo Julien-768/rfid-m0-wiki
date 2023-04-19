@@ -1,3 +1,0 @@
-# Electronique
-
-{{Elec_Manufacturing}}

@@ -1,11 +1,12 @@
 # Programming procedure
-
-## prerequisites
+ 
+## Prerequisites
 
 1. Download [Visual Studio Code](https://code.visualstudio.com/download)
 2. Install [PlatfomIO](https://docs.platformio.org/en/stable/integration/ide/vscode.html#installation)
 3. Clone the [rfid_m0.code](vscode://vscode.git/clone?url=https%3A%2F%2Fgitlab.in2p3.fr%2Frfid_m0%2Frfid_m0.code.git) repository
 4. Get a [USB Micro B cable](https://en.wikipedia.org/wiki/USB_hardware#/media/File:MicroB_USB_Plug.jpg)
+5. Set your computer in UTC time zone
 
 ## Programming
 

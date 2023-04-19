@@ -33,7 +33,7 @@ The software options are editable in the configuration file "CONFIG.txt" located
 
 The file is written as a [JSON string](https://developers.squarespace.com/what-is-json), take care to keep quotes and commas intacts when modifying the file.
 
-## How to edit
+## How to edit the file
 
 To change the configuration file:
 
@@ -42,7 +42,7 @@ To change the configuration file:
 3. Change the value of the required parameters
 4. Save your modifications and insert back the SD card into the device
 
-*NOTE* If the CONFIG.txt file is not present into the SD card, the device will automatically create it with default values
+*NOTE* If the configuration file is not present into the SD card, the device will automatically create it with default values
 
 ## Parameters description
 
@@ -58,8 +58,8 @@ Here is an explanation of the parameters you can tune, possible values to change
 | rfid_attempts    | how many times the RFID will check for the presence of a TAG after an IR event    | [1..xx]           |
 | delay_tag_save   | delay (in second) between two consecutives records of the same TAG on the antenna | [1..xx]           |
 | mode_time_period | activation only between start_time and stop_time hours                            | {true ; false}    |
-| start_time       | start hour of the system in mode_day_only                                         | [0..23]           |
-| stop_time        | stop of the system in mode_day_only                                               | [0..23]           |
+| start_time       | start hour of the system in mode_day_only (UTC time)                              | [0..23]           |
+| stop_time        | stop of the system in mode_day_only (UTC time)                                    | [0..23]           |
 | delay_loop       | delay (in millisecond) between two consecutive sensor checks                      | [1..10000]        |
 | release_time     | time in seconds for a release after any capture (security)                        | [0..xx]           |
 | mode_capture     | capture mode selection                                                            | {1,2,3,4}         |
@@ -69,16 +69,4 @@ Here is an explanation of the parameters you can tune, possible values to change
 | tag_4            | part of the tag number for the capture of specific individuals                    |                   |
 | tag_5            | part of the tag number for the capture of specific individuals                    |                   |
 
-## The capture mode selection
-
-Be aware only advanced user should activate the capture mode! The mode_capture option can take a number from 1 to 4.
-
-1. *Recording of passages* Following an event on the infrared sensor, RFID reading. No capture.
-2. *Capture any individual* Following an event on the infrared sensor, closing the door.
-3. *Capture of specific tags* Following an event on the infrared sensor, RFID reading. If the tag is one of them described in parameters, closing the door.
-4. *Capture untagged individuals* Following an event on the infrared sensor, RFID reading. If there is no tag, closing the door.
-
-Notes
-
-* For each modes, a security timeout opens the door after a certain duration (parameter release_time)
-* Be careful to specify a mode compatible with the rest of the configuration. Modes 2 and 4 require at least one infrared sensor activated (opt_IR_1 or opt_IR_2 set to true).
+*Notes :* Be careful to specify a mode compatible with the rest of the configuration. Modes 2 and 4 require at least one infrared sensor activated (**opt_IR_1** or **opt_IR_2** set to true).

@@ -2,7 +2,8 @@
 
 ## Description
 
-La barrière infrarouge utilise le principe et les composants destinés aux télécommandes infrarouges. En effet, on émet une lumière pulsée infrarouge à une certaine fréquence (36kHz). En face on place un photo détecteur qui passe à l'état bas seulement si il détecte un rayonnement IR à cette fréquence. Ainsi Ces capteurs infrarouge fonctionnent en tout ou rien. On ne peut pas régler la distance de détection. Plus le rayonnement Infrarouge est intense plus la barrière infrarouge peut être grande (plusieurs mètres).
+The infrarer barrier uses the same principle and components than infrared remote controls. A infrared pulsed light is emitted at a certain frequency (36kHz in our case). A receiver, only sensitive to this frequency, is placed in front of the emitter. This receiver sends a low-level output only if it detects the signal (high-level output if no signal).
+Indeed this barrier in an On / Off system, with no distance detection. More the infrared signal is intense, higher can be the infrared barrier (several meters).
 
 ## Software used to generate a 36 kHz Pulsed Width Modulation
 
@@ -46,32 +47,26 @@ The Infrared emitter has an wide opening angle. For testing purpose, use heat sh
 
 Measurement made on the pin output of the Phototransistor TSOP34536.
 
-## Émetteur Infrarouge
+## Infrared emitter
 
 ![Picture IR emitter](./uploads/faf76029d4c4bf6ed90eff264ebd9dab/image.png){: style="width:200px"}
 
-Cathode (-) patte la plus courte (pas de méplat visible)
+The cathode (-) is the shortest pin (no flat visible)
 
-## Phototransistor TSOP34536
+## Infrared receiver TSOP34536
 
 ![phototransistor](./uploads/9e841f54ce27092b014421e1b7e74c72/phototransistor.png){: style="width:300px"}
 
-Alimentation de 2.5V à 5.5V
+Power supply from 2.5Vdc to 5.5Vdc
 
 [datasheet.pdf](https://www.vishay.com/doc?82490)
 
-## Phototransistor TSOP31536
-
-[datasheet.pdf](https://www.vishay.com/doc?82493)
-
 ## Examples on the web
 
-* Comptage par franchissement d'une barrière infrarouge avec Arduino
-UNO
+* Coutning by IR crossing with Arduino UNO
 <http://makerspace56.org/comptage-par-franchissement-dune-barriere-infrarouge/>
 
-* Youtube la grotte du geek, code écrit pour l'environnement
-STM32CubeIDE
+* Youtube "la grotte du geek" with code dedicated for STM32CubeIDE
 <https://www.youtube.com/watch?v=\_tcBtZZDsCE>
 
 * Adafruit "Using an Infrared Library on Arduino"
@@ -79,8 +74,4 @@ STM32CubeIDE
 
 ## How to check the infrared barriers are working ?
 
-TODO
-
-Lorsqu'on passe la main et la retire, deux messages s'affichent " Broken beam puis restored sur la LED IR 1 et LED IR 2), donc les 2 LEDs fonctionnent !
-
-![serial_console_IR_event](./media/serial_console_IR_event.PNG)
+Refers to the [Checking procedure](Checking_procedure.md), section "Infrared beam" to know how to check the IR barrier

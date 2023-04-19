@@ -12,7 +12,7 @@ On distingue les IO en bleu, l'alimentation de la carte en 5V en rouge, et la ma
 
 ![Nichoir_main_schéma](./uploads/7d0519200c182f8dde2e305f0a5f2c08/Nichoir_main_schéma.png)
 
-Pour l'alimentation de cette carte d'acquisition se référer à la section [Overview](./Overview.md)
+Pour l'alimentation de cette carte d'acquisition se référer à la section [Overview](./Electronic_overview.md)
 
 ## Materials
 
@@ -23,6 +23,11 @@ Pour l'alimentation de cette carte d'acquisition se référer à la section [Ove
 La Feather M0 Adalogger de Adafruit est une carte de développement de type Arduino spécialement conçue pour des applications d'enregistrement de données. Elle dispose de 256KB de mémoire flash, ce qui lui permet d'avoir un code plus volumineux que la plupart des modèles équivalents. Son slot microSD permet de ne pas manquer d'espace de stockage pour les données recueillies. **Cette carte fonctionne en niveau logique 3.3v, il faut donc faire attention à sa compatibilité avec les capteurs qui fonctionnent en 5v.**
 
 [tutorial adafruit](https://learn.adafruit.com/adafruit-feather-m0-adalogger/pinouts)
+
+
+<a href="../assets/images/TODO/Pinout_Feather_M0.png">
+<img src="../assets/images/TODO/Pinout_Feather_M0.png" width="800">
+</a>
 
 ### Servomoteur
 

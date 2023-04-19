@@ -101,32 +101,45 @@ nav:
     - User:
       - Device for rodent species:
         - Overview: Device_description.md
+        - First time use: First_time_use.md
         - Checking procedure: Checking_procedure.md
-      - Software configuration: Software_configuration.md
+      - Software:
+        - Functioning: Software_functioning.md
+        - Configuration: Software_configuration.md
 
     - Hardware:
+      - Rodent species case: Rodent_species_case.md
       - Burrow antenna: Antenna_Burrow.md
       - Nest box antenna: Antenna_schwegler.md
+
     - Developper:
-      - TODO liste: TODO-liste.md
-      - Check liste: Check-list.md
-      - Assembling instructions:
-        - Antenna: Antenna.md
-        - Case: Malette.md
-        - Electronics: Electronique.md
-        - Programming: programming.md
-
-      - Pinout: Pinouts.md
-
+    
       - Electronic boards:
-        - Overview: Overview.md
-        - Main board: Main_board_Materials.md
+        - Overview: Electronic_overview.md
+        - Main board: Main_board.md
         - 5V power supply board: Power-5V.md
         - 12V power supply board: Power-12V.md
+        - Infrared: Infrared.md
 
-      - Infrared: Infrared.md
+      - Assembly a burrow case:
+        - Antenna: Antenna_burrow_assembly.md
+        - Electronic: Electronic_assembly.md
+        - Burrow case: Burrow_case.md
+        - Programming: programming.md
+        - Final assembly: Burrow_case_assembly.md
+
+      - Assembly a nest box:
+        - Antenna: Antenna_nest_assembly.md
+        - Electronic: Electronic_assembly.md
+        - Nest box: Nest_box.md
+        - Programming: programming.md
+        - Final assembly: Nest_box_assembly.md
+
+      - Manufacturing files: Elec_Manufacturing.md
+      - Mods for next revision: Elec_boards_TODO.md
+
+    - TO SORT:
+      - TODO liste: TODO-liste.md
+      - Check liste: Check-list.md
+      - ToBeMoved: To_be_moved.md
       - JLINK-bootloader: JLINK-bootloader.md
-
-      - Electronic boards:
-        - Manufacturing files: Elec_Manufacturing.md
-        - Mods for next revision: Elec_boards_TODO.md
