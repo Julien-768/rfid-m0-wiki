@@ -28,6 +28,7 @@ Three boards have to be prepared :
 |16| Mofset Q9 & Q10               | Power MOSFET N Channel 60 V 600 mA                    | 2         | RS-Pro         | 823-1827        |
 |17| Power Mofset                  | Power MOSFET N Channel 55 V 41 A                      | 2         | RS-Pro         | 541-0086        |
 |18| 3.3V voltage regulator        | Fixed LDO Voltage Regulator 3.3Vout 1A                | 1         | RS-Pro         | 5339498         |
+|19| CR1220 battery                | Battery coin cell 3V CR1220 36mAh                     | 1         | RS-Pro         |     866-0653         |
 
 * Weld the different screw terminal blocks into the board, as the two JST connectors
 * Weld the Q9 and Q10 transistors and the resistors R5, R7, R8, R9
@@ -49,6 +50,7 @@ Three boards have to be prepared :
 
 * Add the RTC module and then the Feather M0
 * (Optionally) Add the temperature sensor
+* Insert the CR1220 battery the corresponding slot of the RTC module
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Main_board/Final_assembly.jpg">
