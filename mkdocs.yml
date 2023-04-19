@@ -118,22 +118,23 @@ nav:
         - Main board: Main_board.md
         - Power supply:
           - Power management : Power_supply.md
-          - 5V board: Power-5V.md
-          - 12V board: Power-12V.md
+          - 5V power board: Power-5V.md
+          - 12V power board: Power-12V.md
 
       - Assembly a burrow device:
+        - Overview: Burrow_device_assem_overview.md
         - Antenna: Antenna_burrow_assembling.md
         - Electronic: Electronic_assembling.md
         - Burrow case: Burrow_case.md
         - Programming: programming.md
-        - Final assembly: Burrow_device_assembling.md
+        - Final assembling: Burrow_device_assembling.md
 
       - Assembly a nest box:
         - Antenna: Antenna_nest_assembling.md
         - Electronic: Electronic_assembling.md
         - Nest box: Nest_box.md
         - Programming: programming.md
-        - Final assembly: Nest_box_assembling.md
+        - Final assembling: Nest_box_assembling.md
 
       - Manufacturing files: Elec_Manufacturing.md
       - Mods for next revision: Elec_boards_TODO.md

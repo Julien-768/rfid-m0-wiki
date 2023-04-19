@@ -3,8 +3,8 @@
 ## Schematic of the system
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/rfid.elec.schematic/Power_board_5V_schematic.png">
-<img src="../assets/images/rfid.elec.schematic/Power_board_5V_schematic.png" width="600">
+<a href="../assets/images/Power_board/5V_schematic.svg">
+<img src="../assets/images/Power_board/5V_schematic.svg" width="600">
 </a>
 <!-- markdownlint-enable MD033 -->
 

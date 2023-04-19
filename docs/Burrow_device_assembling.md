@@ -1,4 +1,4 @@
-# Final assembly
+# Final assembling
 
 Ensure the Feather M0 is [already programmed](programming.md) and RTC is up-to-date.  
 

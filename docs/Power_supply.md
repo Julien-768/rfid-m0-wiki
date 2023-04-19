@@ -1,28 +1,26 @@
-# 1
+# Power management
 
-## 2
+The two power boards are physically different but shares the same functionnalities.
 
-### Lecture de la tension de batterie
+## Battery voltage measureement
 
-La tension d'une batterie LiPo ou de 3 piles AA en série peut monter jusqu'à 4.2V. Cependant, les pins du feather M0 n'acceptent pas plus de 3V3.
-Pour s'en affranchir, un pont diviseur composé de deux résistances de 100k (R1 et R2) divise par 2 la tension. Pour éviter les variations brusques de tension pour des condensateurs (C2 et C4) stabilisent la mesure.
+A Li-Po / Li-ion battery voltage can reach 4.2V and a lead-battery 14V. As the Feather M0 do not accept more than 3.3V on its digital inputs, **a voltage divider is required**.  
+The division ratio is different on the two power board (3 for a 5v power board / 6 for a 12v power board) according to the mounted resistors, and **has to be indicated into the software**.  
 
-Au niveau informatique, la tension de batterie est mesurée à chaque boucle. Si celle-ci baisse d'un certain seuil (>0.1V) entre deux mesures, La tension de la batterie est enregistrée sur la carte SD.
+Some capacitors are also added in order to stabilize the reading. In addition, a moving average filter is performed in the software.
 
-### Mise hors tension du système
+The battery voltage is recorded into the SD memory only if it varies by more than 0.1V since the last record.
 
-<--Manual-->
+## Power-off the system
 
-Pour un stockage long ou une remise à zéro complète du dispositif, un interrupteur ON / OFF coupe physiquement la connexion à la source d'alimentation. Pour une coupure propre du dispositif, un interrupteur à poussoir permet une mise hors-tension contrôlée et évite par exemple de corrompre la carte SD.
+For a long storage, an On / Off switch physically disconnect the system from the battery.  
 
-<--Manual-->
+For a clean power-off, a push-button allow a **controlled power-off** of the system to avoid to corrupt the SD card memory. In addition, the system can also pilot its own power-off in case of overtemperature or low battery voltage.
 
-Pour cette dernière méthode nous nous sommes inspiré de ce [tuto_mise_hors_tension](https://github.com/craic/arduino_power/blob/master/PowerOnPowerOff.md)
+The method is described into this [tutorial](https://github.com/craic/arduino_power/blob/master/PowerOnPowerOff.md)
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Power_board/power_on_power_off_cycle.png">
 <img src="../assets/images/Power_board/power_on_power_off_cycle.png">
 </a>
 <!-- markdownlint-enable MD033 -->
-
-Grâce à cette électronique, le software peut commander l'éteignage du dispositif (par exemple lorsque la lecture de la batterie est inférieure à un certain seuil).

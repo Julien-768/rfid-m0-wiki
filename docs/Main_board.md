@@ -3,8 +3,8 @@
 ## Schematic of the system
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Main_board/Schematic.png">
-<img src="../assets/images/Main_board/Schematic.png" width="800">
+<a href="../assets/images/Main_board/Schematic.svg">
+<img src="../assets/images/Main_board/Schematic.svg" width="600">
 </a>
 <!-- markdownlint-enable MD033 -->
 
