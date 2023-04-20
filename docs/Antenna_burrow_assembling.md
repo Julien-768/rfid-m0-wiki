@@ -2,16 +2,18 @@
 
 The antenna consists of two parts :
 
-- One part that forms the inner edges : IR sensors are inserted inside and the antenna is cabled **« Socle.stl »**
+- One part that forms the inner edges : IR sensors are inserted inside and the RFID antenna is cabled
 
-- One part that forms the outer edges and screws into the first, with a waterproof seal to ensure the seal between the parts **« Socle_couvercle.stl »**
+- One part that forms the outer edges and screws into the first, with a waterproof seal to ensure the seal between the parts
+
+When the two parts are assembled together and the cable is connected, a resin casting is carried out to protect the sensors.
 
 ## Step 1 : Make the antenna base
 
 - **3D print** the part « Socle.stl »
 - Apply a **first coat of epoxy resin** for impregnation on the inside walls that will receive the resin casting. Use the long-setting resin (24h) to have time to spread resin into the walls
 - [Cable a coil antenna](./Assembling_antenna.md) for a 190uH impedance (+/- 29 spires) around the antenna base
-- **Cable the IR** emitters and receivers (provide 15cm of wire) by ensuring to [respect the cable colors](./assets/images/rfid.elec.schematic/Interface_board_schematic.png)
+- **Cable the IR** emitters and receivers (provide 15cm of wire) by ensuring to [respect the cable colors](./assets/images/Manufacturing/Interface_board_schema.png)
 - **Stick the IR** into the antenna :
     - Position the IR emitter on the left side, seated in the hole and block it with glue gun
     - Position the IR receiver on the right side, face to the hole and block it with glue gun.

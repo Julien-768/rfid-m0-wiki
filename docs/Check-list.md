@@ -32,8 +32,6 @@ AVANT: Lecture batterie par le dispositif: 6.59V sur pin 9 (mesure batterie inte
 alors que la batterie (3 piles rechargeables 1.2V) est mesuré au multimètre à 3.57V
 APRES: Problème résolu en mettant un pont diviseur sur une autre pin que la pin 9
 
-![Capture](./uploads/c100d8a547589b39f04c359a63c0451e/Capture.PNG)
-
 - [X] **Mise hors tension du système pour protéger les piles.**
 
 - [X] **éteindre LED ext au bout d'1 min**

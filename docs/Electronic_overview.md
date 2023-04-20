@@ -1,10 +1,16 @@
 # Overview
 
+The electronic of the device is composed of several boards :
+
+* A main board that receive most of the component and is linked to the sensors
+* A power board in charge to manage the energy of the system and deliver a regulated 5v
+* A RFID board that, once associated to an antenna, reads the RFID tags
+
 ## Schematic of the system
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/rfid.elec.schematic/General_schematic.png">
-<img src="../assets/images/rfid.elec.schematic/General_schematic.png" width="600">
+<a href="../assets/images/Manufacturing/General_schema.png">
+<img src="../assets/images/Manufacturing/General_schema.png" width="600">
 </a>
 <!-- markdownlint-enable MD033 -->
 

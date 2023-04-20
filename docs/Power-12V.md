@@ -1,10 +1,12 @@
 # Lead-battery power supply board
 
+This page describes the 12v power board, used to connect a 12v lead battery to the device.
+
 ## Schematic of the system
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Power_board/12V_schematic.svg">
-<img src="../assets/images/Power_board/12V_schematic.svg" width="600">
+<a href="../assets/images/Manufacturing/12V_board_schema.svg">
+<img src="../assets/images/Manufacturing/12V_board_schema.svg" width="600">
 </a>
 <!-- markdownlint-enable MD033 -->
 

@@ -1,10 +1,12 @@
 # Li-Po / Li-Ion battery power supply board
 
+This page describes the 5v power board, used to connect a 3.6v Li-Ion or 3.7v Li-Po battery to the device.
+
 ## Schematic of the system
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Power_board/5V_schematic.svg">
-<img src="../assets/images/Power_board/5V_schematic.svg" width="600">
+<a href="../assets/images/Manufacturing/5V_board_schema.svg">
+<img src="../assets/images/Manufacturing/5V_board_schema.svg" width="600">
 </a>
 <!-- markdownlint-enable MD033 -->
 

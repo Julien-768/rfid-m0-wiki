@@ -1,10 +1,12 @@
 # Main board
 
+This page describes the main board, that regroups the main sensors / components of the device.
+
 ## Schematic of the system
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Main_board/Schematic.svg">
-<img src="../assets/images/Main_board/Schematic.svg" width="600">
+<a href="../assets/images/Manufacturing/Main_board_schema.svg">
+<img src="../assets/images/Manufacturing/Main_board_schema.svg" width="600">
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -82,7 +84,7 @@ More information about the board in the [Adafruit tutorial](https://learn.adafru
 
 The Tectus RFID board supports the HDX, FDX and EM4102 protocols. Linked to a 190µH external antenna, its range mainly depends of the antenna size and the type of transponder used.
 
-More information about the [connection pinout](./uploads/81b7cef750505db74dd9b735ed8705fd/Connection_Drawing_TLB-30-SER.pdf) and the [communication](./uploads/651a3e69d9c31fa0e2970c75e4627ca0/scotty.v1.4_TLB-30-Commands_.pdf)
+More information about the [connection pinout](./assets/images/Tech_doc/Connection_Drawing_TLB-30-SER.pdf) and the [communication](./assets/images/Tech_doc/scotty.v1.4_TLB-30-Commands_.pdf)
 
 ### Resistance-Temperature-Detector (RTD) sensor
 
