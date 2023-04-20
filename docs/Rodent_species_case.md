@@ -26,7 +26,7 @@ Several powering options are proposed :
 
 ## Consumption & Autonomy
 
-TO DO :
+TO DO + Mettre à jour la fin de la page, y compris anglais et déplacer images media --> images
 
 - Indiquer la conso de tous les capteurs : Emetteur IR / Recepteur IR / RFID (Standby - Recherche tag - Lecture de tag)
 - Donner la consommation d'un capteur IR fonction de sa distance de détection

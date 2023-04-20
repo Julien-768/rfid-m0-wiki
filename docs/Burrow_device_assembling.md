@@ -1,12 +1,14 @@
 # Final assembling
 
-Ensure the Feather M0 is [already programmed](programming.md) and RTC is up-to-date.  
+This page describes how to assemble all the burrow device components into a Pelicase.
 
-In addition of the [electronic boards](Electronic_assembling.md) and the [case](Burrow_case.md), some material is required (Cf BOM).
+Some supports are prepared and then the electronic boards are mounted on it and wired. Finally the equipped supports are installed into the Pelicase and connected to the antenna and the batteries.
+
+To follow these steps, it's required to have already realized a [burrow antenna](Antenna_burrow_assembling.md), all the [electronic boards](Electronic_assembling.md) and a [burrow case](Burrow_case.md).The main board has to **be [programmed](programming.md) and RTC has to be up-to-date**. In addition, the **burrow antenna has to be attached** to the case.
 
 ## Step 1 : Prepare the supports
 
-* 3D print the part [«RFID_support.stl»]](.\assets\images\Burrow_assembling\RFID_support.stl)
+* 3D print the part [«RFID_support.stl»](.\assets\images\Manufacturing\Support_RFID.stl)
 * Insert 2 x M2.5 nuts in the RFID support
 * Insert the RFID reader in its support. Be careful to respect the orientation
 
@@ -16,7 +18,7 @@ In addition of the [electronic boards](Electronic_assembling.md) and the [case](
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Prepare the PVC fixation parts ["Support_inf"](.\assets\images\Burrow_assembling\Support_inf.pdf) and ["Support_PCB"](.\assets\images\Burrow_assembling\Support_PCB.pdf) according to their drawings
+* Prepare the PVC fixation parts ["Support_inf"](.\assets\images\Manufacturing\Support_inf.pdf) and ["Support_PCB"](.\assets\images\Manufacturing\Support_PCB.pdf) according to their drawings
 * Screw two angle brackets into the "Support_inf" plate with 4 self-tapping screws M3 x 6
 
 <!-- markdownlint-disable MD033 -->

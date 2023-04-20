@@ -1,10 +1,8 @@
 # Electronic
 
-Three boards have to be prepared :
+This page describes how to prepare the three electronic boards required by the device.
 
-* The main board
-* The Tectus RFID reader
-* A power-supply board : 5V or 12V
+Firstly a main board is assembled to receive the different components and connectors. Secondly, some terminal blocks are added to the RFID board in order to be easily connected with the other boards. Finally, a power board is assembled according to the choice of battery (5v or 12v battery).
 
 ## Step 1 : Prepare the main board
 
@@ -29,6 +27,7 @@ Three boards have to be prepared :
 * Add the RTC module and then the Feather M0
 * (Optionally) Add the temperature sensor
 * Insert the CR1220 battery the corresponding slot of the RTC module
+* Insert a microSD card in the corresponding slot of the SD module
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Main_board/Final_assembling.jpg">

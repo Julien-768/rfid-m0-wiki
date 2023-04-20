@@ -1,6 +1,7 @@
 # Power management
 
-The two power boards are physically different but shares the same functionnalities.
+According to the choice of battery, two different power boards can be used with the device.  
+Both boards are physically different but share the same functionnalities.
 
 ## Battery voltage measureement
 
