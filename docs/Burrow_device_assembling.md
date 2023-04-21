@@ -42,11 +42,11 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Screw the 6 wires from RFID reader to the main board
-* Connect the 3 ways JST cable into the main board and wire it into the power board 12V connector (PWR_mng connector)
-* Connect the 2 ways JST cable into the main board and wire it into the power board 12V connector (PWR_5V connector)
+* Add and screw 6 wires from RFID reader to the main board
+* Connect the 3 ways JST XH cable (cable delivered with the 3 ways JST XH connector) into the main board and wire it into the power board 12V connector (PWR_mng connector)
+* Connect the 2 ways JST XH cable into the main board and wire it into the power board 12V connector (PWR_5V connector)
 * Connect two wires into the main button with two lugs
-* Maintain the main button into the "Support_PCB" by 2 x M2.5 x 20 screws, 2 washers and 2 x M2.5 nuts
+* Maintain the SWITCH button into the "Support_PCB" by 2 x M2.5 x 20 screws, 2 washers and 2 x M2.5 nuts
 * Connect the wire extremity to the "SWITCH" connector of the power board
 
 <!-- markdownlint-disable MD033 -->
@@ -85,7 +85,7 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Add 6 mm thick sealing tape on each side of the battery compartment
+* Add 5 mm thick sealing tape on each side of the battery compartment
 * Add 3 mm thick sealing tape above the battery slot
 * Add the batteries and connect them with the dedicated lugs
 

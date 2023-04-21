@@ -1,8 +1,8 @@
 # Assembly a burrow device
 
-This section describes the different steps to follow in order to assemble a device that monitor a burrow occupation.
+This section describes the different steps to follow to assemble a device that monitor a burrow occupation. The list of required material is avaible at this [link](./assets/images/Manufacturing/Bill of material.xlsx).
 
-Firstly, a **burrow antenna is build**. This antenna receives the RFID antenna, able to detect RFID tags, but also the two infrared sensors. The manufacturing of this device is based on 3D-printed parts in which electronic components are inserted. Resin is then added to protect the components from environment and rodents.
+Firstly, a **burrow antenna is build**. This antenna receives the RFID antenna, able to detect RFID tags, but also two infrared sensors. The manufacturing of this device is based on 3D-printed parts in which electronic components are inserted. Resin is then added to protect the components from environment and rodents.
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Antennas/burrow_antenna.jpg">
@@ -26,9 +26,9 @@ The last board only requires to weld some connectors. The power board (two varia
 </a>
 <!-- markdownlint-enable MD033 -->
 
-The last step before the final assembling is to **program the main board**. This step has to be done after the electronic assembling in order to correctly set the time of the real-time-clock (CR1220 coin cell must be inserted).
+The last step before the final assembling is to **program the main board**. This step must be done after the electronic assembling in order to correctly set the time of the real-time-clock (CR1220 coin cell must be inserted).
 
-Finally **all the components are installed into the case**. This step requires some wiring to connect the different boards together.
+Finally **all the components are installed into the case**. This step requires wiring to connect the different boards together.
 
 Once battery inserted and connected, the device will be ready for [checking](Checking_procedure.md).
 
