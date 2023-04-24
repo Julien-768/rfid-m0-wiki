@@ -14,7 +14,7 @@ The operating tempererature range is 0°c to 50°c.
 
 The system stores its data on a Micro-SD card. The maximal supported size is 32GB (SD and SDHC card supported).
 
-A 2GB SD card can record ~8,800,000,000 detections with tags (~102 continuous days with one detection per second).
+A 2GB SD card can record ~8,800,000,000 detections with tags (**~102 continuous days** with one detection per second).
 
 ## Powering
 

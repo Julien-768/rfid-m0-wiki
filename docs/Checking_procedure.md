@@ -88,18 +88,18 @@ We are going to check if the SD card is correctly working (write data) and if th
 ??? "File content"
 
     ```
-    2023-2-24;9:25:54.107;System; Start;
-    2023-2-24;9:25:54.107;System; RTC is ok;
-    2023-2-24;9:26:10.895;IR 1 ; broken beam ;
-    2023-2-24;9:26:14.435;IR 1 ; beam restored ;
-    2023-2-24;9:26:17.211;IR 2 ; broken beam ;
-    2023-2-24;9:26:21.254;IR 2 ; beam restored ;
-    2023-2-24;9:26:55.319;IR 1 ; broken beam ;
-    2023-2-24;9:26:55.331;IR 2 ; broken beam ;
-    2023-2-24;9:26:55.429;8000F33EDD41499D; A0;
-    2023-2-24;9:26:55.838;IR 1 ; beam restored ;
-    2023-2-24;9:26:55.850;IR 2 ; beam restored ;
-    2023-2-15;12:54:5.553;System; Shut Down Button;
+    2023-2-24;9:25:54.107;System;Start;
+    2023-2-24;9:25:54.107;System;RTC is ok;
+    2023-2-24;9:26:10.895;IR 1;broken beam;
+    2023-2-24;9:26:14.435;IR 1;beam restored;
+    2023-2-24;9:26:17.211;IR 2;broken beam;
+    2023-2-24;9:26:21.254;IR 2;beam restored;
+    2023-2-24;9:26:55.319;IR 1;broken beam;
+    2023-2-24;9:26:55.331;IR 2;broken beam;
+    2023-2-24;9:26:55.429;A0;8000F33EDD41499D;
+    2023-2-24;9:26:55.838;IR 1;beam restored;
+    2023-2-24;9:26:55.850;IR 2;beam restored;
+    2023-2-15;12:54:5.553;System;Shut Down Button;
     ```
 
 *NOTE* The time base is expressed in UTC time period

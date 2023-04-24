@@ -23,6 +23,8 @@ The antenna incorporates two infrared transmitters / receivers as well as an RFI
 </a>
 <!-- markdownlint-enable MD033 -->
 
+Note  : IR sensor noted "IR 1" in the record file is the one mounted on the top of the antenna (small diameter)
+
 The case contains all the embedded electronics, the battery, the clock, the micro-SD memory card and the start-up buttons.
 On the outside of the case you'll find:
 
