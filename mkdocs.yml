@@ -128,6 +128,7 @@ nav:
         - Burrow case: Burrow_case.md
         - Programming: programming.md
         - Final assembling: Burrow_device_assembling.md
+        - Check the device: Check_burrow_device.md
 
       - Assembly a nest box:
         - Antenna: Antenna_nest_assembling.md

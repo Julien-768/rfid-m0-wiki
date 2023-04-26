@@ -30,7 +30,7 @@ The last step before the final assembling is to **program the main board**. This
 
 Finally **all the components are installed into the case**. This step requires wiring to connect the different boards together.
 
-Once battery inserted and connected, the device will be ready for [checking](Checking_procedure.md).
+Once battery inserted and connected, the device will be ready for [checking](Check_burrow_device.md).
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Burrow_assembling/Final_assembling.jpg">
