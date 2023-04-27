@@ -68,4 +68,4 @@ The autonomies are indicated considering :
 * a 12V 5.4 A.h Lead battery (more pessimistic situation)
 * T = 20°c
 
-For more information, refer to the [calculation sheet](.\assets\images\User_description\Consumption_and_autonomy.xlsx).
+For more information, refer to the [calculation sheet](./assets/images/User_description/Consumption_and_autonomy.xlsx).

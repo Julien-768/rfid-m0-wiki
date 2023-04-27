@@ -8,7 +8,7 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 
 ## Step 1 : Prepare the supports
 
-* 3D print the part [«RFID_support.stl»](.\assets\images\Manufacturing\Support_RFID.stl)
+* 3D print the part [«RFID_support.stl»](./assets/images/Manufacturing/Support_RFID.stl)
 * Insert 2 x M2.5 nuts in the RFID support
 * Insert the RFID reader in its support. Be careful to respect the orientation
 
@@ -18,7 +18,7 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Prepare the PVC fixation parts ["Support_inf"](.\assets\images\Manufacturing\Support_inf.pdf) and ["Support_PCB"](.\assets\images\Manufacturing\Support_PCB.pdf) according to their drawings
+* Prepare the PVC fixation parts ["Support_inf"](./assets/images/Manufacturing/Support_inf.pdf) and ["Support_PCB"](./assets/images/Manufacturing/Support_PCB.pdf) according to their drawings
 * Screw two angle brackets into the "Support_inf" plate with 4 self-tapping screws M3 x 6
 
 <!-- markdownlint-disable MD033 -->
