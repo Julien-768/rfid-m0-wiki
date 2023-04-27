@@ -30,8 +30,8 @@ Several powering options are proposed :
 
 | Component                                    | Power consumption [mW]          |
 |----------------------------------------------|:-------------------------------:|
-| 5V power board                               | 85                              |
-| 12V power board                              | 177                             |
+| 5V power board                               | 43                              |
+| 12V power board                              | 112                             |
 | Feather + RTC                                | 65                              |
 | RFID reader & antenna - Standby              | 80                              |
 | RFID reader & antenna - Research             | 387                             |
