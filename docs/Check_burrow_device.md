@@ -12,7 +12,7 @@ Start by following the different steps described in the [User Checking Procedure
 
 ## Step 2 : Edit the configuration file
 
-1. Open the CONFIG.txt file in the SD memory card
+1. Open the CONFIG.cfg file in the SD memory card
 2. Edit the option "mode_time_period" to true
 3. Edit the option "start_time" by setting an hour higher than the current (in UTC timezone)
 4. Edit the option "stop_time" by setting start_time + 2h
