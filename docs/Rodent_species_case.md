@@ -34,7 +34,7 @@ Several powering options are proposed :
 | 12V power board                              | 112                             |
 | Feather + RTC                                | 65                              |
 | RFID reader & antenna - Standby              | 80                              |
-| RFID reader & antenna - Research             | 387                             |
+| RFID reader & antenna - Research             | 450                             |
 | RFID reader & antenna - Reading              | 232                             |
 | 1 IR Emitter                                 | 15.8                            |
 | 1 IR Receiver                                | 1.3                             |
@@ -56,10 +56,10 @@ Some notions have to be kept in mind :
 
 | System configuration                     |  Consumption [W.h]               | Autonomy              |
 |------------------------------------------|:--------------------------------:|:---------------------:|
-| IR On - RFID On - 24/24h mode            | 5.9                              | 11d 1h 53m            |
-| IR On - RFID On - 12/24h mode            | 3.7                              | 17d 11h 49m           |
-| IR Off - RFID On - 24/24h mode           | 10.8                             | 5d 23h 53m            |
-| IR Off - RFID On - 12/24h mode           | 6.2                              | 10d 11h 28m           |
+| IR On - RFID On - 24/24h mode            | 5.9                              | 10d 22h 9m            |
+| IR On - RFID On - 12/24h mode            | 3.7                              | 17d 7h 9m           |
+| IR Off - RFID On - 24/24h mode           | 12.3                             | 5d 6h 34m             |
+| IR Off - RFID On - 12/24h mode           | 6.9                              | 9d 8h 37m             |
 
 The autonomies are indicated considering :
 
