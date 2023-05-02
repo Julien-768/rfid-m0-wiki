@@ -32,7 +32,7 @@ Several powering options are proposed :
 |----------------------------------------------|:-------------------------------:|
 | 5V power board                               | 43                              |
 | 12V power board                              | 112                             |
-| Feather + RTC                                | 65                              |
+| Feather (including SD) + RTC                 | 65                              |
 | RFID reader & antenna - Standby              | 80                              |
 | RFID reader & antenna - Research             | 450                             |
 | RFID reader & antenna - Reading              | 232                             |
@@ -43,6 +43,8 @@ Several powering options are proposed :
 The consumptions are measured for T = 20°c.
 
 The IR emitter is considered with 220 Ohm resistor and 50% PWM duty cycle.
+
+**Be careful to the SD card consumption** : Its consumption can vary from 1 et 10mA according to the manufacturer and the production batch.
 
 ### System consumption & autonomy
 
