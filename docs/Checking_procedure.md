@@ -88,7 +88,7 @@ We are going to check if the SD card is correctly working (write data) and if th
 ??? "File content"
 
     ```
-    2023-5-4;13:4:3.123;MB202303001;inv_mainboard;202303YH001;uid_experiment;
+    2023-5-4;13:4:3.123;MB202303001;inv_mainboard;uid_experiment;202303YH001;
     2023-5-4;13:4:3.123;MB202303001;inv_mainboard;System;Start;
     2023-5-4;13:4:10.123;MB202303001;inv_mainboard;System;RTC is ok;
     2023-5-4;13:4:28.301;2303002591056;inv_rfid_sensor;IR 2;broken beam;
