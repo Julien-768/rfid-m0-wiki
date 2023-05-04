@@ -53,6 +53,7 @@ According to the power supply available, two different boards can be prepared :
 
 ### 5V power supply board
 
+* Prepare the Powerboost and the Universal charger by assembling them
 * Weld the SMD resistors on the underside of the PCB
 * Weld the C2 capacitor on the underside of the PCB.
 * Weld the two 1N4001 diodes on the upper side of the PCB
