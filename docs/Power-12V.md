@@ -31,7 +31,7 @@ The battery used is a 12V lead battery. Its nominal voltage can reach 14V when f
 During usage, ensure that the temperature is between **0°c to 50°c**.
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Power_board/12v_Battery.jpg">
-<img src="../assets/images/Power_board/12v_Battery.jpg" width="250">
+<a href="../assets/images/Power_board/12v_battery.jpg">
+<img src="../assets/images/Power_board/12v_battery.jpg" width="250">
 </a>
 <!-- markdownlint-enable MD033 -->
