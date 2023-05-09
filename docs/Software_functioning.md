@@ -45,3 +45,34 @@ In case of errors, the external red LED turns on and the internal red LED blinks
 * 2 times : Memory card not detected
 * 3 times : Failed to write data on the SD card (memory can be corrupted)
 * 4 times : Real-Time Clock battery has to be replaced. The program has to be compiled and uploaded again to reset the error
+
+## Data description
+
+There are several types of messages written into the SD memory card :
+
+| Data type     | Message content                   | Comment                             |
+|---------------|-----------------------------------|-------------------------------------|
+| System        | Start                             |                                     |
+| System        | RTC is ok                         |                                     |
+| System        | RTC set time to compilation date  |                                     |
+| System        | RTC lost power                    |                                     |
+| System        | RTC has unknow error              |                                     |
+| System        | Sleep mode                        |                                     |
+| System        | Wake up mode                      |                                     |
+| System        | Up                                | Still alive                         |
+| System        | Shutdown : High temp              |                                     |
+| System        | Shutdown : Battery low            |                                     |
+| System        | Shutdown : User                   |                                     |
+| Ax            | RFID tag                          |                                     |
+| Irx           | Broken beam                       |                                     |
+| Irx           | Beam restored                     |                                     |
+| Temperature   | Temperature measurement in °c     | If temp. variation > 0.02°c        |
+| Vbat          | Battery measurement in V          | If batt. variation > 0.1V          |
+| Vbat          | Power saving                      | Battery < BATTERY_MIN_VOLTAGE + 0,1 |
+| Vbat          | Battery restored                  | Battery > BATTERY_MIN_VOLTAGE + 0,2 |
+| Vbat          | Battery check by user             |                                     |
+| -             | UID mainboard & experiment        | First line of each data file        |
+| Door          | Closed                            |                                     |
+| Door          | Open : Init                       |                                     |
+| Door          | Open : Release time               |                                     |
+| Door          | Open : Security                   | High temp, Battery low, Error…      |

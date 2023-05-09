@@ -88,18 +88,21 @@ We are going to check if the SD card is correctly working (write data) and if th
 ??? "File content"
 
     ```
-    2023-2-24;9:25:54.107;System; Start;
-    2023-2-24;9:25:54.107;System; RTC is ok;
-    2023-2-24;9:26:10.895;IR 1 ; broken beam ;
-    2023-2-24;9:26:14.435;IR 1 ; beam restored ;
-    2023-2-24;9:26:17.211;IR 2 ; broken beam ;
-    2023-2-24;9:26:21.254;IR 2 ; beam restored ;
-    2023-2-24;9:26:55.319;IR 1 ; broken beam ;
-    2023-2-24;9:26:55.331;IR 2 ; broken beam ;
-    2023-2-24;9:26:55.429;8000F33EDD41499D; A0;
-    2023-2-24;9:26:55.838;IR 1 ; beam restored ;
-    2023-2-24;9:26:55.850;IR 2 ; beam restored ;
-    2023-2-15;12:54:5.553;System; Shut Down Button;
+    2023-5-4;13:4:3.123;MB202303001;inv_mainboard;uid_experiment;202303YH001;
+    2023-5-4;13:4:3.123;MB202303001;inv_mainboard;System;Start;
+    2023-5-4;13:4:10.123;MB202303001;inv_mainboard;System;RTC is ok;
+    2023-5-4;13:4:28.301;2303002591056;inv_rfid_sensor;IR 2;broken beam;
+    2023-5-4;13:4:31.870;2303002591056;inv_rfid_sensor;IR 2;beam restored;
+    2023-5-4;13:4:33.871;2303002591056;inv_rfid_sensor;IR 1;broken beam;
+    2023-5-4;13:4:35.263;2303002591056;inv_rfid_sensor;IR 1;beam restored;
+    2023-5-4;13:4:38.71;2303002591056;inv_rfid_sensor;IR 2;broken beam;
+    2023-5-4;13:4:38.94;2303002591056;inv_rfid_sensor;IR 1;broken beam;
+    2023-5-4;13:4:38.586;2303002591056;inv_rfid_sensor;A0;972-270000015773;
+    2023-5-4;13:4:41.198;2303002591056;inv_rfid_sensor;IR 1;beam restored;
+    2023-5-4;13:4:41.308;2303002591056;inv_rfid_sensor;IR 2;beam restored;
+    2023-5-4;13:4:44.267;MB202303001;inv_mainboard;Vbat;Battery check by user;
+    2023-5-4;13:4:44.267;MB202303001;inv_mainboard;Vbat;3.62V;
+    2023-5-4;13:4:50.871;MB202303001;inv_mainboard;System;Shutdown : User;
     ```
 
 *NOTE* The time base is expressed in UTC time period

@@ -12,9 +12,9 @@ The operating tempererature range is 0°c to 50°c.
 
 ## Memory
 
-The system stores its data on a Micro-SD card. The maximal supported size is 32GB (SD and SDHC card supported).
+The system stores its data on a Micro-SD card. The maximal supported size is 32GB ([SD and SDHC](https://www.arduino.cc/reference/en/libraries/sd/) card supported).
 
-TODO : Ajouter le nombre de passage enregistrable sur une carte SD 2Go
+A 2GB SD card can record ~5,100,000,000 detections with tags (**~59 continuous days** with one detection per second).
 
 ## Powering
 
@@ -26,69 +26,48 @@ Several powering options are proposed :
 
 ## Consumption & Autonomy
 
-TO DO :
+### Component consumption
 
-- Indiquer la conso de tous les capteurs : Emetteur IR / Recepteur IR / RFID (Standby - Recherche tag - Lecture de tag)
-- Donner la consommation d'un capteur IR fonction de sa distance de détection
-- Indiquer la conso complète en mode : IR On + RFID standby / IR On + RFID recherche tag / IR On + RFID lecture / IR Off + RFID standby / IR Off + RFID recherche tag / IR Off + RFID lecture / Boitier en mode sleep
-- Ajouter calcul d'autonomie fonction du mode :
-  - IR On + RFID déclenché sur évenement + Fonctionnement 24/24
-  - IR Off + RFID actif tout le temps + Fonctionnement 24/24
-  - IR On + RFID déclenché sur évenement + Fonctionnement 12/24
-  - IR Off + RFID actif tout le temps + Fonctionnement 12/24
+| Component                                    | Power consumption [mW]          |
+|----------------------------------------------|:-------------------------------:|
+| 5V power board                               | 43                              |
+| 12V power board                              | 112                             |
+| Feather (including SD) + RTC                 | 65                              |
+| RFID reader & antenna - Standby              | 80                              |
+| RFID reader & antenna - Research             | 450                             |
+| RFID reader & antenna - Reading              | 232                             |
+| 1 IR Emitter                                 | 15.8                            |
+| 1 IR Receiver                                | 1.3                             |
+| + 3.3V regulator                             | 45                              |
 
-## Consommation
+The consumptions are measured for T = 20°c.
 
-### Mesures
+The IR emitter is considered with 220 Ohm resistor and 50% PWM duty cycle.
 
-Test consommation effectué avec une alimentation programmable (KEYSIGHT
-N6705C).
+**Be careful to the SD card consumption** : Its consumption can vary from 1 et 10mA according to the manufacturer and the production batch.
 
-Alimentation 5V du Feather M0 + RTC + RFID en acquisition
+### System consumption & autonomy
 
-![D:\\screencapture2.gif](./media/image10.gif)
+The autonomy of the system depends of its consumption, that varies according to the software configuration.
+Some notions have to be kept in mind :
 
-<!-- markdownlint-disable MD033 -->
-<object id="current" data="../media/current.htm" width="600" height="250"></object>
-<!-- markdownlint-enable MD033 -->
+* There is no consumption difference if one or two IR sensors are active. In both cases, the two emitters & receivers are powered
+* If the two IR sensors are inactive, the RFID is always in research mode (except during sleep mode)
+* If the temperature sensor is active, the IR receivers are powered even if opt_IR_1 & opt_IR_2 are False (same power supply)
+* During sleep mode, only the Feather & the RTC are powered
 
-Puis test avec l'alim à la place de la batterie en 3.6V branchée sur le
-PowerBoost
+| System configuration                     |  Consumption [W.h]               | Autonomy              |
+|------------------------------------------|:--------------------------------:|:---------------------:|
+| IR On - RFID On - 24/24h mode            | 5.9                              | 10d 22h 9m            |
+| IR On - RFID On - 12/24h mode            | 3.7                              | 17d 7h 9m           |
+| IR Off - RFID On - 24/24h mode           | 12.3                             | 5d 6h 34m             |
+| IR Off - RFID On - 12/24h mode           | 6.9                              | 9d 8h 37m             |
 
-Tout compris RFID au repos
+The autonomies are indicated considering :
 
-![D:\\screencapture3.gif](./media/image12.gif)
+* 50 detections with RFID tag per hour
+* One detection = 5 seconds in front of sensor, incluging 1 second to read the RFID tag
+* a 12V 5.4 A.h Lead battery (more pessimistic situation)
+* T = 20°c
 
-Tout compris RFID en acquisition
-
-![D:\\screencapture4.gif](./media/image13.gif)
-
-|                          |                 |                          |
-|--------------------------|-----------------|--------------------------|
-| Carte Feather M0 + RTC   |                 | <14mA>                     |
-| Carte RFID Tectus + antenne   | Allumée au repos| <15mA>                     |
-|                          | En acquisition  | 100mA sur 150ms          |
-| Système Total            | RFID éteinte    | <0.18W>                    |
-|                          | RFID au repos   | <0.26W>                    |
-|                          | Acquisition (10 lectures RFID) | <0.38W>           |
-
-Système Total:
-
-- Carte Feather M0 + RTC
-- Carte RFID Tectus + antenne
-- 2 barrières IR
-- Power Boost
-
-### Calcul Autonomie
-
-<!-- markdownlint-disable MD033 -->
-<object id="consumption" data="../media/consumption.htm" width="600" height="250"></object>
-<!-- markdownlint-enable MD033 -->
-
-### Carte moyenne Puissance
-
-Dakota 2010-0 TLB-30-BB LF
-
-\\Projets\\RFID Tectus
-
-![Clipboard - 23 février 2022 11_25](./media/image21.png)
+For more information, refer to the [calculation sheet](./assets/images/User_description/Consumption_and_autonomy.xlsx).

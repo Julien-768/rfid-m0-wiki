@@ -1,4 +1,4 @@
-# Infrared functionnality
+# Modulated infrared functionnality
 
 ## Description
 
@@ -7,7 +7,7 @@ Indeed this barrier in an On / Off system, with no distance detection. More the 
 
 ## Software used to generate a 36 kHz Pulsed Width Modulation
 
-For generating a PWM on the Feather M0, we use the SAMD21 turbo PWM library on an available [PWM pin](./assets/images/TODO/Pinout_Feather_M0.png)
+For generating a PWM on the Feather M0, we use the [Arduino SAMD21 turbo PWM](https://github.com/ocrdu/Arduino_SAMD21_turbo_PWM) on an available [PWM pin](./assets/images/TODO/Pinout_Feather_M0.png)
 
 <!-- markdownlint-disable MD010 -->
 ```C
@@ -46,20 +46,6 @@ The Infrared emitter has an wide opening angle. For testing purpose, use heat sh
 <!-- markdownlint-enable MD033 -->
 
 Measurement made on the pin output of the Phototransistor TSOP34536.
-
-## Infrared emitter
-
-![Picture IR emitter](./uploads/faf76029d4c4bf6ed90eff264ebd9dab/image.png){: style="width:200px"}
-
-The cathode (-) is the shortest pin (no flat visible)
-
-## Infrared receiver TSOP34536
-
-![phototransistor](./uploads/9e841f54ce27092b014421e1b7e74c72/phototransistor.png){: style="width:300px"}
-
-Power supply from 2.5Vdc to 5.5Vdc
-
-[datasheet.pdf](https://www.vishay.com/doc?82490)
 
 ## Examples on the web
 

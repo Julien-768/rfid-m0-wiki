@@ -2,46 +2,8 @@
 
 # Manufacturing files
 
-[Access to the Repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec)
+All the required files for the manufacturing are accessible at this link : [Access to the Repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec)
 
-[Download as zip](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/archive/master/rfid_m0.elec-master.zip)
+You can also directly [Download as zip](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/archive/master/rfid_m0.elec-master.zip)
 
-## Main board
-
-<a href="../assets/images/rfid.elec.schematic/Main_board%20schematic.png">
-<img src="../assets/images/rfid.elec.schematic/Main_board%20schematic.png" width="400">
-</a>
-
-<a href="../assets/images/rfid.elec.schematic/Main_board TOP.jpeg">
-<img src="../assets/images/rfid.elec.schematic/Main_board TOP.jpeg" width="200">
-</a>
-
-## Power supply board 12V
-
-<a href="../assets/images/rfid.elec.schematic/Power_12v%20schematic.png">
-<img src="../assets/images/rfid.elec.schematic/Power_12v%20schematic.png" width="400">
-</a>
-
-<a href="../assets/images/rfid.elec.schematic/Power_board_12V%20TOP.jpeg">
-<img src="../assets/images/rfid.elec.schematic/Power_board_12V%20TOP.jpeg" width="300">
-</a>
-
-## Power supply board 5V
-
-<a href="../assets/images/rfid.elec.schematic/Power_board_5V%20schematic.png">
-<img src="../assets/images/rfid.elec.schematic/Power_board_5V%20schematic.png" width="400">
-</a>
-
-<a href="../assets/images/rfid.elec.schematic/Power_board_5V%20TOP.jpeg">
-<img src="../assets/images/rfid.elec.schematic/Power_board_5V%20TOP.jpeg" width="200">
-</a>
-
-## Interface board for burrow antenna
-
-<a href="../assets/images/rfid.elec.schematic/Interface_board%20schematic.png">
-<img src="../assets/images/rfid.elec.schematic/Interface_board%20schematic.png" width="400">
-</a>
-
-<!-- <a href="../assets/images/rfid.elec.schematic/Interface_board%20schematic.png">
-<img src="../assets/images/rfid.elec.schematic/Interface_board%20schematic.png" width="400">
-</a -->
+The list of required material is avaible at this [link](./assets/images/Manufacturing/Bill of material.xlsx).

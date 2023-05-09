@@ -117,23 +117,26 @@ nav:
       - Electronic boards:
         - Overview: Electronic_overview.md
         - Main board: Main_board.md
-        - 5V power supply board: Power-5V.md
-        - 12V power supply board: Power-12V.md
-        - Infrared: Infrared.md
+        - Power supply:
+          - Power management : Power_supply.md
+          - 5V power board: Power-5V.md
+          - 12V power board: Power-12V.md
 
-      - Assembly a burrow case:
-        - Antenna: Antenna_burrow_assembly.md
-        - Electronic: Electronic_assembly.md
+      - Assembly a burrow device:
+        - Overview: Burrow_device_assem_overview.md
+        - Antenna: Antenna_burrow_assembling.md
+        - Electronic: Electronic_assembling.md
         - Burrow case: Burrow_case.md
         - Programming: programming.md
-        - Final assembly: Burrow_case_assembly.md
+        - Final assembling: Burrow_device_assembling.md
+        - Check the device: Check_burrow_device.md
 
       - Assembly a nest box:
-        - Antenna: Antenna_nest_assembly.md
-        - Electronic: Electronic_assembly.md
+        - Antenna: Antenna_nest_assembling.md
+        - Electronic: Electronic_assembling.md
         - Nest box: Nest_box.md
         - Programming: programming.md
-        - Final assembly: Nest_box_assembly.md
+        - Final assembling: Nest_box_assembling.md
 
       - Manufacturing files: Elec_Manufacturing.md
       - Mods for next revision: Elec_boards_TODO.md
@@ -143,3 +146,4 @@ nav:
       - Check liste: Check-list.md
       - ToBeMoved: To_be_moved.md
       - JLINK-bootloader: JLINK-bootloader.md
+      - Modulated infrared: Infrared.md

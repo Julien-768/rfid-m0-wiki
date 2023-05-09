@@ -4,7 +4,7 @@ The software is customizable by the user to active sensors, working time and beh
 
 ## Configuration file
 
-The software options are editable in the configuration file "CONFIG.txt" located on the SD card.
+The software options are editable in the configuration file "CONFIG.cfg" located on the SD card.
 
 ??? "Configuration file with default values"
 
@@ -38,7 +38,7 @@ The file is written as a [JSON string](https://developers.squarespace.com/what-i
 To change the configuration file:
 
 1. Take the SD card from the device and insert it into a computer
-2. Look for CONFIG.txt file and open it
+2. Look for CONFIG.cfg file and open it
 3. Change the value of the required parameters
 4. Save your modifications and insert back the SD card into the device
 
