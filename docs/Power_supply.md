@@ -3,7 +3,7 @@
 According to the choice of battery, two different power boards can be used with the device.  
 Both boards are physically different but share the same functionnalities.
 
-## Battery voltage measureement
+## Battery voltage measurement
 
 A Li-Po / Li-ion battery voltage can reach 4.2V and a lead-battery 14V. As the Feather M0 do not accept more than 3.3V on its digital inputs, **a voltage divider is required**.  
 The division ratio is different on the two power board (3 for a 5v power board / 6 for a 12v power board) according to the mounted resistors, and **has to be indicated into the software**.  

@@ -10,6 +10,8 @@ When the two parts are assembled together and the cable is connected, a resin ca
 
 ## Step 1 : Make the antenna base
 
+Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description with its specifications.
+
 - **3D print** the part « Socle.stl »
 - Apply a **first coat of epoxy resin** for impregnation on the inside walls that will receive the resin casting. Use the long-setting resin (24h) to have time to spread resin into the walls (Weight ratio for preparation : 5 resin - 1 hardener)
 - [Cable a coil antenna](./Assembling_antenna.md) for a 190uH impedance (+/- 29 spires) around the antenna base

@@ -14,9 +14,9 @@ The main board has different voltage levels :
 
 * 5V : Provided by the PW connector, the 5V is distributed to the Feather M0, the RFID module, the servomotor and the 3.3V voltage regulator
 * 3V (permanent) : Provided by the internal Feather M0 regulator, this 3V powers the RTC module
-* 3V (piloted) : Provided by the 3.3V regulator, this voltage powers the IR emitter & receiver and the temperature sensor (RTD)
+* 3V (controlled) : Provided by the 3.3V regulator, this voltage powers the IR emitter & receiver and the temperature sensor (RTD)
 
-As the Feather is a 3V-logic level, all the inputs / outputs are **3V-logic based**.
+As the Feather is a 3V3-logic level, all the inputs / outputs are **3V3-logic based**.
 
 Several **communication modes** are used :
 
@@ -56,10 +56,10 @@ Description of the pinout used :
 </a>
 <!-- markdownlint-enable MD033 -->
 
-The Hitec HS-53 servomotor is suitable for miniaturized or energy-saving systems. With a rotational speed of 1.2 rev/s, it can deliver a maximal torque of 1.5 kg.cm.
+The Feetech FS90 servomotor is suitable for miniaturized or energy-saving systems. With a rotational speed of 1.4 rev/s, it can deliver a maximal torque of 1.3 kg.cm.
 5V power supply
 
-For more details refers to the [datasheet](https://asset.conrad.com/media10/add/160267/c1/-/gl/001081926ML01/mode-demploi-1081926-mini-servomoteur-analogique-hitec-hs-53-112053-1-pcs.pdf)
+For more details refers to the [datasheet](https://www.gotronic.fr/pj2-fs90-2549.pdf)
 
 ### Real-Time-Clock (RTC) module
 
@@ -78,7 +78,7 @@ More information about the board in the [Adafruit tutorial](https://learn.adafru
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/RFID/RFID_module.png">
-<img src="../assets/images/RFID/RFID_module.png" width="300">
+<img src="../assets/images/RFID/RFID_module.png" width="400">
 </a>
 <!-- markdownlint-enable MD033 -->
 
