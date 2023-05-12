@@ -10,6 +10,8 @@ When the two parts are assembled together and the cable is connected, a resin ca
 
 ## Step 1 : Make the antenna base
 
+Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description with its specifications.
+
 - **3D print** the part « Socle.stl »
 - Apply a **first coat of epoxy resin** for impregnation on the inside walls that will receive the resin casting. Use the long-setting resin (24h) to have time to spread resin into the walls (Weight ratio for preparation : 5 resin - 1 hardener)
 - [Cable a coil antenna](./Assembling_antenna.md) for a 190uH impedance (+/- 29 spires) around the antenna base
@@ -20,8 +22,8 @@ When the two parts are assembled together and the cable is connected, a resin ca
     - Apply a polyurethane glue coat in the IR receiver hole (Araldite 2028-1 Spray Gun) to **form a bulb** on the inside of the antenna. This bulb will avoid mud accumulation before sensor.
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Antennas/burrow_ant_base.png">
-<img src="../assets/images/Antennas/burrow_ant_base.png" alt="Burrow antenna base" height="400" >
+<a href="../assets/images/Antennas/Burrow_ant_base.png">
+<img src="../assets/images/Antennas/Burrow_ant_base.png" alt="Burrow antenna base" height="400" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -31,16 +33,16 @@ When the two parts are assembled together and the cable is connected, a resin ca
 - **Machine two flats** on the brass large nut
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Antennas/burrow_ant_nut.png">
-<img src="../assets/images/Antennas/burrow_ant_nut.png" alt="Burrow antenna nut" width="300" >
+<a href="../assets/images/Antennas/Burrow_ant_nut.png">
+<img src="../assets/images/Antennas/Burrow_ant_nut.png" alt="Burrow antenna nut" width="300" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
 - **Screw** the brass pipe + O-ring with nut on cover
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Antennas/burrow_ant_cover.png">
-<img src="../assets/images/Antennas/burrow_ant_cover.png" alt="Burrow antenna cover" height="400" >
+<a href="../assets/images/Antennas/Burrow_ant_cover.png">
+<img src="../assets/images/Antennas/Burrow_ant_cover.png" alt="Burrow antenna cover" height="400" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -110,8 +112,8 @@ When the two parts are assembled together and the cable is connected, a resin ca
 - Install the antenna on **flat position** and hold the cable high
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Antennas/burrow_ant_preparation.jpg">
-<img src="../assets/images/Antennas/burrow_ant_preparation.jpg" alt="Burrow antenna preparation" width="400" >
+<a href="../assets/images/Antennas/Burrow_ant_preparation.jpg">
+<img src="../assets/images/Antennas/Burrow_ant_preparation.jpg" alt="Burrow antenna preparation" width="400" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -121,5 +123,5 @@ When the two parts are assembled together and the cable is connected, a resin ca
 - Let the resin dry a couple of hours. Then clean the antenna (remove modelling clay and excess of silicon)
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Antennas/burrow_ant_resin.jpg">
-<img src="../assets/images/Antennas/burrow_ant_resin.jpg" alt="Antenna resined" height="400" >
+<a href="../assets/images/Antennas/Burrow_ant_resin.jpg">
+<img src="../assets/images/Antennas/Burrow_ant_resin.jpg" alt="Antenna resined" height="400" >

@@ -65,8 +65,8 @@ According to the power supply available, two different boards can be prepared :
 * On the underside  side of the PCB, cut the pins that protrude
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Power_Board/5v_powerSupp.jpg">
-<img src="../assets/images/Power_Board/5v_powerSupp.jpg" alt="5v power supply" width="500" >
+<a href="../assets/images/Power_board/5v_powerSupp.jpg">
+<img src="../assets/images/Power_board/5v_powerSupp.jpg" alt="5v power supply" width="500" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -75,8 +75,8 @@ According to the power supply available, two different boards can be prepared :
 * Weld the SMD resistors on the underside of the PCB
   
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Power_Board/12v_powerSupp_SMD.jpg">
-<img src="../assets/images/Power_Board/12v_powerSupp_SMD.jpg" alt="12v power supply with SMD" width="500" >
+<a href="../assets/images/Power_board/12v_powerSupp_SMD.jpg">
+<img src="../assets/images/Power_board/12v_powerSupp_SMD.jpg" alt="12v power supply with SMD" width="500" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -87,7 +87,7 @@ According to the power supply available, two different boards can be prepared :
 * On the underside  side of the PCB, cut the pins that protrude
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Power_Board/12v_powerSupp.jpg">
-<img src="../assets/images/Power_Board/12v_powerSupp.jpg" alt="12v power supply" width="500" >
+<a href="../assets/images/Power_board/12v_powerSupp.jpg">
+<img src="../assets/images/Power_board/12v_powerSupp.jpg" alt="12v power supply" width="500" >
 </a>
 <!-- markdownlint-enable MD033 -->

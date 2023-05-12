@@ -106,6 +106,7 @@ nav:
       - Software:
         - Functioning: Software_functioning.md
         - Configuration: Software_configuration.md
+        - Assembly: Software_assembly.md
 
     - Hardware:
       - Rodent species case: Rodent_species_case.md

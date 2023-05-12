@@ -52,3 +52,9 @@ This 130 x 150 mm solar panel has a power of 2.5W It can deliver 500 mA for a no
 
 The battery used is a Lithium-ion battery 3.6V 20Ah. Its nominal voltage can reach 4.2V when fully charged. **Do not unload below 3V.**  
 During usage, ensure that the temperature is between **0°c to 50°c**.
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Power_board/5v_battery.jpg">
+<img src="../assets/images/Power_board/5v_battery.jpg" width="300">
+</a>
+<!-- markdownlint-enable MD033 -->
