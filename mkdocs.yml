@@ -139,11 +139,10 @@ nav:
         - Final assembling: Nest_box_assembling.md
 
       - Manufacturing files: Elec_Manufacturing.md
-      - Mods for next revision: Elec_boards_TODO.md
+
+    - Credits: Credits.md
 
     - TO SORT:
-      - TODO liste: TODO-liste.md
-      - Check liste: Check-list.md
-      - ToBeMoved: To_be_moved.md
       - JLINK-bootloader: JLINK-bootloader.md
       - Modulated infrared: Infrared.md
+      - Mods for next revision: Elec_boards_TODO.md

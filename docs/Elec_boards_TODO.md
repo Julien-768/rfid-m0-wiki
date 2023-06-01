@@ -20,6 +20,14 @@ comments: true
 
 ![Capture](./assets/images/TODO/Main_board_mods.png){: style="width:400px"}
 
+* Remonter les descriptions sur la face supérieure du circuit (connecteur IR, led, servo et RFID, PW_mng) pour meilleure visibilité
+* Ajouter dénomination +/- sur le connecteur PW_5V
+* Déplacer les dénominations Q12, Q13, C1, C3 et R8 pour les rendre visible une fois les composants installés
+* Eloigner le connecteur PW_mng de Q12 pour faciliter la manipulation du connecteur
+* Ne pas déplacer C1 mais indiquer dans le montage de le souder avec assez de longueur de pattes pour permettre de le plier (meilleure intégration mécanique)
+* Inverser le sens de montage pour permettre de voir sa référence une fois le composant monté et plié
+* Remplacer le régulateur 3v3 par une version avec faible courant de fuite
+
 ## Power board 5V
 
 * C2 100 nF et C3 100 nF capacitors must be replaced by components 0805 105K X7R 50V SMD in 1206 size. C2 must not be a discrete component (disturbing once the board is placed).
@@ -34,7 +42,12 @@ comments: true
 
 * Define slots to connect IR emitter and receiver cables : 4 x 3V3 et 4 x GND
 * Remove footprints under the Adafruit boards
+* Remplacer les connecteurs P3 /P4 par des bornier à vis de pas 2.54mm
+* Indiquer le + et le – pour le connecteur PWR_5V
+* Corriger la piste en contact avec le plan de masse (pin EN --> Q2)
+* Déplacer la dénomination Q1 pour la rendre visible une fois le composant installé et replié
 
 ## Interface board
 
 * Transfer the project into Kicad software
+* Corriger le schéma : Diodes inversées
