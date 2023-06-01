@@ -4,7 +4,7 @@
 
 The material needed to make a coil antenna is:
 
-* enamelled copper wire. We used the [ref CUL100/0.10 from BLOCK](https://www.block.eu/en_US/productversion/cul-100010/) ([RadioSpare ref 337-7088](https://fr.rs-online.com/web/p/fils-de-cuivre/3377088))
+* enamelled copper wire. We used the 0.2 copper wire from Radiospares ([RadioSpare ref 357-918](https://fr.rs-online.com/web/p/fils-de-cuivre/0357918))
 * the structure to wrap the antenna around. This is the 3D printed part named antenna.stl.
 * a glue gun
 * standard wire for connecting to the reader part TODO REF
