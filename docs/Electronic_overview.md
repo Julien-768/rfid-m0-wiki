@@ -40,7 +40,7 @@ A 3-wire cable connect the main board to the power board :
 * SW : This line allow the main board to read the START button status (pressed / released)
 * VBAT : Battery voltage compatible with 3.3V-logic level
 
-To be compatible with different battery technologies, two power board are available :
+To be compatible with different battery technologies, two power boards are available :
 
 * [5V power supply board](./Power-5V.md) to use Li-Po or Li-Ion battery. A reload by USB-C or an optional solar panel is also possible.
 * [12V power supply board](./Power-12V.md) to use lead-battery from 9V to 18V.

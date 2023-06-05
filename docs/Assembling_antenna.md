@@ -11,12 +11,13 @@ The material needed to make a coil antenna is:
 * connectors, if needed, to easily manipulate your antenna TODO REF
 * soldering material, iron, solder, heat shrink, ...
 
-## Antenna dimensionning
+## Antenna sizing
 
 If wire lenght is not specified for the specific antenna we want to build, the Nagaoka's formula would help us.
 It returns the inductance based on the size, the thickness and the number of spires of the coil antenna.
-This will give us the wire lenght to use to make the coil.
-Note we are not exactly in the conditions of the formula, the final inductance will need to be measured with an inductance meter.
+This script allows to check if the chosen coil design achieves the required inductance.
+
+Note : we are not exactly in the conditions of the formula, the final inductance will need to be measured with an inductance meter.
 
 <!-- markdownlint-disable MD038 -->
 note "Python code for calculating the coil inductance"
@@ -31,19 +32,29 @@ The copper wire used is enamelled. For soldering we need first to remove the ena
 The safest option is to sand the enamel off by using a fine sandpaper.
 An other option is to melt the enamel off by using the soldering iron, solder and the flux within it, extra flux.
 
-if you are not used to the method, we strongly recommand to browse for some video of 'how to remove enamel coating from copper wire'
+If you are not used to the method, we strongly recommand to browse for some video of 'how to remove enamel coating from copper wire'
 
 ## Assembly steps
 
-* wrap the wire around its structure. Leave a starting lenght out of the wrapping, around 20 cm will be ok.
-* when the wrapping is done, use the glue gun to fix the coil to the structure and wires together
+* Wrap the wire around its structure. Leave a starting lenght out of the wrapping, around 20 cm will be ok.
+* When the wrapping is done, check the inductance of the coil with an inductance meter. Ensure to select the right frequency (as close as possible to the antenna frequency range).
+  The theoretical quality factor of the antenna has to be ckecked too (Q option on the inductance meter). The Q quality factor can be calculed with the following equation :
+
+    $$
+    Q = \frac{2 \cdot \pi \cdot f \cdot L}{1000 \cdot R}
+    $$
+
+   with Q the quality factor, f the coil frequency in kHz, L the coil inductance in µH, and R the coil resistance in Ohm
+
+* When the coil is validated, use the glue gun to fix the coil to the structure and wires together
 * Prepare the enamelled wire for soldering few centimeters out of the coil. Solder standard wire on it, use heat shrink for insulation. Twist the cable for the antenna tail not to radiate.
 
-TODO PHOTO
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Antennas/antenna_wiring.png">
+<img src="../assets/images/Antennas/antenna_wiring.png" width="600">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-* Check the inductance of the coil
-* glue the welded parts close inside the 3D printed part
-
+* Glue the welded parts close inside the 3D printed part
 * Add your connector to the tail antenna
-* TODO
-* glue the connected parts
+* Glue the connected parts

@@ -15,7 +15,7 @@ Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description 
 - **3D print** the part « Socle.stl »
 - Apply a **first coat of epoxy resin** for impregnation on the inside walls that will receive the resin casting. Use the long-setting resin (24h) to have time to spread resin into the walls (Weight ratio for preparation : 5 resin - 1 hardener)
 - [Cable a coil antenna](./Assembling_antenna.md) for a 190uH impedance (+/- 29 spires) around the antenna base
-- **Cable the IR** emitters and receivers (provide 15cm of wire) by ensuring to [respect the cable colors](./assets/images/Manufacturing/Interface_board_schema.png)
+- **Cable the IR** emitters and receivers (provide 15cm of wire) by ensuring to [respect the cable colors](#wire_color_table)
 - **Stick the IR** into the antenna :
     - Position the IR emitter on the left side, seated in the hole and block it with glue gun
     - Position the IR receiver on the right side, face to the hole and block it with glue gun.
@@ -58,6 +58,8 @@ Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description 
 
 - **Prepare the Ethernet cable**: Strip and tin both ends of wires
 - **Screw wires** to the terminal block by respecting the following color association :
+
+<a name="wire_color_table"></a>
 
 | Color                             | Function                          |
 |-----------------------------------|-----------------------------------|

@@ -25,17 +25,18 @@ The read range is 500 mm (typical values) with a EM4102 transponders (1.7 mm Ø)
 
 ### Dimension
 
-The antenna is an circle of 37.5 mm Ø. You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/tree/master/antenna_schwegler)
+The antenna is an circle of Ø36 mm . You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/tree/master/antenna_schwegler)
 
 ### 3D preview
 
 <!-- markdownlint-disable MD033 -->
 <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/raw/master/antenna_schwegler/Assembly.stl?inline=false%3Finline%3Dfalse&orientation=bottom&bgcolor=transparent" style="border:0;margin:0;width:100%;height:400px;"></iframe>
+
 <!-- markdownlint-enable MD033 -->
 
 ## Electronic specifications
 
-The antenna inductance is around 192µH to be compliant to the Tectus RFID reader TITAN 4004. It is suitable with the 125 - 134 kHz frequency range. It requires TODO m of enamelled copper wire which would make TODO spires.
+The antenna inductance is around 192µH to be compliant to the Tectus RFID reader TITAN 4004. It is suitable with the 125 - 134 kHz frequency range. It requires 7.5 m of Ø0.2mm enamelled copper wire which would make 66.5 spires.
 
 ## Assembling instructions
 

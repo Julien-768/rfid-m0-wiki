@@ -12,7 +12,6 @@ This antenna is designed for use on an outdoor burrow, it is suitable with the T
 
 The radiation pattern was measured with a FDX Biolog Tiny Tag from [biolog-animal](https://www.biolog-animal.com/en/products/veterinarian/biolog-tiny-domestic-fauna-10268/)
 The read range is 700 mm (typical values) with a FDX transponders (8 mm x 1.4 mm Ø)
-<!-- TODO HDX transponders (VALUE_TODO mm Ø) 25 cm with FDX-B transponders (VALUE_TODO mm Ø) -->
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Antennas/burrow_radiation.png">
@@ -24,7 +23,7 @@ The read range is 700 mm (typical values) with a FDX transponders (8 mm x 1.4 mm
 
 ### Dimension
 
-The antenna is a circle of 91 mm Ø by 7 mm height. You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/tree/master/antenna_burrow)
+The antenna is a circle of Ø91 mm  by 7 mm height. You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/tree/master/antenna_burrow)
 
 ### 3D preview
 
@@ -34,7 +33,7 @@ The antenna is a circle of 91 mm Ø by 7 mm height. You can access the [mechanic
 
 ## Electronic specifications
 
-The antenna inductance is around 192µH to be compliant to the Tectus RFID reader TITAN 4004. It is suitable with the 125 - 134 kHz frequency range. It requires TODO m of enamelled copper wire which would make 29 spires (One spire is TODO).
+The antenna inductance is around 192µH to be compliant to the Tectus RFID reader TITAN 4004. It is suitable with the 125 - 134 kHz frequency range. It requires 8.8 m of Ø0.2mm enamelled copper wire which would make 30.6 spires (One spire is 0.286 m).
 
 ## Assembling instructions
 
