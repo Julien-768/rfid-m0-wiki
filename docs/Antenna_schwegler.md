@@ -12,12 +12,15 @@ This antenna is designed for use on 3D printed door for [Schwegler nest box 2M](
 ## Radiating pattern
 
 The radiation pattern was measured with a 2.3mm EM4102 PIT Bird Tag from [Eccel Technology Ltd.](https://eccel.co.uk/product/2-3mm-em4102-pit-bird-tag-black/)
-The read range is 500 mm (typical values) with a EM4102 transponders (1.7 mm Ø)
-<!-- TODO HDX transponders (VALUE_TODO mm Ø) 25 cm with FDX-B transponders (VALUE_TODO mm Ø) -->
+The read range is 400 mm (typical values) with a EM4102 transponders (1.7 mm Ø) in the best conditions.
+The following results are measured on an antenna with a quality factor Q = 23.
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Antennas/schwegler_radiation.png">
-<img src="../assets/images/Antennas/schwegler_radiation.png" width="600">
+<a href="../assets/images/Antennas/schwegler_radiation_best.png">
+<img src="../assets/images/Antennas/schwegler_radiation_best.png" width="600">
+</a>
+<a href="../assets/images/Antennas/schwegler_radiation_worst.png">
+<img src="../assets/images/Antennas/schwegler_radiation_worst.png" width="600">
 </a>
 <!-- markdownlint-enable MD033 -->
 

@@ -4,12 +4,11 @@
 
 The material needed to make a coil antenna is:
 
-* enamelled copper wire. We used the 0.2 copper wire from Radiospares ([RadioSpare ref 357-918](https://fr.rs-online.com/web/p/fils-de-cuivre/0357918))
-* the structure to wrap the antenna around. This is the 3D printed part named antenna.stl.
-* a glue gun
-* standard wire for connecting to the reader part TODO REF
-* connectors, if needed, to easily manipulate your antenna TODO REF
-* soldering material, iron, solder, heat shrink, ...
+* Enamelled copper wire. The 0.2 copper wire from Radiospares is used ([RadioSpare ref 357-918](https://fr.rs-online.com/web/p/fils-de-cuivre/0357918))
+* The structure to wrap the antenna around. This is the 3D printed part named antenna.stl.
+* A glue gun
+* Standard wire for connecting to the RFID reader TODO REF
+* Soldering material, iron, solder, heat shrink...
 
 ## Antenna sizing
 
@@ -19,12 +18,11 @@ This script allows to check if the chosen coil design achieves the required indu
 
 Note : we are not exactly in the conditions of the formula, the final inductance will need to be measured with an inductance meter.
 
-<!-- markdownlint-disable MD038 -->
-note "Python code for calculating the coil inductance"
+??? "Python code for check the coil inductance"
+
     ```
     --8<-- "docs/assets/code/Inductors_characteristics.py"
     ```
-<!-- markdownlint-enable MD038 -->
 
 ## Soldering instructions
 
@@ -32,7 +30,7 @@ The copper wire used is enamelled. For soldering we need first to remove the ena
 The safest option is to sand the enamel off by using a fine sandpaper.
 An other option is to melt the enamel off by using the soldering iron, solder and the flux within it, extra flux.
 
-If you are not used to the method, we strongly recommand to browse for some video of 'how to remove enamel coating from copper wire'
+If you are not used to the method, we strongly recommand to browse for some video of ['How to remove enamel coating from copper wire'](https://www.youtube.com/results?search_query=how+to+remove+enamel+coating+from+copper+wire)
 
 ## Assembly steps
 
@@ -46,15 +44,13 @@ If you are not used to the method, we strongly recommand to browse for some vide
 
    with Q the quality factor, f the coil frequency in kHz, L the coil inductance in µH, and R the coil resistance in Ohm
 
-* When the coil is validated, use the glue gun to fix the coil to the structure and wires together
+* Once the coil is validated, use the glue gun to fix the coil to the structure and wires together
 * Prepare the enamelled wire for soldering few centimeters out of the coil. Solder standard wire on it, use heat shrink for insulation. Twist the cable for the antenna tail not to radiate.
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Antennas/antenna_wiring.png">
-<img src="../assets/images/Antennas/antenna_wiring.png" width="600">
+<img src="../assets/images/Antennas/antenna_wiring.png" width="500">
 </a>
 <!-- markdownlint-enable MD033 -->
 
 * Glue the welded parts close inside the 3D printed part
-* Add your connector to the tail antenna
-* Glue the connected parts
