@@ -1,18 +1,11 @@
 {
-    "origins": ["https://gitlab.in2p3.fr",
-                "https://rfid_m0.pages.in2p3.fr"
-                "file:///C:/Users/Julien/Documents/Source/Repos/RFID_M0/rfid_m0.wiki/site/Elec_boards_TODO/index.html",
-                "file://",
-                "https://gitlab.in2p3.fr/rfid_m0/rfid_m0.wiki",
-                "https://gitlab.in2p3.fr/rfid_m0/rfid_m0.wiki/-/blob/master/",
-                "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki/",
-                "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki",
-                "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki.vercel.app",
-                "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki/Elec_boards_TODO/",
-                "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki/Elec_boards_TODO",
-                "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki/Elec_boards_TODO.vercel.app"],
-    "originsRegex": ["http://localhost:[0-9]+",
-                      "file:///C:/Users/Julien/Documents/Source/Repos/RFID_M0/rfid_m0.wiki/site/Elec_boards_TODO/index.html",
-                      "file://",
-                      "http://127.0.0.1:[0-9]+"]
-  }
+    "origins": [
+        "https://rfid_m0.pages.in2p3.fr",
+        "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki",
+        "https://rfid_m0.pages.in2p3.fr/rfid_m0.wiki/Elec_boards_TODO"
+    ],
+    "originsRegex": [
+        "http://localhost:[0-9]+"
+    ]
+}
+
