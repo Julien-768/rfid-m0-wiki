@@ -12,12 +12,15 @@ This antenna is designed for use on 3D printed door for [Schwegler nest box 2M](
 ## Radiating pattern
 
 The radiation pattern was measured with a 2.3mm EM4102 PIT Bird Tag from [Eccel Technology Ltd.](https://eccel.co.uk/product/2-3mm-em4102-pit-bird-tag-black/)
-The read range is 500 mm (typical values) with a EM4102 transponders (1.7 mm Ø)
-<!-- TODO HDX transponders (VALUE_TODO mm Ø) 25 cm with FDX-B transponders (VALUE_TODO mm Ø) -->
+The read range is 400 mm (typical values) with a EM4102 transponders (1.7 mm Ø) in the best conditions.
+The following results are measured on an antenna with a quality factor Q = 23.
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Antennas/schwegler_radiation.png">
-<img src="../assets/images/Antennas/schwegler_radiation.png" width="600">
+<a href="../assets/images/Antennas/schwegler_radiation_best.png">
+<img src="../assets/images/Antennas/schwegler_radiation_best.png" width="600">
+</a>
+<a href="../assets/images/Antennas/schwegler_radiation_worst.png">
+<img src="../assets/images/Antennas/schwegler_radiation_worst.png" width="600">
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -25,17 +28,18 @@ The read range is 500 mm (typical values) with a EM4102 transponders (1.7 mm Ø)
 
 ### Dimension
 
-The antenna is an circle of 37.5 mm Ø. You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/tree/master/antenna_schwegler)
+The antenna is an circle of Ø36 mm . You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/tree/master/antenna_schwegler)
 
 ### 3D preview
 
 <!-- markdownlint-disable MD033 -->
 <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/raw/master/antenna_schwegler/Assembly.stl?inline=false%3Finline%3Dfalse&orientation=bottom&bgcolor=transparent" style="border:0;margin:0;width:100%;height:400px;"></iframe>
+
 <!-- markdownlint-enable MD033 -->
 
 ## Electronic specifications
 
-The antenna inductance is around 192µH to be compliant to the Tectus RFID reader TITAN 4004. It is suitable with the 125 - 134 kHz frequency range. It requires TODO m of enamelled copper wire which would make TODO spires.
+The antenna inductance is around 192µH to be compliant to the Tectus RFID reader TITAN 4004. It is suitable with the 125 - 134 kHz frequency range. It requires 7.5 m of Ø0.2mm enamelled copper wire which would make 66.5 spires.
 
 ## Assembling instructions
 

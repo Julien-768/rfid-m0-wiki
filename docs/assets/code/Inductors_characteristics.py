@@ -35,7 +35,6 @@ NB_SPIRES = 20
 
 DIAMETER = 2 * RADIUS
 
-
 def nagaoka(u):
     if u == 0:
         return 1
@@ -48,9 +47,8 @@ def nagaoka(u):
         c = a - b
         ci = 1
         cs = c * c / 2 + m
-
-        loop_condition = True
         co = c
+        
         while (c < co) or loop_condition:
             ao = (a + b) / 2
             b = math.sqrt(a * b)
@@ -59,9 +57,7 @@ def nagaoka(u):
             c = a - b
             cs = cs + ci * c * c  # Sum for n = 0 to infinity of (2^n * c²)
             ci = 2 * ci
-            if loop_condition:
-                loop_condition = False
-
+        
         cs = cs / 2
         K = math.pi / (a + a)   # elliptic integral K = pi/(2a)
         KmE = K * cs            # K - E

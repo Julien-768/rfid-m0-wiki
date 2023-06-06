@@ -1,6 +1,8 @@
 # Software assembly
 
-The device is composed by several sub-systems : electronic board, sensors, software, experiment... In order to ensure the traceability of equipment and data, an assembly file resumes the unique identifier (UID) of each sub-system. Each measurement data is then recorded with the associated sensor UID. In addition the UID of the main board and the experiment is recalled at the beginning of each data file.
+The device is composed by several sub-systems : electronic board, sensors, software, experiment... In order to ensure the traceability of equipment and data, an assembly file resumes the unique identifier (UID) of each sub-system.
+
+Each measurement data is then recorded with the associated sensor UID. In addition the UID of the main board and the experiment is recalled at the beginning of each data file.
 
 ## Assembly file
 

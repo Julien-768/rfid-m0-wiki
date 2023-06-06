@@ -26,6 +26,8 @@ Several powering options are proposed :
 
 ## Consumption & Autonomy
 
+For details about components consumption and autonomy calculation, refers to the [calculation sheet](./assets/images/User_description/Consumption_and_autonomy.xlsx).
+
 ### Component consumption
 
 | Component                                    | Power consumption [mW]          |
@@ -69,5 +71,3 @@ The autonomies are indicated considering :
 * One detection = 5 seconds in front of sensor, incluging 1 second to read the RFID tag
 * a 12V 5.4 A.h Lead battery (more pessimistic situation)
 * T = 20°c
-
-For more information, refer to the [calculation sheet](./assets/images/User_description/Consumption_and_autonomy.xlsx).

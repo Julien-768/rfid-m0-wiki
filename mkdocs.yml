@@ -85,10 +85,15 @@ markdown_extensions:
   - pymdownx.snippets
   - attr_list
   - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_javascript:
   - javascripts/feedback.js
   - giscus.json
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
   - git-revision-date-localized:
@@ -140,11 +145,10 @@ nav:
         - Final assembling: Nest_box_assembling.md
 
       - Manufacturing files: Elec_Manufacturing.md
-      - Mods for next revision: Elec_boards_TODO.md
+
+    - Credits: Credits.md
 
     - TO SORT:
-      - TODO liste: TODO-liste.md
-      - Check liste: Check-list.md
-      - ToBeMoved: To_be_moved.md
       - JLINK-bootloader: JLINK-bootloader.md
       - Modulated infrared: Infrared.md
+      - Mods for next revision: Elec_boards_TODO.md
