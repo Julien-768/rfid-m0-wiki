@@ -27,7 +27,7 @@ Two scripts are available for the sizing. The first one calculates the length of
 
 The second script allows to check if the chosen coil design achieves the required inductance, based on the real length and number of spires of the coil :
 
-??? "Python code for check the coil inductance"
+??? "Python code to check the coil inductance"
 
     ```
     --8<-- "docs/assets/code/Inductors_characteristics.py"
