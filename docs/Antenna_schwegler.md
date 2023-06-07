@@ -39,7 +39,7 @@ The antenna is an circle of Ø36 mm . You can access the [mechanical schematic o
 
 ## Electronic specifications
 
-The antenna inductance is around 192µH to be compliant to the Tectus RFID reader TITAN 4004. It is suitable with the 125 - 134 kHz frequency range. It requires 7.5 m of Ø0.2mm enamelled copper wire which would make 66.5 spires.
+The antenna inductance is around 192µH to be compliant to the Tectus RFID reader TITAN 4004. It is suitable with the 125 - 134 kHz frequency range. It requires 7.5 m of Ø0.2mm enamelled copper wire which would make ~67 spires.
 
 ## Assembling instructions
 
