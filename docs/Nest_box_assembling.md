@@ -1,0 +1,109 @@
+# Final assembling
+
+This page describes how to assembly mechanical & electronic components dedicated to a nest box. Some 3D printed supports are prepared and then the electronic boards are inserted and fixed into it.
+
+To follow these steps, it's required to have already realized a [nest box antenna](Antenna_nest_assembling.md) and the [electronic boards](Electronic_assembling.md).The main board has to **be [programmed](programming.md) and RTC has to be up-to-date**.
+
+## Step 1 : Prepare the parts
+
+* 3D print the parts :
+    * Case : ["Upper_case.stl"](./assets/images/Manufacturing/Upper_case.stl) and ["Lower_case.stl"](./assets/images/Manufacturing/Lower_case.stl)
+    * Door : ["Door.stl"](./assets/images/Manufacturing/Door.stl)
+    * Technical door : ["Technical_door.stl"](./assets/images/Manufacturing/Technical_door.stl)
+    * Lever : ["Lever_stp.stl"](./assets/images/Manufacturing/Lever.stl)
+* Install the lever into the servo motor
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Nest_box_assem/Servo_lever.jpg">
+<img src="../assets/images/Nest_box_assem/Servo_lever.jpg" alt="Servo equipped with lever" width="250" >
+</a>
+<!-- markdownlint-enable MD033 -->
+
+* Solder wire on the + and - connections of the power board 5v (remove the jack connector if present). Connect the other extremity of the wire to the waterproof USB connector
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Nest_box_assem/Power_board_USB.jpg">
+<img src="../assets/images/Nest_box_assem/Power_board_USB.jpg" alt="Power board with USB connector" width="400" >
+</a>
+<!-- markdownlint-enable MD033 -->
+
+* Solder the main button switch (bistable) to JST 2-PH connectors, and the switch button (monostable) to free wire end : Let ~10cm of wire for buth buttons.
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Nest_box_assem/Switch.jpg">
+<img src="../assets/images/Nest_box_assem/Switch.jpg" alt="Switch" width="400" >
+</a>
+<!-- markdownlint-enable MD033 -->
+
+* Solder JST 2-PH connectors on the battery
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Nest_box_assem/Battery_wired.jpg">
+<img src="../assets/images/Nest_box_assem/Battery_wired.jpg" alt="Battery with connectors" width="400" >
+</a>
+<!-- markdownlint-enable MD033 -->
+
+## Step 2 : Install the parts and wire
+
+* Install the two buttons on the upper case. Add two switch sealing boots with their seals.
+* Install the USB connector and its seal
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Nest_box_assem/Case_buttons.jpg">
+<img src="../assets/images/Nest_box_assem/Case_buttons.jpg" alt="Upper case with buttons" width="250" >
+</a>
+<!-- markdownlint-enable MD033 -->
+
+* Install the power board into the upper case and fix it with **TODO** screws
+* Connect the main button switch : one extremity to the solar charger output, the other to the booster input
+* Connect the switch button to the 2 ways screw terminal block
+* Connect the 3 ways JST XH cable (cable delivered with the 3 ways JST XH connector) into the PWR_mng connector
+* Connect the 2 ways JST XH cable into to the PWR_5V connector
+* Connect the battery to the solar charger battery input. **Make sure the main button is Off** (no CHG light on the solar charger module). If it's not the case, turn off the button
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Nest_box_assem/Power_board_wired.jpg">
+<img src="../assets/images/Nest_box_assem/Power_board_wired.jpg" alt="Power board with wires" width="250" >
+</a>
+<!-- markdownlint-enable MD033 -->
+
+* Install the main board into the upper case and fix it with **TODO** screws. Take care to **orient the USB connector** to avoid collisions with the RTC module
+* Connect the wires from the power board (3 ways JST XH and 2 ways JST XH) to the PW_mng and PW connectors
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Nest_box_assem/Main_board_installed.jpg">
+<img src="../assets/images/Nest_box_assem/Main_board_installed.jpg" alt="Main board installed" width="250" >
+</a>
+<!-- markdownlint-enable MD033 -->
+
+* Install the door and then the servo motor. The pin of the door must be placed inside the lever hole. Fix the motor it with **TODO** screws
+* Install the equipped antenna and fix it with one **TODO** screw
+* Connect the servo motor to the Servo connector of the main board
+* Connect the antenna to the IR connector of the main board. Do not connect the coil antenna, only the IR sensors.
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Nest_box_assem/Main_board_wired.jpg">
+<img src="../assets/images/Nest_box_assem/Main_board_wired.jpg" alt="Main board wired" width="250" >
+</a>
+<!-- markdownlint-enable MD033 -->
+
+* Install the Tectus board and fix it to the upper case with a plastic clamp
+* Connect the coil antenna to the antenna connector of the Tectus board
+* Connect the Tectus board to the main board
+* Install the red led and its seal on the upper case. Then connect it to the main board
+* Fix the battery in the lower case with velcro strap
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Nest_box_assem/Nest_box_opened.jpg">
+<img src="../assets/images/Nest_box_assem/Nest_box_opened.jpg" alt="Nest box assembled opened" width="250" >
+</a>
+<!-- markdownlint-enable MD033 -->
+
+* Add the technical door
+* Close the nest box and fix it with 4 **TODO** screws
+
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Nest_box_assem/Nest_box_closed.jpg">
+<img src="../assets/images/Nest_box_assem/Nest_box_closed.jpg" alt="Nest box assembled" width="250" >
+</a>
+<!-- markdownlint-enable MD033 -->

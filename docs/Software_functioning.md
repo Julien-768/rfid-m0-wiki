@@ -64,8 +64,8 @@ There are several types of messages written into the SD memory card :
 | System        | Shutdown : Battery low            |                                     |
 | System        | Shutdown : User                   |                                     |
 | Ax            | RFID tag                          |                                     |
-| Irx           | Broken beam                       |                                     |
-| Irx           | Beam restored                     |                                     |
+| IRx           | Broken beam                       |                                     |
+| IRx           | Beam restored                     |                                     |
 | Temperature   | Temperature measurement in °c     | If temp. variation > 0.02°c        |
 | Vbat          | Battery measurement in V          | If batt. variation > 0.1V          |
 | Vbat          | Power saving                      | Battery < BATTERY_MIN_VOLTAGE + 0,1 |

@@ -1,5 +1,7 @@
 # Make the coil antenna
 
+This page describes how to prepare a coil antenna intended to be installed into a nest box.
+
 Refers to the [dedicated page](./Antenna_schwegler.md) for the antenna description with its specifications.
 
 - **3D print** the part « Antenna.stl »
