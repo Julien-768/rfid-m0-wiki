@@ -7,10 +7,10 @@ To follow these steps, it's required to have already realized a [nest box antenn
 ## Step 1 : Prepare the parts
 
 * 3D print the parts :
-    * Case : ["Upper_case.stl"](./assets/images/Manufacturing/Upper_case.stl) and ["Lower_case.stl"](./assets/images/Manufacturing/Lower_case.stl)
-    * Door : ["Door.stl"](./assets/images/Manufacturing/Door.stl)
-    * Technical door : ["Technical_door.stl"](./assets/images/Manufacturing/Technical_door.stl)
-    * Lever : ["Lever_stp.stl"](./assets/images/Manufacturing/Lever.stl)
+    * Case : ["Upper_case.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Upper_case.stl) and ["Lower_case.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Lower_case.stl)
+    * Door : ["Door.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Door.stl)
+    * Technical door : ["Technical_door.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Technical_door.stl)
+    * Lever : ["Lever_stp.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Lever_stp.stl)
 * Install the lever into the servo motor
 
 <!-- markdownlint-disable MD033 -->
@@ -101,6 +101,7 @@ To follow these steps, it's required to have already realized a [nest box antenn
 
 * Add the technical door
 * Close the nest box and fix it with 4 **TODO** screws
+* Add sealing glue on the junction of the two cases
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Nest_box_assem/Nest_box_closed.jpg">
