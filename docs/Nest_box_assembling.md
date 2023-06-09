@@ -55,7 +55,7 @@ To follow these steps, it's required to have already realized a [nest box antenn
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Install the power board into the upper case and fix it with **TODO** screws
+* Install the power board into the upper case and fix it with 2 x M2 L10 screws
 * Connect the main button switch : one extremity to the solar charger output, the other to the booster input
 * Connect the switch button to the 2 ways screw terminal block
 * Connect the 3 ways JST XH cable (cable delivered with the 3 ways JST XH connector) into the PWR_mng connector
@@ -68,7 +68,7 @@ To follow these steps, it's required to have already realized a [nest box antenn
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Install the main board into the upper case and fix it with **TODO** screws. Take care to **orient the USB connector** to avoid collisions with the RTC module
+* Install the main board into the upper case and fix it with 2 x M2 L10 screws. Take care to **orient the USB connector** to avoid collisions with the RTC module
 * Connect the wires from the power board (3 ways JST XH and 2 ways JST XH) to the PW_mng and PW connectors
 
 <!-- markdownlint-disable MD033 -->
@@ -77,8 +77,8 @@ To follow these steps, it's required to have already realized a [nest box antenn
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Install the door and then the servo motor. The pin of the door must be placed inside the lever hole. Fix the motor it with **TODO** screws
-* Install the equipped antenna and fix it with one **TODO** screw
+* Install the door and then the servo motor. The pin of the door must be placed inside the lever hole. Fix the motor it with 2 x M2 L10 screws
+* Install the equipped antenna and fix it with 1 x M2.5 L6 screw
 * Connect the servo motor to the Servo connector of the main board
 * Connect the antenna to the IR connector of the main board. Do not connect the coil antenna, only the IR sensors.
 
@@ -101,7 +101,7 @@ To follow these steps, it's required to have already realized a [nest box antenn
 <!-- markdownlint-enable MD033 -->
 
 * Add the technical door
-* Close the nest box and fix it with 4 **TODO** screws
+* Close the nest box and fix it with 4 x M2.5 L6 countersunk screws
 * Add sealing glue on the junction of the two cases
 
 <!-- markdownlint-disable MD033 -->
