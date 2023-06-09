@@ -7,6 +7,7 @@ To follow these steps, it's required to have already realized a [nest box antenn
 ## Step 1 : Prepare the parts
 
 * 3D print the parts :
+  
     * Case : ["Upper_case.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Upper_case.stl) and ["Lower_case.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Lower_case.stl)
     * Door : ["Door.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Door.stl)
     * Technical door : ["Technical_door.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Technical_door.stl)

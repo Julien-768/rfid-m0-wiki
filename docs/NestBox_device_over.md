@@ -7,7 +7,7 @@ Optionally the nest box door can be closed to capture targeted individuals : Non
 The entire system is contained in a door compatible with [Schwegler nest box 2M](https://www.schwegler-natur.de/portfolio_1408366639/nisthoehle-2m/?lang=en)
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/User_description/Nest_box_installed">
+<a href="../assets/images/User_description/Nest_box_installed.jpg">
 <img src="../assets/images/User_description/Nest_box_installed.jpg" alt= "Nest box installed" width="300">
 </a>
 <!-- markdownlint-enable MD033 -->
@@ -18,7 +18,7 @@ TODO : Photo en environnement extérieur
 The entrance of the nest box incorporates two infrared transmitters / receivers as well as an RFID antenna.
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/User_description/Nest_box_sensors">
+<a href="../assets/images/User_description/Nest_box_sensors.jpg"">
 <img src="../assets/images/User_description/Nest_box_sensors.jpg" alt= "Nest box sensors" height="300">
 </a>
 <!-- markdownlint-enable MD033 -->
@@ -26,7 +26,7 @@ The entrance of the nest box incorporates two infrared transmitters / receivers 
 Note : IR sensor noted "IR 1" in the record file is the one mounted at the entrance
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/User_description/Nest_box_IR_sensors">
+<a href="../assets/images/User_description/Nest_box_IR_sensors.jpg"">
 <img src="../assets/images/User_description/Nest_box_IR_sensors.jpg" alt= "Nest box IR sensors" height="300">
 </a>
 <!-- markdownlint-enable MD033 -->
@@ -40,8 +40,8 @@ The bottom of the nest box allows the user to interact with the system and its t
 * A ring : Used to hold power bank via a carabiner
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Procedure/Nest_box_Ext_comp.png">
-<img src="../assets/images/Procedure/Nest_box_Ext_comp.png" alt= "Nest box external component" height="300">
+<a href="../assets/images/User_description/Nest_box_Ext_comp.jpg">
+<img src="../assets/images/User_description/Nest_box_Ext_comp.jpg" alt= "Nest box external component" height="300">
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -51,7 +51,7 @@ By sliding the technical door, it's possible to access to :
 * A CR1220 3V battery for the Real-Time Clock
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Procedure/Nest_box_Int_comp.png">
-<img src="../assets/images/Procedure/Nest_box_Int_comp.png" alt= "Nest box internal component" height="300">
+<a href="../assets/images/User_description/Nest_box_Int_comp.jpg">
+<img src="../assets/images/User_description/Nest_box_Int_comp.jpg" alt= "Nest box internal component" height="300">
 </a>
 <!-- markdownlint-enable MD033 -->
