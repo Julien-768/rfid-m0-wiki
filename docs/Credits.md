@@ -3,7 +3,7 @@
 
 50% of the project is co-financed by the European Union under the [Interreg V Upper Rhine program](https://www.interreg-rhin-sup.eu/) through the European Regional Development Fund (FEDER).
 
-The different project partners :
+Partners involved :
 
 * [Collectivité Européenne d'Alsace](https://www.alsace.eu/)
 * [Stiftung Natur und Umwelt Rheinland-Pfalz (SNU)](https://snu.rlp.de/de/startseite/)

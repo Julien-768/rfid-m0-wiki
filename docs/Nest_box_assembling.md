@@ -12,11 +12,12 @@ To follow these steps, it's required to have already realized a [nest box antenn
     * Door : ["Door.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Door.stl)
     * Technical door : ["Technical_door.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Technical_door.stl)
     * Lever : ["Lever_stp.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Lever_stp.stl)
-* Install the lever into the servo motor
+
+* Install the lever on the servo motor
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Nest_box_assem/Servo_lever.jpg">
-<img src="../assets/images/Nest_box_assem/Servo_lever.jpg" alt="Servo equipped with lever" width="250" >
+<img src="../assets/images/Nest_box_assem/Servo_lever.jpg" alt="Servo equipped with lever" width="400" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -96,7 +97,7 @@ To follow these steps, it's required to have already realized a [nest box antenn
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Nest_box_assem/Nest_box_opened.jpg">
-<img src="../assets/images/Nest_box_assem/Nest_box_opened.jpg" alt="Nest box assembled opened" width="250" >
+<img src="../assets/images/Nest_box_assem/Nest_box_opened.jpg" alt="Nest box assembled opened" width="400" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
