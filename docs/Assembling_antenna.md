@@ -7,18 +7,27 @@ The material needed to make a coil antenna is:
 * Enamelled copper wire. The 0.2 copper wire from Radiospares is used ([RadioSpare ref 357-918](https://fr.rs-online.com/web/p/fils-de-cuivre/0357918))
 * The structure to wrap the antenna around. This is the 3D printed part named antenna.stl.
 * A glue gun
-* Standard wire for connecting to the RFID reader TODO REF
+* Standard 28 AWG wire for connecting to the RFID reader
 * Soldering material, iron, solder, heat shrink...
 
 ## Antenna sizing
 
-If wire lenght is not specified for the specific antenna we want to build, the Nagaoka's formula would help us.
-It returns the inductance based on the size, the thickness and the number of spires of the coil antenna.
-This script allows to check if the chosen coil design achieves the required inductance.
+If the wire lenght is not specified for the specific antenna we want to build, the Nagaoka's formula would help us.
+It returns the inductance based on the coil diameter, the thickness of the wire and the number of spires of the coil antenna.
 
 Note : we are not exactly in the conditions of the formula, the final inductance will need to be measured with an inductance meter.
 
-??? "Python code for check the coil inductance"
+Two scripts are available for the sizing. The first one calculates the length of wire required for the coil antenna, based on the antenna diameter, the wire diameter and the desired inductance :
+
+??? "Python code for coil inductance sizing"
+
+    ```
+    --8<-- "docs/assets/code/Antenna_coil_sizing.py"
+    ```
+
+The second script allows to check if the chosen coil design achieves the required inductance, based on the real length and number of spires of the coil :
+
+??? "Python code to check the coil inductance"
 
     ```
     --8<-- "docs/assets/code/Inductors_characteristics.py"

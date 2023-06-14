@@ -35,7 +35,7 @@ The case contains all the embedded electronics, the battery, the clock, the micr
 On the outside of the case you'll find:
 
 * A main switch button : Used to connect / disconnect the system with the battery
-* A switch button : Used to power-on / power-off the system
+* A switch button : Used to power-on / power-off the system / get the battery status
 * A red LED : Used by the system to interact with the user
 
 <!-- markdownlint-disable MD033 -->

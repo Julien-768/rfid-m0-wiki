@@ -105,9 +105,11 @@ nav:
 
     - User:
       - Device for rodent species:
-        - Overview: Device_description.md
+        - Overview: Burrow_device_over.md
         - First time use: First_time_use.md
         - Checking procedure: Checking_procedure.md
+      - Device for bird species:
+        - Overview: NestBox_device_over.md
       - Software:
         - Functioning: Software_functioning.md
         - Configuration: Software_configuration.md
@@ -138,13 +140,13 @@ nav:
         - Check the device: Check_burrow_device.md
 
       - Assembly a nest box:
+        - Overview: Nestbox_device_assem_overview.md
         - Antenna: Antenna_nest_assembling.md
         - Electronic: Electronic_assembling.md
-        - Nest box: Nest_box.md
         - Programming: programming.md
         - Final assembling: Nest_box_assembling.md
 
-      - Manufacturing files: Elec_Manufacturing.md
+      - Manufacturing files: Manufacturing.md
 
     - Credits: Credits.md
 

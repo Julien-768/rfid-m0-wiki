@@ -9,8 +9,8 @@ The electronic of the device is composed of several boards :
 ## Schematic of the system
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Manufacturing/General_schema.png">
-<img src="../assets/images/Manufacturing/General_schema.png" width="600">
+<a href="../assets/images/Manufacturing/General_schematic.svg">
+<img src="../assets/images/Manufacturing/General_schematic.svg" width="600">
 </a>
 <!-- markdownlint-enable MD033 -->
 

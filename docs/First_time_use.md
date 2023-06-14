@@ -7,17 +7,17 @@ The antenna must be positioned at the entrance of the burrow so that individuals
 ## How to power-on / power-off the device?
 
 Check the battery is connected then press the main switch (with power symbol, pressed = On).
-Then press the switch button until the external red LED turns on. Once done, release it. The external red LED should turn OFF after the startup of the device.
+Then press the switch button until the red LED turns on. Once done, release it. The red LED should turn OFF after the startup of the device.
 
-To power-off the device, maintain the switch button pressed until the external LED stops blinking and remains on. Once done, press the main switch (released = Off) and disconnect the battery.
+To power-off the device, maintain the switch button pressed until the LED stops blinking and remains on. Once done, press the main switch (released = Off) and disconnect the battery.
 
 ## How to check the device is correctly working?
 
 To check the system is working properly after a start-up, refers to the [Checking procedure](Checking_procedure)
 
-## How to check that the system is still working (battery are OK)?
+## How to check the status of the battery?
 
-Quickly press and release the switch button (< 0.5 second). If the system is still powered, the external red LED should briefly blinks.
+Quickly press and release the switch button (< 0.5 second). One second after the button release, the red LED will blink from 1 to 5 times : 1 blink per 20% of available battery. Is the red LED is not blinking at all, the system is off.
 
 ## How to access to the recorded data?
 
