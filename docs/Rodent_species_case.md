@@ -1,6 +1,6 @@
 # Technical specifications
 
-The system is designed to be integrated into a [1150 hard case Pelicase](https://www.peli.com/eu/fr/product/cases/protector/1150) (210 x 170 x 100 mm).
+The system is designed to be integrated into a [1150 hard case Pelicase](https://www.peli.com/eu/fr/product/cases/protector/1150) (240 x 198 x 109 mm).
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/User_description/1150_pelicase.jpg">
@@ -20,13 +20,40 @@ A 2GB SD card can record ~5,100,000,000 detections with tags (**~59 continuous d
 
 Several powering options are proposed :
 
-1. 4.2v Li-ion battery
-2. 12v Lead battery
-3. 4.2v Li-ion battery and solar panel
+* Lithium powered :
+    * A 3.6V 20Ah 72Wh Li-ion battery
+    * A 3.6V 20Ah 72Wh Li-ion battery equipped with solar panel
+* Lead powered : A 12V 5.4Ah 64.8Wh Lead battery
 
 ## Consumption & Autonomy
 
 For details about components consumption and autonomy calculation, refers to the [calculation sheet](./assets/images/User_description/Consumption_and_autonomy.xlsx).
+
+### System consumption & autonomy
+
+The autonomy of the system depends of its consumption, that varies according to the software configuration.
+Some notions have to be kept in mind :
+
+* There is no consumption difference if one or two IR sensors are active. In both cases, the two emitters & receivers are powered
+* If the two IR sensors are inactive, the RFID is always in research mode (except during sleep mode)
+* If the temperature sensor is active, the IR receivers are powered even if opt_IR_1 & opt_IR_2 are False (same power supply)
+* During sleep mode, only the Feather & the RTC are powered
+
+| System configuration                     |  Consumption [W.h]               | Autonomy              |
+|------------------------------------------|:--------------------------------:|:---------------------:|
+| IR On - RFID (On) - 12/24h mode          | 3.7                              | 17d 7h 9m             |
+| IR On - RFID (On) - 24/24h mode          | 5.9                              | 10d 22h 9m            |
+| IR Off - RFID On - 12/24h mode           | 6.9                              | 9d 8h 37m             |
+| IR Off - RFID On - 24/24h mode           | 12.3                             | 5d 6h 34m             |
+
+*(On) : RFID triggered by infrared sensors*
+
+The autonomies are indicated considering :
+
+* 50 detections with RFID tag per hour
+* One detection = 5 seconds in front of sensor, incluging 1 second to read the RFID tag
+* a 12V 5.4 A.h Lead battery (more pessimistic situation)
+* T = 20°c
 
 ### Component consumption
 
@@ -47,27 +74,3 @@ The consumptions are measured for T = 20°c.
 The IR emitter is considered with 220 Ohm resistor and 50% PWM duty cycle.
 
 **Be careful to the SD card consumption** : Its consumption can vary from 1 et 10mA according to the manufacturer and the production batch.
-
-### System consumption & autonomy
-
-The autonomy of the system depends of its consumption, that varies according to the software configuration.
-Some notions have to be kept in mind :
-
-* There is no consumption difference if one or two IR sensors are active. In both cases, the two emitters & receivers are powered
-* If the two IR sensors are inactive, the RFID is always in research mode (except during sleep mode)
-* If the temperature sensor is active, the IR receivers are powered even if opt_IR_1 & opt_IR_2 are False (same power supply)
-* During sleep mode, only the Feather & the RTC are powered
-
-| System configuration                     |  Consumption [W.h]               | Autonomy              |
-|------------------------------------------|:--------------------------------:|:---------------------:|
-| IR On - RFID On - 24/24h mode            | 5.9                              | 10d 22h 9m            |
-| IR On - RFID On - 12/24h mode            | 3.7                              | 17d 7h 9m           |
-| IR Off - RFID On - 24/24h mode           | 12.3                             | 5d 6h 34m             |
-| IR Off - RFID On - 12/24h mode           | 6.9                              | 9d 8h 37m             |
-
-The autonomies are indicated considering :
-
-* 50 detections with RFID tag per hour
-* One detection = 5 seconds in front of sensor, incluging 1 second to read the RFID tag
-* a 12V 5.4 A.h Lead battery (more pessimistic situation)
-* T = 20°c

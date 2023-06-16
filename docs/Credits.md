@@ -1,16 +1,21 @@
 
 ## Founding & partnership
 
-50% of the project is co-financed by the European Union under the [Interreg V Upper Rhine program](https://www.interreg-rhin-sup.eu/) through the European Regional Development Fund (FEDER).
+* European Union under the [Interreg V Upper Rhine program](https://www.interreg-rhin-sup.eu/) through the European Regional Development Fund (FEDER).
 
-Partners involved :
+* MiPHC, Mission for Interdisciplinarity at [IPHC](https://iphc.cnrs.fr/)
 
-* [Collectivité Européenne d'Alsace](https://www.alsace.eu/)
-* [Stiftung Natur und Umwelt Rheinland-Pfalz (SNU)](https://snu.rlp.de/de/startseite/)
-* [Centre National de la Recherche Scientifique - Délégation Alsace](https://www.alsace.cnrs.fr/fr)
-* [Chambre d'Agriculture d'Alsace](https://alsace.chambre-agriculture.fr/)
-* [Direction Regionale De L Environnement De L Amenagement Et Du Logement  (DREAL)](https://www.grand-est.developpement-durable.gouv.fr/)
-* [RLP AgroScience Groupe d'études et de protection des mammifères d'Alsace](https://gepma.org/)
+<!-- TODO : Ajouter la phrase type -->
+
+## Contributors
+
+* Courtecuisse Julien
+* Yves Handrich
+* Sylvie Massemin
+* Lafoux Pauline
+* Brucker Mathieu
+* Yann Leguereau
+* Benjamin Tenaud
 
 ## License
 

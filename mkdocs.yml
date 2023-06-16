@@ -145,12 +145,12 @@ nav:
         - Electronic: Electronic_assembling.md
         - Programming: programming.md
         - Final assembling: Nest_box_assembling.md
-
       - Manufacturing files: Manufacturing.md
-
-    - Credits: Credits.md
-
-    - TO SORT:
+    
+    - Advanced:
       - JLINK-bootloader: JLINK-bootloader.md
       - Modulated infrared: Infrared.md
       - Mods for next revision: Elec_boards_TODO.md
+    
+    - Credits: Credits.md
+

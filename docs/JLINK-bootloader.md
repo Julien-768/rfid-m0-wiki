@@ -1,15 +1,20 @@
 # How to restore the Feather M0 bootloader
 
-## En cas de problème, regraver le bootloader avec J-LINK SWD
+## In case of problem, reburn the bootloader with J-LINK SWD
 
-**Si le --offset a été oublié, la carte n'est pas récupérable, même avec J-LINK !**
+**If the --offset was forgotten, the card is not recoverable, even with J-LINK!**
 
-Nous pouvons en cas de problème avec le bootloader, le regraver dans la carte. Il nous faut pour cela [le programme J-Flash](https://www.segger.com/products/production/flasher/tools/j-flash/about-j-flash/) et un boitier J-LINK.
+In case of problem with the bootloader, the feather board can be reburned. To do this, it's required to have :
 
-Le boitier J-LINK et le feather M0 sont connecté par le swd. voici la [procédure et le fichier bootloader à regraver](https://learn.adafruit.com/proper-step-debugging-atsamd21-arduino-zero-m0/restoring-bootloader)
+* [the J-Flash program](https://www.segger.com/products/production/flasher/tools/j-flash/about-j-flash/)
+* [a J-LINK Debug probe](https://www.segger.com/products/debug-probes/j-link/models/j-link-base/)
 
-Le feather M0 est protégé par défaut. Il faudra [écrire un mot pour ôter la protection](https://roamingthings.de/posts/use-j-link-to-change-the-boot-loader-protection-of-a-sam-d21/)
+The J-LINK Debug probe and the Feather M0 are connected together by an SWD connector on the SWDIO / SWCLK pins (back side of the Feather). Follow the [procedure](https://learn.adafruit.com/proper-step-debugging-atsamd21-arduino-zero-m0/restoring-bootloader) to burn the bootloader.
 
-## Pin out J-LINK SWD
+<!-- markdownlint-disable MD033 -->
+<a href="../assets/images/Tech_doc/Feather_SWD_pin.jpg">
+<img src="../assets/images/Tech_doc/Feather_SWD_pin.jpg" alt= "SWD pinout" height="200">
+</a>
+<!-- markdownlint-enable MD033 -->
 
-![image](/assets/images/TO_SORT/SWD_pin.png)
+Note: The Feather M0 is write protected. It will be necessary to [write a word to remove the protection](https://roamingthings.de/posts/use-j-link-to-change-the-boot-loader-protection-of-a-sam-d21/).
