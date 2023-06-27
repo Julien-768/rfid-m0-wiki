@@ -18,8 +18,8 @@ The system consists of a terrier antenna and a case.
 The antenna incorporates two infrared transmitters / receivers as well as an RFID antenna.
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/User_description/Antenna_details.png">
-<img src="../assets/images/User_description/Antenna_details.png" alt= "Antenna details" height="300">
+<a href="../assets/images/User_description/Burrow_device_detailed.jpg">
+<img src="../assets/images/User_description/Burrow_device_detailed.jpg" alt= "Burrow device detailed" height="400">
 </a>
 <!-- markdownlint-enable MD033 -->
 

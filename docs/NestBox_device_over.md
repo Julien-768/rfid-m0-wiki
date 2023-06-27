@@ -11,7 +11,6 @@ The entire system is contained in a door compatible with [Schwegler nest box 2M]
 <img src="../assets/images/User_description/Nest_box_installed.jpg" alt= "Nest box installed" width="300">
 </a>
 <!-- markdownlint-enable MD033 -->
-TODO : Photo en environnement extérieur
 
 ## System constitution
 
