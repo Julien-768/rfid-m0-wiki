@@ -49,46 +49,18 @@ To follow these steps, it's required to have already realized a [nest box antenn
 
 * Install the two buttons on the upper case. Add two switch sealing boots with their seals.
 * Install the USB connector and its seal
-
-<!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Nest_box_assem/Case_buttons.jpg">
-<img src="../assets/images/Nest_box_assem/Case_buttons.jpg" alt="Upper case with buttons" width="250" >
-</a>
-<!-- markdownlint-enable MD033 -->
-
 * Install the power board into the upper case and fix it with 2 x M2 L10 screws
 * Connect the main button switch : one extremity to the solar charger output, the other to the booster input
 * Connect the switch button to the 2 ways screw terminal block
 * Connect the 3 ways JST XH cable (cable delivered with the 3 ways JST XH connector) into the PWR_mng connector
 * Connect the 2 ways JST XH cable into to the PWR_5V connector
 * Connect the battery to the solar charger battery input. **Make sure the main button is Off** (no CHG light on the solar charger module). If it's not the case, turn off the button
-
-<!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Nest_box_assem/Power_board_wired.jpg">
-<img src="../assets/images/Nest_box_assem/Power_board_wired.jpg" alt="Power board with wires" width="250" >
-</a>
-<!-- markdownlint-enable MD033 -->
-
 * Install the main board into the upper case and fix it with 2 x M2 L10 screws. Take care to **orient the USB connector** to avoid collisions with the RTC module
 * Connect the wires from the power board (3 ways JST XH and 2 ways JST XH) to the PW_mng and PW connectors
-
-<!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Nest_box_assem/Main_board_installed.jpg">
-<img src="../assets/images/Nest_box_assem/Main_board_installed.jpg" alt="Main board installed" width="250" >
-</a>
-<!-- markdownlint-enable MD033 -->
-
 * Install the door and then the servo motor. The pin of the door must be placed inside the lever hole. Fix the motor it with 2 x M2 L10 screws
 * Install the equipped antenna and fix it with 1 x M2.5 L6 screw
 * Connect the servo motor to the Servo connector of the main board
 * Connect the antenna to the IR connector of the main board. Do not connect the coil antenna, only the IR sensors.
-
-<!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Nest_box_assem/Main_board_wired.jpg">
-<img src="../assets/images/Nest_box_assem/Main_board_wired.jpg" alt="Main board wired" width="250" >
-</a>
-<!-- markdownlint-enable MD033 -->
-
 * Install the Tectus board and fix it to the upper case with a plastic clamp
 * Connect the coil antenna to the antenna connector of the Tectus board
 * Connect the Tectus board to the main board
