@@ -110,6 +110,7 @@ nav:
         - Checking procedure: Checking_procedure.md
       - Device for bird species:
         - Overview: NestBox_device_over.md
+      - Battery: Battery.md
       - Software:
         - Functioning: Software_functioning.md
         - Configuration: Software_configuration.md
