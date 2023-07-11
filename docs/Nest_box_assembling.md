@@ -29,7 +29,7 @@ To follow these steps, it's required to have already realized a [nest box antenn
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Solder the main button switch (bistable) to JST 2-PH connectors, and the switch button (monostable) to free wire end : Let ~10cm of wire for buth buttons.
+* Solder the main button switch (bistable) to two JST 2-PH cables, and the switch button (monostable) to free wire end : Let ~10cm of wire for buth buttons.
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Nest_box_assem/Switch.jpg">
@@ -74,8 +74,8 @@ To follow these steps, it's required to have already realized a [nest box antenn
 <!-- markdownlint-enable MD033 -->
 
 * Add the technical door
+* Add the sealing between the two cases
 * Close the nest box and fix it with 4 x M2.5 L6 countersunk screws
-* Add sealing glue on the junction of the two cases
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Nest_box_assem/Nest_box_closed.jpg">
