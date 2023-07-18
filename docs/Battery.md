@@ -23,3 +23,7 @@ When a battery is planned to be stored for a certain time, you have to set it in
 3. Select the mode **Storage**
 4. Select the **number of cells** and the **max current** : Use the same values as for the reload
 5. Start the process by a long press on Start / Enter button
+
+## Documentation
+
+The documentation of the battery and its safety data sheet are available at this [link](./assets/docs/Yuasa 12V lead battery documentation.zip)
