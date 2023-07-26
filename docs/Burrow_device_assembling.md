@@ -8,7 +8,7 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 
 ## Step 1 : Prepare the supports
 
-* 3D print the part ["RFID_support.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/antenna_burrow/Support_RFID.stl)
+* 3D print the part ["RFID_support.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/antenna_burrow/RFID_support.stl)
 * Insert 2 x M2 nuts in the RFID support
 * Insert the RFID reader in its support. Be careful to respect the orientation
 
@@ -18,12 +18,12 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Prepare the PVC fixation parts ["Support_inf"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/antenna_burrow/Support_inf.pdf) and ["Support_PCB"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/antenna_burrow/Support_PCB.pdf) according to their drawings
+* Prepare the PVC fixation parts ["Lower_support"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/antenna_burrow/Lower_support.pdf) and ["PCB_support"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/antenna_burrow/PCB_support.pdf) according to their drawings
 * Screw two angle brackets into the "Support_inf" plate with 4 self-tapping screws M3 x 6
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Burrow_assembling/Support_inf.jpg">
-<img src="../assets/images/Burrow_assembling/Support_inf.jpg" alt="Support inf" width="300" >
+<a href="../assets/images/Burrow_assembling/Lower_support.jpg">
+<img src="../assets/images/Burrow_assembling/Lower_support.jpg" alt="Lower support" width="300" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -38,8 +38,8 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 * Add 2 x M2 nuts and tight them
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Burrow_assembling/Support_PCB_noWire.jpg">
-<img src="../assets/images/Burrow_assembling/Support_PCB_noWire.jpg" alt="Support PCB assembling without wires" width="800" >
+<a href="../assets/images/Burrow_assembling/PCB_support_noWire.jpg">
+<img src="../assets/images/Burrow_assembling/PCB_support_noWire.jpg" alt="PCB support assembling without wires" width="800" >
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -51,8 +51,8 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 * Connect the wire extremity to the "SWITCH" connector of the power board
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Burrow_assembling/Support_PCB_Wire.jpg">
-<img src="../assets/images/Burrow_assembling/Support_PCB_Wire.jpg" alt="Support PCB assembling with wires" width="800" >
+<a href="../assets/images/Burrow_assembling/PCB_support_Wire.jpg">
+<img src="../assets/images/Burrow_assembling/PCB_support_Wire.jpg" alt="PCB support assembling with wires" width="800" >
 </a>
 <!-- markdownlint-enable MD033 -->
   
