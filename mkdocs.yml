@@ -151,7 +151,6 @@ nav:
     - Advanced:
       - JLINK-bootloader: JLINK-bootloader.md
       - Modulated infrared: Infrared.md
-      - Mods for next revision: Elec_boards_TODO.md
     
     - Credits: Credits.md
 
