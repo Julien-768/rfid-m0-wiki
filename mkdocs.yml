@@ -151,6 +151,7 @@ nav:
     - Advanced:
       - JLINK-bootloader: JLINK-bootloader.md
       - Modulated infrared: Infrared.md
+      - Temperature tests: Temperature_test.md
     
     - Credits: Credits.md
 
