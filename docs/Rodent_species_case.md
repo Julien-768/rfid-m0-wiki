@@ -65,17 +65,17 @@ Some notions have to be kept in mind :
 
 ### Component consumption
 
-| Component                                    | Power consumption [mW]          |
-|----------------------------------------------|:-------------------------------:|
-| 5V power board                               | 43                              |
-| 12V power board                              | 112                             |
-| Feather (including SD) + RTC                 | 65                              |
-| RFID reader & antenna - Standby              | 80                              |
-| RFID reader & antenna - Research             | 450                             |
-| RFID reader & antenna - Reading              | 232                             |
-| 1 IR Emitter                                 | 15.8                            |
-| 1 IR Receiver                                | 1.3                             |
-| + 3.3V regulator                             | 45                              |
+| Board           | Component                                  | Mode      | Power consumption [mW]          |
+|-----------------|--------------------------------------------|:---------:|:-------------------------------:|
+| Power board 5V  | Power board                                | -         | 43                              |
+| Power board 12V | Power board                                | -         | 112                             |
+| Main board      | Feather (including SD) + RTC               | -         | 65                              |
+| Main board      | RFID reader & antenna                      | Standby   | 80                              |
+| Main board      | RFID reader & antenna                      | Research  | 450                             |
+| Main board      | RFID reader & antenna                      | Reading   | 232                             |
+| Main board      | 1 IR Emitter                               | -         | 15.8                            |
+| Main board      | 1 IR Receiver                              | -         | 1.3                             |
+| Main board      | + 3.3V regulator                           | -         | 45                              |
 
 The consumptions are measured for T = 20°c.
 
