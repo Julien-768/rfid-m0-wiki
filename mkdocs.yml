@@ -22,7 +22,7 @@ extra:
 # site analytics
    analytics:
       provider: google
-      property: G-XXXXXXXXXX #TODO leave empty if not using google analytics, else fill
+      property: G-CK1V1L0NVS
       feedback:
          title: Was this page helpful?
          ratings:
