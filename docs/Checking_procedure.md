@@ -28,7 +28,7 @@ We are going to check the SD card and the RTC are in order by checking the LEDs 
 2. Press the switch button until the red LED turns on. Once done, release it. The red LED should turn OFF after the startup of the device.
     * If the red LED does not light up at all, check that the battery connector is well plugged-in
     * If the red LED is blinking 2 times, the memory card is not found or is faulty, reinsert it or replace it.
-    * If the red LED is blinking 4 times, the RTC battery might be faulty, replace it.
+    * If the red LED is blinking 4 times, the CR1220 coil cell battery might be faulty, replace it. Then the main board must be [reprogrammed](./programming.md)
 
 ### Infrared beam
 

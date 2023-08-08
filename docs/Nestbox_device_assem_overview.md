@@ -1,6 +1,6 @@
 # Assembly a nest box device
 
-This section describes the different steps to follow to assemble a device that monitor a nest box occupation. The list of required material is avaible at this [link](./assets/images/Manufacturing/Bill of material.xlsx).
+This section describes the different steps to follow to assemble a device that monitor a nest box occupation. The list of required material is avaible at this[link](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/blob/development/Bill%20of%20material.xlsx).
 
 Firstly, a **nest box antenna is build**. This antenna receives the RFID antenna, able to detect RFID tags, but also two infrared sensors. The manufacturing of this device is based on 3D-printed parts in which electronic components are inserted and glued.
 

@@ -23,7 +23,14 @@ Several powering options are proposed :
 * Lithium powered :
     * A 3.6V 20Ah 72Wh Li-ion battery
     * A 3.6V 20Ah 72Wh Li-ion battery equipped with solar panel
+
+    Weight ~0.3kg - Cost ~80€ usually  
+    This battery is required to be powered by solar panels.
+
 * Lead powered : A 12V 5.4Ah 64.8Wh Lead battery
+
+    Weight ~1.7kg - Cost ~40€ usually  
+    This battery technology is quite common and easy to reload / transport.
 
 ## Consumption & Autonomy
 
@@ -32,12 +39,6 @@ For details about components consumption and autonomy calculation, refers to the
 ### System consumption & autonomy
 
 The autonomy of the system depends of its consumption, that varies according to the software configuration.
-Some notions have to be kept in mind :
-
-* There is no consumption difference if one or two IR sensors are active. In both cases, the two emitters & receivers are powered
-* If the two IR sensors are inactive, the RFID is always in research mode (except during sleep mode)
-* If the temperature sensor is active, the IR receivers are powered even if opt_IR_1 & opt_IR_2 are False (same power supply)
-* During sleep mode, only the Feather & the RTC are powered
 
 | System configuration                     |  Consumption [W.h]               | Autonomy              |
 |------------------------------------------|:--------------------------------:|:---------------------:|
@@ -55,19 +56,26 @@ The autonomies are indicated considering :
 * a 12V 5.4 A.h Lead battery (more pessimistic situation)
 * T = 20°c
 
+Some notions have to be kept in mind :
+
+* There is no consumption difference if one or two IR sensors are active. In both cases, the two emitters & receivers are powered
+* If the two IR sensors are inactive, the RFID is always in research mode (except during sleep mode)
+* If the temperature sensor is active, the IR receivers are powered even if opt_IR_1 & opt_IR_2 are False (same power supply)
+* During sleep mode, only the Feather & the RTC are powered
+
 ### Component consumption
 
-| Component                                    | Power consumption [mW]          |
-|----------------------------------------------|:-------------------------------:|
-| 5V power board                               | 43                              |
-| 12V power board                              | 112                             |
-| Feather (including SD) + RTC                 | 65                              |
-| RFID reader & antenna - Standby              | 80                              |
-| RFID reader & antenna - Research             | 450                             |
-| RFID reader & antenna - Reading              | 232                             |
-| 1 IR Emitter                                 | 15.8                            |
-| 1 IR Receiver                                | 1.3                             |
-| + 3.3V regulator                             | 45                              |
+| Board           | Component                                  | Mode      | Power consumption [mW]          |
+|-----------------|--------------------------------------------|:---------:|:-------------------------------:|
+| Power board 5V  | Power board                                | -         | 43                              |
+| Power board 12V | Power board                                | -         | 112                             |
+| Main board      | Feather (including SD) + RTC               | -         | 65                              |
+| Main board      | RFID reader & antenna                      | Standby   | 80                              |
+| Main board      | RFID reader & antenna                      | Research  | 450                             |
+| Main board      | RFID reader & antenna                      | Reading   | 232                             |
+| Main board      | 1 IR Emitter                               | -         | 15.8                            |
+| Main board      | 1 IR Receiver                              | -         | 1.3                             |
+| Main board      | + 3.3V regulator                           | -         | 45                              |
 
 The consumptions are measured for T = 20°c.
 
