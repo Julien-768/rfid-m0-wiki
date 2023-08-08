@@ -5,17 +5,19 @@
 
 * MiPHC, Mission for Interdisciplinarity at [IPHC](https://iphc.cnrs.fr/)
 
-<!-- TODO : Ajouter la phrase type -->
+## Autors
+
+* Courtecuisse Julien
+* Lafoux Pauline
+* Brucker Mathieu
+* Benjamin Tenaud
 
 ## Contributors
 
-* Courtecuisse Julien
 * Yves Handrich
 * Sylvie Massemin
-* Lafoux Pauline
-* Brucker Mathieu
 * Yann Leguereau
-* Benjamin Tenaud
+* Olivier Clausse
 
 ## License
 

@@ -10,4 +10,6 @@ All the required files for the manufacturing are accessible at these links :
 
 You can also directly [Download as zip](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/archive/master/rfid_m0.elec-master.zip)
 
-The list of required material is avaible at this [link](./assets/images/Manufacturing/Bill of material.xlsx).
+The list of required material is avaible at this [link](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/blob/development/Bill%20of%20material.xlsx).
+
+Note : the bill of material for the first version of the board is still available at this [link](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.elec/-/raw/df4ad44de9ebae8956dc9f1bc0a6a8eed97cd888/Bill%20of%20material.xlsx?inline=false)

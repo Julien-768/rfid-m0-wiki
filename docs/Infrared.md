@@ -7,7 +7,7 @@ Indeed this barrier in an On / Off system, with no distance detection. More the 
 
 ## Software used to generate a 36 kHz Pulsed Width Modulation
 
-For generating a PWM on the Feather M0, we use the [Arduino SAMD21 turbo PWM](https://github.com/ocrdu/Arduino_SAMD21_turbo_PWM) on an available [PWM pin](./assets/images/TODO/Pinout_Feather_M0.png)
+For generating a PWM on the Feather M0, we use the [Arduino SAMD21 turbo PWM](https://github.com/ocrdu/Arduino_SAMD21_turbo_PWM) on an available [PWM pin](./assets/images/Main_board/Feather_M0_pinout.png)
 
 <!-- markdownlint-disable MD010 -->
 ```C
@@ -28,8 +28,8 @@ pwm.analogWrite(PIN_IR_PWM, 500);   // PWM frequency is now around 36KHz, dutycy
 ## PWM 36kHz - output generated
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/TODO/Scope_IR_Modulation_output_1.png">
-<img src="../assets/images/TODO/Scope_IR_Modulation_output_1.png" width="400">
+<a href="../assets/images/Main_board/Scope_IR_Modulation_output_1.png">
+<img src="../assets/images/Main_board/Scope_IR_Modulation_output_1.png" width="400">
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -40,8 +40,8 @@ The Infrared emitter has an wide opening angle. For testing purpose, use heat sh
 ## Infrared receiver - input read
 
 <!-- markdownlint-disable MD033 -->
-<a href="../assets/images/TODO/Scope_IR_input_1.png">
-<img src="../assets/images/TODO/Scope_IR_input_1.png" width="400">
+<a href="../assets/images/Main_board/Scope_IR_input_1.png">
+<img src="../assets/images/Main_board/Scope_IR_input_1.png" width="400">
 </a>
 <!-- markdownlint-enable MD033 -->
 

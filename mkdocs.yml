@@ -110,6 +110,7 @@ nav:
         - Checking procedure: Checking_procedure.md
       - Device for bird species:
         - Overview: NestBox_device_over.md
+      - Battery: Battery.md
       - Software:
         - Functioning: Software_functioning.md
         - Configuration: Software_configuration.md
@@ -150,7 +151,7 @@ nav:
     - Advanced:
       - JLINK-bootloader: JLINK-bootloader.md
       - Modulated infrared: Infrared.md
-      - Mods for next revision: Elec_boards_TODO.md
+      - Temperature tests: Temperature_test.md
     
     - Credits: Credits.md
 

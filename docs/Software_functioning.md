@@ -26,17 +26,14 @@ Be aware only advanced user should activate the capture mode! The **mode_capture
 
 ## Security of the system
 
-The device is automatically powered-off if :
-
-* the temperature exceeds 50°c
-* the battery voltage falls below a threshold (BATTERY_MIN_VOLTAGE = 3V for Li-ion battery or 12V for Lead battery)
+The device is automatically powered-off if the battery voltage falls below a threshold (BATTERY_MIN_VOLTAGE = 3V for Li-ion battery or 12V for Lead battery)
 
 In addition, if the battery voltage passes below BATTERY_MIN_VOLTAGE + 0.1V, the sensor reading is suspended until the voltage is passed above BATTERY_MIN_VOLTAGE + 0.2V.
 
 The door is automatically opened if :
 
 * it has been closed for a certain duration (**release_time** option)
-* system shutdowns in case of overheating or under voltage
+* system shutdowns in case of under voltage
 
 ## Error management
 
@@ -60,14 +57,13 @@ There are several types of messages written into the SD memory card :
 | System        | Sleep mode                        |                                     |
 | System        | Wake up mode                      |                                     |
 | System        | Up                                | Still alive                         |
-| System        | Shutdown : High temp              |                                     |
 | System        | Shutdown : Battery low            |                                     |
 | System        | Shutdown : User                   |                                     |
 | Ax            | RFID tag                          |                                     |
 | IRx           | Broken beam                       |                                     |
 | IRx           | Beam restored                     |                                     |
-| Temperature   | Temperature measurement in °c     | If temp. variation > 0.02°c        |
-| Vbat          | Battery measurement in V          | If batt. variation > 0.1V          |
+| Temperature   | Temperature measurement in °c     | If temp. variation > 0.02°c         |
+| Vbat          | Battery measurement in V          | If batt. variation > 0.1V           |
 | Vbat          | Power saving                      | Battery < BATTERY_MIN_VOLTAGE + 0,1 |
 | Vbat          | Battery restored                  | Battery > BATTERY_MIN_VOLTAGE + 0,2 |
 | Vbat          | Battery check by user             |                                     |
