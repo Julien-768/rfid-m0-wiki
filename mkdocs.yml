@@ -40,6 +40,9 @@ extra:
                target="_blank" rel="noopener">sending us your feedback</a>
               #TODO fill if not using google analytics
 
+extra_css:
+    - css/extra.css
+
 # Configuration
 theme:
    name: material
@@ -90,7 +93,6 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/feedback.js
-  - giscus.json
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -99,7 +101,12 @@ plugins:
   - git-revision-date-localized:
       fallback_to_build_date: true
   - search
-
+  # weasyprint for linux distrobution only
+  # - pdf-export:
+  #     verbose: true
+  #     media_type: print
+  #     # enabled_if_env: ENABLE_PDF_EXPORT
+  #     combined: true
 nav:
     - Home: index.md
 
@@ -122,7 +129,7 @@ nav:
       - Nest box antenna: Antenna_schwegler.md
 
     - Developper:
-    
+
       - Electronic boards:
         - Overview: Electronic_overview.md
         - Main board: Main_board.md
@@ -147,11 +154,11 @@ nav:
         - Programming: programming.md
         - Final assembling: Nest_box_assembling.md
       - Manufacturing files: Manufacturing.md
-    
+
     - Advanced:
       - JLINK-bootloader: JLINK-bootloader.md
       - Modulated infrared: Infrared.md
       - Temperature tests: Temperature_test.md
-    
+
     - Credits: Credits.md
 

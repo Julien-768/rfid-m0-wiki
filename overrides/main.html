@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ super() }}
+
+<script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+<link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+
+<div id="comment-section">Loading Comments...</div>
+
+<script>
+  try {
+    var docCommentSectionId = document.getElementById('comments-section-id').innerHTML
+  } catch {
+    var docCommentSectionId = "catch-all"
+  }
+  if (docCommentSectionId == null) {
+    docCommentSectionId = "catch-all"
+  }
+
+  initComments({
+    node: document.getElementById("comment-section"),
+    defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+    siteName: "rfid.m0.wiki",
+    commentSectionId: docCommentSectionId,
+    serverName: "cactus.chat"
+  })
+  console.log('docCommentSectionId')
+  console.log(docCommentSectionId)
+</script>
+
+{% endblock %}

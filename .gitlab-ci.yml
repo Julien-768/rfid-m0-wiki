@@ -1,6 +1,7 @@
 image: python:3.8-buster
 
 before_script:
+  - apt install python3-pip python3-cffi python3-brotli libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0
   - pip install -r requirements.txt
 
 test:
@@ -22,4 +23,3 @@ pages:
     - public
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-    
