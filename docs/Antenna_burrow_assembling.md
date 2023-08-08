@@ -12,7 +12,7 @@ When the two parts are assembled together and the cable is connected, a resin ca
 
 Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description with its specifications.
 
-- **3D print** the part [« Antenna.stl »](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/master/antenna_burrow/antenna.stl)
+- **3D print** the part [« Antenna.stl »](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/antenna.stl)
 - Apply a **first coat of epoxy resin** for impregnation on the inside walls that will receive the resin casting. Use the long-setting resin (24h) to have time to spread resin into the walls (Weight ratio for preparation : 5 resin - 1 hardener)
 - [Cable a coil antenna](./Assembling_antenna.md) for a 192uH impedance (~30 spires) around the antenna base
 - **Cable the IR** emitters and receivers (provide 15cm of wire) by ensuring to [respect the cable colors](#wire_color_table)
@@ -29,7 +29,7 @@ Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description 
 
 ## Step 2 : Make the antenna cover
 
-- 3D print the part [« Cover.stl »](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/master/antenna_burrow/cover.stl)
+- 3D print the part [« Cover.stl »](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/cover.stl)
 - **Machine two flats** on the brass large nut
 
 <!-- markdownlint-disable MD033 -->

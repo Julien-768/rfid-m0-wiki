@@ -1,6 +1,6 @@
 # Home
 
-The RFID_M0 open source project provides the hardware, mechanical and code sources needed for building an embedded system that monitors relatively small species around their shelter.
+The rfid.m0 open source project provides the hardware, mechanical and code sources needed for building an embedded system that monitors relatively small species around their shelter.
 
 The devices are gathering an RFID reader to identify TAG individuals, infrared beams to monitor an entrance, and eventually a temperature sensor.
 Datas are recorded into an SD card with a timestamp from a real time clock.

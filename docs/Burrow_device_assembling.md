@@ -8,7 +8,7 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 
 ## Step 1 : Prepare the supports
 
-* 3D print the part ["RFID_support.stl"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/antenna_burrow/RFID_support.stl)
+* 3D print the part ["RFID_support.stl"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/development/antenna_burrow/RFID_support.stl)
 * Insert 2 x M2 nuts in the RFID support
 * Insert the RFID reader in its support. Be careful to respect the orientation
 
@@ -18,7 +18,7 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 </a>
 <!-- markdownlint-enable MD033 -->
 
-* Prepare the PVC fixation parts ["Lower_support"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/antenna_burrow/Lower_support.pdf) and ["PCB_support"](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/blob/development/antenna_burrow/PCB_support.pdf) according to their drawings
+* Prepare the PVC fixation parts ["Lower_support"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/development/antenna_burrow/Lower_support.pdf) and ["PCB_support"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/development/antenna_burrow/PCB_support.pdf) according to their drawings
 * Screw two angle brackets into the "Support_inf" plate with 4 self-tapping screws M3 x 6
 
 <!-- markdownlint-disable MD033 -->
@@ -55,15 +55,15 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 <img src="../assets/images/Burrow_assembling/PCB_support_Wire.jpg" alt="PCB support assembling with wires" width="800" >
 </a>
 <!-- markdownlint-enable MD033 -->
-  
+
 * Screw two angle brackets into the "Support_PCB" plate with 4 x M3 x 8, M3 washers and M3 nuts. Angle brackets have to be positioned on the RFID side of the plate.
 
 ## Step 3 : Assembly the case
 
-* Wire the START button with two pairs of wires : Each pair have to be connected on the NO & COM pins.  
+* Wire the START button with two pairs of wires : Each pair have to be connected on the NO & COM pins.
 *Note* It's advised to **wind the wires of each pairs together** in order to correctly wire them next into the main board
 * Install the "Support_inf" plate into the case
-* Insert the antenna connector into the main board screw terminal block and tight. **Ensure the IR receiver #1 (green wire) is positioned at the top**  
+* Insert the antenna connector into the main board screw terminal block and tight. **Ensure the IR receiver #1 (green wire) is positioned at the top**
   *Note* The antenna connector has to be screwed into the main board **before the "Support_PCB" plate fixation** into the case, for a better access to the screws
 * Screw the red led into the 2 ways screw terminal block of the main board
 

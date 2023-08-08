@@ -15,7 +15,7 @@ The device assembly is described in the assembly file "ASSEMBLY.cfg" located on 
     "uid_powerboard":"PB202303001",
     "uid_tectus":"202124001",
     "uid_rfid_sensor":"2303002591056",
-    "uid_software":"rfid_m0.code.2.0.0-rc.2",
+    "uid_software":"rfid.m0.code.2.0.0-rc.2",
     "uid_experiment":"202303YH001"
     }
     ```

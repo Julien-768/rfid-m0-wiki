@@ -28,13 +28,13 @@ The following results are measured on an antenna with a quality factor Q = 23.
 
 ### Dimension
 
-The antenna is an circle of Ø36 mm . You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/tree/master/antenna_schwegler)
+The antenna is an circle of Ø36 mm . You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/tree/master/antenna_schwegler)
 
 ### 3D preview
 
 <!-- markdownlint-disable MD033 -->
 
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https://gitlab.in2p3.fr/rfid_m0/rfid_m0.meca/-/raw/master/antenna_schwegler/antenna.stl?inline=false" style="border:0;margin:0;width:100%;height:400px;"></iframe>
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/raw/master/antenna_schwegler/antenna.stl?inline=false" style="border:0;margin:0;width:100%;height:400px;"></iframe>
 
 <!-- markdownlint-enable MD033 -->
 
