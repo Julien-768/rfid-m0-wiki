@@ -13,7 +13,7 @@ To power-off the device, maintain the switch button pressed until the LED stops 
 
 ## How to check the device is correctly working?
 
-To check the system is working properly after a start-up, refers to the [Checking procedure](Checking_procedure)
+To check the system is working properly after a start-up, refers to the [Checking procedure](Checking_procedure.md)
 
 ## How to check the status of the battery?
 

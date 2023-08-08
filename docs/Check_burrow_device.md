@@ -4,7 +4,7 @@ The aim of this page is to describe how to check the device once just assembled.
 
 ## Step 1 : Follow the user checking procedure
 
-Start by following the different steps described in the [User Checking Procedure](/docs/Checking_procedure.md). Once the tests realized, check the content of the SD card in order to verify :
+Start by following the different steps described in the [User Checking Procedure](Checking_procedure.md). Once the tests realized, check the content of the SD card in order to verify :
 
 * Data are written into the SD memory card
 * All the events are detected and written (IR events, RFID tag value, system start and shut down...)
@@ -20,7 +20,7 @@ Start by following the different steps described in the [User Checking Procedure
 6. Turn on the device and wait a few minutes
 7. Check that the system does not read the sensor by passing a RFID tag into the antenna and checking the external red led does not blink
 
-If this test does not succeed, check the configuration file format is correct (refers to [Configuration](/docs/Software_configuration.md) for details).
+If this test does not succeed, check the configuration file format is correct (refers to [Configuration](Software_configuration.md) for details).
 
 ## Step 3 : Check the battery management
 
