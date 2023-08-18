@@ -10,13 +10,13 @@ import math
 #################################################
 
 # mean radius in m
-RADIUS = 52.5e-3
+RADIUS = 0.5 * 105e-3
 
 # Length / thickness in m
 COIL_LENGHT = 4e-3
 
 # number of spires
-NB_SPIRES = 20
+NB_SPIRES = 26
 
 #################################################
 
@@ -35,21 +35,22 @@ NB_SPIRES = 20
 
 DIAMETER = 2 * RADIUS
 
+
 def nagaoka(u):
     if u == 0:
         return 1
     else:
-        uu = u * u                # (diameter/length)²
-        m = uu / (1 + uu)         # square of modulus
+        uu = u * u  # (diameter/length)²
+        m = uu / (1 + uu)  # square of modulus
         m2 = 4 * math.sqrt(1 + uu)
-        a = 1                       # arithmetic mean
-        b = math.sqrt(1 - m)        # geometric mean
+        a = 1  # arithmetic mean
+        b = math.sqrt(1 - m)  # geometric mean
         c = a - b
         ci = 1
         cs = c * c / 2 + m
         co = c
-        
-        while (c < co) or loop_condition:
+
+        while c < co:
             ao = (a + b) / 2
             b = math.sqrt(a * b)
             a = ao
@@ -57,23 +58,31 @@ def nagaoka(u):
             c = a - b
             cs = cs + ci * c * c  # Sum for n = 0 to infinity of (2^n * c²)
             ci = 2 * ci
-        
+
         cs = cs / 2
-        K = math.pi / (a + a)   # elliptic integral K = pi/(2a)
-        KmE = K * cs            # K - E
-        E = K * (1 - cs)        # elliptic integral E
+        K = math.pi / (a + a)  # elliptic integral K = pi/(2a)
+        KmE = K * cs  # K - E
+        E = K * (1 - cs)  # elliptic integral E
 
         return (m2 / uu * (KmE) + m2 * E - 4 * u) / (3 * math.pi)
 
 
 k = nagaoka(DIAMETER / COIL_LENGHT)
 # Inductor in µHenries
-Ls = k * 4 * pow(math.pi, 2)/10000000 * pow(RADIUS, 2) \
-    * pow(NB_SPIRES, 2) / COIL_LENGHT * 1000000   # µ0 = 4π×10-7
+Ls = (
+    k
+    * 4
+    * pow(math.pi, 2)
+    / 10000000
+    * pow(RADIUS, 2)
+    * pow(NB_SPIRES, 2)
+    / COIL_LENGHT
+    * 1000000
+)  # µ0 = 4π×10-7
 
-print(f'Nagaoka coefficient is {k}')
-print(f'inductor is {Ls} µH')
+print(f"Nagaoka coefficient is {k}")
+print(f"inductor is {Ls} µH")
 
 wire_length = NB_SPIRES * DIAMETER * math.pi
 
-print(f'Wire length is {wire_length} m')
+print(f"Wire length is {wire_length} m")
