@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block outdated %}
+You're not viewing the latest version.
+<a href="https://rfid.m0.pages.in2p3.fr/rfid.m0.wiki/">
+  <strong>Click here to go to latest.</strong>
+</a>
+{% endblock %}
+
 {% block content %}
 {{ super() }}
 
