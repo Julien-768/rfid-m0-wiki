@@ -21,7 +21,7 @@ extra:
         lang: en
 # versionning
    version:
-    provider: mike
+      provider: mike
       default: rfid.m0
 # site analytics
    analytics:
