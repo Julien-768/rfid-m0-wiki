@@ -19,6 +19,10 @@ extra:
       - name: English
         link: /en/
         lang: en
+# versionning
+   version:
+    provider: mike
+      default: rfid.m0
 # site analytics
    analytics:
       provider: google
