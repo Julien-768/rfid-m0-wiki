@@ -11,6 +11,10 @@ repo_url: https://gitlab.in2p3.fr/rfid.m0
 copyright: Copyright &copy; 2017 - 2023 IPHC's technical platform MIBE
 
 extra:
+# versionning
+   version:
+   provider: mike
+   default: latest
 # language
    alternate:
       - name: Français
