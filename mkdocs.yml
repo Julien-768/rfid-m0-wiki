@@ -162,6 +162,7 @@ nav:
     - Advanced:
       - JLINK-bootloader: JLINK-bootloader.md
       - Modulated infrared: Infrared.md
+      - Reset the RTC: RTC_reset.md
       - Temperature tests: Temperature_test.md
 
     - Credits: Credits.md
