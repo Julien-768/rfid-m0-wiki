@@ -30,15 +30,8 @@ Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description 
 ## Step 2 : Make the antenna cover
 
 - 3D print the part [« Cover.stl »](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/cover.stl)
-- **Machine two flats** on the brass large nut
-
-<!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Antennas/Burrow_ant_nut.png">
-<img src="../assets/images/Antennas/Burrow_ant_nut.png" alt="Burrow antenna nut" width="300" >
-</a>
-<!-- markdownlint-enable MD033 -->
-
-- **Screw** the brass pipe + O-ring with nut on cover
+- Apply a **first coat of epoxy resin** for impregnation on the inside walls that will receive the resin casting. Use the long-setting resin (24h) to have time to spread resin into the walls (Weight ratio for preparation : 5 resin - 1 hardener)
+- **Screw** the short pipe + O-ring with brass nut on cover
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Antennas/Burrow_ant_cover.png">

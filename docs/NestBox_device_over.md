@@ -16,7 +16,7 @@ The entire system is contained in a door compatible with [Schwegler nest box 2M]
 
 The entrance of the nest box incorporates two infrared transmitters / receivers as well as an RFID antenna.
 
-Note : IR sensor noted "IR 1" in the record file is the one mounted at the entrance
+Note : IR sensor noted "IR 1" in the record file is the one mounted at the entrance (exterior side)
 
 The bottom of the nest box allows the user to interact with the system and its the battery :
 
