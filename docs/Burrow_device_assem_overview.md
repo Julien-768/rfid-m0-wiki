@@ -1,6 +1,6 @@
 # Assembly a burrow device
 
-This section describes the different steps to follow to assemble a device that monitor a burrow occupation. The list of required material is avaible at this [link](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.elec/-/blob/development/Bill%20of%20material.xlsx).
+This section describes the different steps to follow to assemble a device that monitor a burrow occupation. The list of required material is avaible at this [link](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.elec/-/blob/master/Bill%20of%20material.xlsx).
 
 Firstly, a **burrow antenna is build**. This antenna receives the RFID antenna, able to detect RFID tags, but also two infrared sensors. The manufacturing of this device is based on 3D-printed parts in which electronic components are inserted. Resin is then added to protect the components from environment and rodents.
 
