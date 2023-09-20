@@ -22,6 +22,7 @@ The software options are editable in the configuration file "CONFIG.cfg" located
     "stop_time":23,
     "delay_loop":10,
     "release_time":10,
+    "close_time":1,
     "mode_capture":1,
     "tag_1":"01101728E6",
     "tag_2":"01101728E6",
@@ -62,6 +63,7 @@ Here is an explanation of the parameters you can tune, possible values to change
 | stop_time        | stop of the system in mode_day_only (UTC time)                                    | [0..23]           |
 | delay_loop       | delay (in millisecond) between two consecutive sensor checks                      | [1..10000]        |
 | release_time     | time in seconds for a release after any capture (security)                        | [0..xx]           |
+| close_time       | time in seconds to wait before closing the door                                   | [0..xx]           |
 | mode_capture     | capture mode selection                                                            | {1,2,3,4}         |
 | tag_1            | part of the tag number for the capture of specific individuals                    |                   |
 | tag_2            | part of the tag number for the capture of specific individuals                    |                   |
