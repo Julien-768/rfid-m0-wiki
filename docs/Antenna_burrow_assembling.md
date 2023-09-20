@@ -114,9 +114,9 @@ Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description 
 </a>
 <!-- markdownlint-enable MD033 -->
 
-- **Pour a first 20g of epoxy** resin to check the tightness (Weight ratio : 1 resin - 1 hardener)
+- **Pour a first 20g of epoxy** resin to check the tightness (Weight ratio : 2 resin - 1 hardener - 1% of white pigment)
 - **Check there is no leaks** between parts or over the sensors. If it's the case, clean immediatly
-- Once the resin dried, **pour a 130g resin** to complete the antenna (Weight ratio : 1 resin - 1 hardener)
+- Once the resin dried, **pour a 130g resin** to complete the antenna (Weight ratio : 2 resin - 1 hardener - 1% of white pigment)
 - Let the resin dry a couple of hours. Then clean the antenna (remove modelling clay and excess of silicon)
 
 <!-- markdownlint-disable MD033 -->
