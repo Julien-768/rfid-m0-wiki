@@ -3,7 +3,7 @@
 The main board have 2 sources of time :
 
 * the Real-Time Clock : precise with a very small drift over time - Resolution : second
-* the internal clock : drift over the time due to temperature variation or quartz precision - Resolution : millisecond or even microsecond
+* the internal clock : drift over the time due to temperature variation or quartz precision - Resolution : millisecond or microsecond
 
 This page describes how to use the two time sources to have a precise timestamp with millisecond resolution.
 
