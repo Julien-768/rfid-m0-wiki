@@ -22,7 +22,7 @@ Several powering options are proposed :
 
 * Lithium powered :
     * A 3.6V 20Ah 72Wh Li-ion battery
-    * A 3.6V 20Ah 72Wh Li-ion battery equipped with solar panel
+    * A 3.6V 20Ah 72Wh Li-ion battery equipped with a 5-10V solar panel
 
     Weight ~0.3kg - Cost ~80€ usually  
     This battery is required to be powered by solar panels.
