@@ -13,6 +13,7 @@ To reload a battery, preferably use a dedicated battery charger :
 4. Define the **load current** : A typical value is C / 3 where C is the capacity of the battery in A.h. In the case a lower current is specified on the battery datasheet, use this value.   
 For the lead battery "RS PRO 174-8857", use 1.5A as max current.
 5. Start the process by a long press on Start / Enter button
+6. The charger will reload the battery according to the program. Wait for the end of the process (beep or visual indication) before disconnecting the battery
 
 ## Store a battery
 

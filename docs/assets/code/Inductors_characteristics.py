@@ -13,7 +13,7 @@ import math
 RADIUS = 0.5 * 105e-3
 
 # Length / thickness in m
-COIL_LENGHT = 4e-3
+COIL_LENGTH = 4e-3
 
 # number of spires
 NB_SPIRES = 26
@@ -67,7 +67,7 @@ def nagaoka(u):
         return (m2 / uu * (KmE) + m2 * E - 4 * u) / (3 * math.pi)
 
 
-k = nagaoka(DIAMETER / COIL_LENGHT)
+k = nagaoka(DIAMETER / COIL_LENGTH)
 # Inductor in µHenries
 Ls = (
     k
@@ -76,7 +76,7 @@ Ls = (
     / 10000000
     * pow(RADIUS, 2)
     * pow(NB_SPIRES, 2)
-    / COIL_LENGHT
+    / COIL_LENGTH
     * 1000000
 )  # µ0 = 4π×10-7
 

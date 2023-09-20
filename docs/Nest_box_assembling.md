@@ -8,10 +8,13 @@ To follow these steps, it's required to have already realized a [nest box antenn
 
 * 3D print the parts :
 
-    * Case : ["Upper_case.stl"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Upper_case.stl) and ["Lower_case.stl"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Lower_case.stl)
-    * Door : ["Door.stl"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Door.stl)
-    * Technical door : ["Technical_door.stl"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Technical_door.stl)
-    * Lever : ["Lever_stp.stl"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/development/Schwegler_%20Nest_box_2M/Files%20for%203D%20printing/Lever_stp.stl)
+    * Case : [Upper_case.stl](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_schwegler/3D_print/Full_device/Upper_case.stl) and [Lower_case.stl](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_schwegler/3D_print/Full_device/Lower_case.stl)
+    * Technical door : [Technical_door.stl](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_schwegler/3D_print/Full_device/Technical_door.stl)
+    * RFID support : [RFID_support.stl](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_schwegler/3D_print/Full_device/RFID_support.stl)
+    * Battery case : [Battery_case.stl](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_schwegler/3D_print/Full_device/Battery_case.stl)
+    * Battery cover : [Battery_cover.stl](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_schwegler/3D_print/Full_device/Battery_cover.stl)
+    * Trap lever : [Trap_lever.stl](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_schwegler/3D_print/Full_device/Trap_lever.stl)
+    * Trap door : [Trap_door.stl](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_schwegler/3D_print/Full_device/Trap_door.stl)
 
 * Install the lever on the servo motor
 
