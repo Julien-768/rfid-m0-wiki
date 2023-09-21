@@ -13,8 +13,8 @@ copyright: Copyright &copy; 2017 - 2023 IPHC's technical platform MIBE
 extra:
 # versionning
    version:
-   provider: mike
-   default: latest
+      provider: mike
+      default: latest
 # language
    alternate:
       - name: Français
