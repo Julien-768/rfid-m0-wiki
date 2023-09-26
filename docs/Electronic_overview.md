@@ -5,6 +5,7 @@ The electronic of the device is composed of several boards :
 * A main board that receive most of the component and is linked to the sensors
 * A power board in charge to manage the energy of the system and deliver a regulated 5v
 * A RFID board that, once associated to an antenna, reads the RFID tags
+* An optional multiplex board to connect two antennas to the main board
 
 ## Schematic of the system
 
@@ -13,6 +14,8 @@ The electronic of the device is composed of several boards :
 <img src="../assets/images/Manufacturing/General_schematic.svg" width="600">
 </a>
 <!-- markdownlint-enable MD033 -->
+
+For multiplexed version, <a href="../assets/images/Manufacturing/General_schematic_multiplex.svg">refer here</a>
 
 ## Main board
 
@@ -44,3 +47,15 @@ To be compatible with different battery technologies, two power boards are avail
 
 * [5V power supply board](./Power-5V.md) to use Li-Po or Li-Ion battery. A reload by USB-C or an optional solar panel is also possible.
 * [12V power supply board](./Power-12V.md) to use lead-battery from 9V to 18V.
+
+## Multiplex board
+
+The multiplex board ensures to connect two antennas to the main board by routing :
+
+* RFID signal
+* Infrared signal
+* Power signal
+
+This board is **powered in 5V** and is compatible with **3.3V or 5V-logic level**.
+
+Note : If a multiplex board is used, the servo motor cannot be connected (same pin)

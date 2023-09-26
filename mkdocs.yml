@@ -141,6 +141,7 @@ nav:
           - Power management : Power_supply.md
           - 5V power board: Power-5V.md
           - 12V power board: Power-12V.md
+        - Multiplexing : Multiplex.md
 
       - Assembly a burrow device:
         - Overview: Burrow_device_assem_overview.md
