@@ -17,7 +17,7 @@ To follow these steps, it's required to have already realized a [nest box antenn
 ## Step 2 : Prepare the case
 
 * Solder the main button switch (bistable) and the switch button (monostable) to free wire end : Let ~10cm and ~20cm of wire respectively.
-* Solder the USB connecter to free wire end : Let ~10cm of wire
+* Solder the USB connecter to a JST connector. let ~15cm of wire
 * Install the two buttons on the lower case. Add two switch sealing boots with their seals.
 * Install the USB connector and its seal
 * Install the red led and its seal on the lower case
@@ -40,7 +40,7 @@ To follow these steps, it's required to have already realized a [nest box antenn
 ## Step 3 : Add electronic boards & wiring
 
 * Install the power board into the lower case and fix it with 2 x M2 L8 screws + 2 x M2 L10 screws
-* Connect the USB wires to the 2 ways screw terminal block 'charger'. **Ensure to respect the polarity**
+* Connect the USB wires to the 'Batt' connector of the solar charger
 * Connect the switch button to the 2 ways screw terminal block 'SW'
 * Connect the main button switch  to the 2 ways screw terminal block 'On / Off'
 
