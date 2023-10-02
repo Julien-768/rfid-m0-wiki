@@ -14,7 +14,7 @@ extra:
 # versionning
    version:
       provider: mike
-      default: latest
+      # default: latest
 # language
    alternate:
       - name: Français
