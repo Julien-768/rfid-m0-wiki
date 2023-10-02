@@ -26,7 +26,7 @@ extra:
 # versionning
    version:
       provider: mike
-      default: rfid.m0
+      default: latest
 # site analytics
    analytics:
       provider: google
