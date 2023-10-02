@@ -12,8 +12,8 @@ copyright: Copyright &copy; 2017 - 2024 IPHC's technical platform MIBE
 
 extra:
 # versionning
-   version:
-      provider: mike
+  #  version:
+  #     provider: mike
       # default: latest
 # language
    alternate:
