@@ -23,10 +23,6 @@ extra:
       - name: English
         link: /en/
         lang: en
-# versionning
-   version:
-      provider: mike
-      default: latest
 # site analytics
    analytics:
       provider: google
