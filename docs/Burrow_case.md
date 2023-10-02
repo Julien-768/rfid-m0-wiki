@@ -3,7 +3,7 @@
 This page describes how to adapt a Pelicase in order to receive an antenna and user button / indicator.
 A **burrow antenna** is required before following these instructions.
 
-- **Drill the left side** of the case according to the [provided drawing](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/development/antenna_burrow/Burrow_case_holes.pdf)
+- **Drill the left side** of the case according to the [provided drawing](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/Burrow_case_holes.pdf)
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Case/Case_holes.jpg">

@@ -14,7 +14,7 @@ RADIUS_IN_MM = 105 / 2
 
 # Wire diameter in mm (external) OR constant coil length in mm
 WIRE_DIAMETER = 0.23
-CONSTANT_COIL_LENGHT = True
+CONSTANT_COIL_LENGTH = True
 COIL_LENGHT_CONSTANT = 4
 
 
@@ -88,7 +88,7 @@ while Ls <= TARGET_INDUCTANCE_UH and ITERATION < 20000:
 
     # Compute updated coil characteristics
     NB_SPIRES = math.ceil(WIRE_LENGTH / math.pi / DIAMETER)
-    if CONSTANT_COIL_LENGHT:
+    if CONSTANT_COIL_LENGTH:
         COIL_LENGTH = COIL_LENGHT_CONSTANT / 1000
     else:
         COIL_LENGTH = WIRE_DIAMETER * NB_SPIRES / 1000
@@ -105,10 +105,10 @@ while Ls <= TARGET_INDUCTANCE_UH and ITERATION < 20000:
     if Ls + Inductance_by_spire > TARGET_INDUCTANCE_UH:
         break
 
-if ITERATION != 1000:
+if ITERATION != 2000:
     print(f"|- Radius is \t\t\t{RADIUS_IN_MM:.2f} mm")
     print(f"|- Wire diameter is \t\t{WIRE_DIAMETER:.2f} mm")
-    if CONSTANT_COIL_LENGHT:
+    if CONSTANT_COIL_LENGTH:
         print(f"|- Coil lenght is constraint at {COIL_LENGTH * 1000 :.2f} mm")
     print(f"|- Target inductance is \t{TARGET_INDUCTANCE_UH:.0f} µH")
     print(f"{ITERATION} iterations realized :")
@@ -116,7 +116,7 @@ if ITERATION != 1000:
     print(f"|- Number of spires is\t \t{NB_SPIRES:.0f}")
     print(f"|- Inductance is\t\t \t{Ls:.2f} µH")
     print(f"|- Wire length is\t \t{WIRE_LENGTH:.2f} m")
-    if CONSTANT_COIL_LENGHT:
+    if CONSTANT_COIL_LENGTH:
         print(f"|- Ideal coil lenght would be \t{WIRE_DIAMETER * NB_SPIRES :.2f} mm")
     else:
         print(f"|- Coil lenght is\t \t{COIL_LENGTH * 1000 :.2f} mm")

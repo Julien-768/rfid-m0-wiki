@@ -13,8 +13,8 @@ copyright: Copyright &copy; 2017 - 2023 IPHC's technical platform MIBE
 extra:
 # versionning
    version:
-   provider: mike
-   default: latest
+      provider: mike
+      default: latest
 # language
    alternate:
       - name: Français
@@ -23,6 +23,10 @@ extra:
       - name: English
         link: /en/
         lang: en
+# versionning
+   version:
+      provider: mike
+      default: rfid.m0
 # site analytics
    analytics:
       provider: google
@@ -141,6 +145,7 @@ nav:
           - Power management : Power_supply.md
           - 5V power board: Power-5V.md
           - 12V power board: Power-12V.md
+        - Multiplexing : Multiplex.md
 
       - Assembly a burrow device:
         - Overview: Burrow_device_assem_overview.md
@@ -162,6 +167,8 @@ nav:
     - Advanced:
       - JLINK-bootloader: JLINK-bootloader.md
       - Modulated infrared: Infrared.md
+      - Reset the RTC: RTC_reset.md
+      - Time synchronization: Time_synchronization.md
       - Temperature tests: Temperature_test.md
 
     - Credits: Credits.md

@@ -22,6 +22,8 @@ Be aware only advanced user should activate the capture mode! The **mode_capture
 3. *Capture of specific tags* Following an event on the infrared sensor, RFID reading. If the tag is one of them described in parameters, closing the door.
 4. *Capture untagged individuals* Following an event on the infrared sensor, RFID reading. If there is no tag, closing the door.
 
+When the capture is decided, the door will be closed after the specified delay (**close_time** option) to let time for the individual to pass.
+
 *Note :* For each modes, a security timeout opens the door after a certain duration (**release_time** option)
 
 ## Security of the system
@@ -41,7 +43,7 @@ In case of errors, the external red LED turns on and the internal red LED blinks
 
 * 2 times : Memory card not detected
 * 3 times : Failed to write data on the SD card (memory can be corrupted)
-* 4 times : Real-Time Clock battery has to be replaced. The program has to be compiled and uploaded again to reset the error
+* 4 times : Real-Time Clock battery has to be replaced. The program has to be [compiled and uploaded](./programming.md) again to reset the error
 
 ## Data description
 

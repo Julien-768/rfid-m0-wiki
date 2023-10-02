@@ -34,7 +34,7 @@ More information in the [Adafruit tutorial](https://learn.adafruit.com/adafruit-
 <!-- markdownlint-enable MD033 -->
 
 The BQ24074 board allow to manage the charge of a 3.7V Li-Po or 3.6V Li-Ion battery from a solar panel (MPTT solar charge), a DC charger or an USB port. When the solar panel is sunny enough, it powers the system directly to prevent battery from constantly charging/discharging.
-The output voltage can fluctuate from **3.7V to 5V** and it can deliver **1.5A max**.  
+The output voltage can fluctuate from **3.7V to 5V** and it can deliver **1.5A max**.  Use a **5-10V solar panel** with this power board.
 
 More information in the [Adafruit tutorial](https://learn.adafruit.com/adafruit-bq24074-universal-usb-dc-solar-charger-breakout/overview)
 

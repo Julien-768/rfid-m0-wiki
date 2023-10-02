@@ -17,4 +17,4 @@ The J-LINK Debug probe and the Feather M0 are connected together by an SWD conne
 </a>
 <!-- markdownlint-enable MD033 -->
 
-Note: The Feather M0 is write protected. It will be necessary to [write a word to remove the protection](https://roamingthings.de/posts/use-j-link-to-change-the-boot-loader-protection-of-a-sam-d21/).
+Note: The Feather M0 is write protected. It will be necessary to [write a word to remove the protection](https://hackaday.io/page/5997-programming-a-samd-bootloader-using-jlink-linux).

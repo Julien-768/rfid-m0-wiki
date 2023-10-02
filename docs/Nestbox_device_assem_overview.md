@@ -1,12 +1,12 @@
 # Assembly a nest box device
 
-This section describes the different steps to follow to assemble a device that monitor a nest box occupation. The list of required material is avaible at this[link](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.elec/-/blob/development/Bill%20of%20material.xlsx).
+This section describes the different steps to follow to assemble a device that monitor a nest box occupation. The list of required material is avaible at this [link](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.elec/-/blob/master/Bill%20of%20material.xlsx).
 
 Firstly, a **nest box antenna is build**. This antenna receives the RFID antenna, able to detect RFID tags, but also two infrared sensors. The manufacturing of this device is based on 3D-printed parts in which electronic components are inserted and glued.
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Antennas/schwegler_antenna.jpg">
-<img src="../assets/images/Antennas/schwegler_antenna.jpg" width="300">
+<img src="../assets/images/Antennas/schwegler_antenna.jpg" width="400">
 </a>
 <!-- markdownlint-enable MD033 -->
 
@@ -28,6 +28,6 @@ Once battery inserted and connected, the device will be ready.
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Nest_box_assem/Nest_box_closed.jpg">
-<img src="../assets/images/Nest_box_assem/Nest_box_closed.jpg" alt="Nest box assembled" width="250" >
+<img src="../assets/images/Nest_box_assem/Nest_box_closed.jpg" alt="Nest box assembled" width="350" >
 </a>
 <!-- markdownlint-enable MD033 -->

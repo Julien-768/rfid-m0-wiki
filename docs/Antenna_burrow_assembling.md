@@ -30,15 +30,8 @@ Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description 
 ## Step 2 : Make the antenna cover
 
 - 3D print the part [« Cover.stl »](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/cover.stl)
-- **Machine two flats** on the brass large nut
-
-<!-- markdownlint-disable MD033 -->
-<a href="../assets/images/Antennas/Burrow_ant_nut.png">
-<img src="../assets/images/Antennas/Burrow_ant_nut.png" alt="Burrow antenna nut" width="300" >
-</a>
-<!-- markdownlint-enable MD033 -->
-
-- **Screw** the brass pipe + O-ring with nut on cover
+- Apply a **first coat of epoxy resin** for impregnation on the inside walls that will receive the resin casting. Use the long-setting resin (24h) to have time to spread resin into the walls (Weight ratio for preparation : 5 resin - 1 hardener)
+- **Screw** the short pipe + O-ring with brass nut on cover
 
 <!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Antennas/Burrow_ant_cover.png">
@@ -121,9 +114,9 @@ Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description 
 </a>
 <!-- markdownlint-enable MD033 -->
 
-- **Pour a first 20g of epoxy** resin to check the tightness (Weight ratio : 1 resin - 1 hardener)
+- **Pour a first 20g of epoxy** resin to check the tightness (Weight ratio : 2 resin - 1 hardener - 1% of white pigment)
 - **Check there is no leaks** between parts or over the sensors. If it's the case, clean immediatly
-- Once the resin dried, **pour a 130g resin** to complete the antenna (Weight ratio : 1 resin - 1 hardener)
+- Once the resin dried, **pour a 130g resin** to complete the antenna (Weight ratio : 2 resin - 1 hardener - 1% of white pigment)
 - Let the resin dry a couple of hours. Then clean the antenna (remove modelling clay and excess of silicon)
 
 <!-- markdownlint-disable MD033 -->
