@@ -12,11 +12,27 @@ The entire system is contained in a door compatible with [Schwegler nest box 2M]
 </a>
 <!-- markdownlint-enable MD033 -->
 
-## System constitution
+## Mechanical specifications
 
+### Dimensions
+
+The manufactured door is approximatly 210 mm heigh, 122 mm large and 34 mm deep.
+
+### 3D preview
+
+<!-- markdownlint-disable MD033 -->
+
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgitlab.in2p3.fr%2Frfid.m0%2Frfid.m0.meca%2F-%2Fraw%2Fmaster%2Fantenna_schwegler%2F3D_print%2FFake_device%2FAssembly.stl%3Finline%3Dfalse&orientation=bottom&shading=flat&bgcolor=transparent" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+
+<!-- markdownlint-enable MD033 -->
+## System Components and Features
+
+1 - Entrance Components
 The entrance of the nest box incorporates two infrared transmitters / receivers as well as an RFID antenna.
 
 Note : IR sensor noted "IR 1" in the record file is the one mounted at the entrance (exterior side)
+
+2 - Bottom Components
 
 The bottom of the nest box allows the user to interact with the system and its the battery :
 
@@ -31,6 +47,8 @@ The bottom of the nest box allows the user to interact with the system and its t
 <img src="../assets/images/User_description/Nest_box_Ext_comp.jpg" alt= "Nest box external component" height="300">
 </a>
 <!-- markdownlint-enable MD033 -->
+
+3 - Technical Door
 
 By sliding the technical door, it's possible to access to :
 

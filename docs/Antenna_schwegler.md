@@ -26,9 +26,10 @@ The following results are measured on an antenna with a quality factor Q = 23.
 
 ## Mechanical specifications
 
-### Dimension
+### Dimensions
 
-The antenna is an circle of Ø36 mm . You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/tree/master/antenna_schwegler)
+The internal diameter a the mechanical part is 32 mm. It is designed for great tits bird species. The depth the bird would have to cross is 34 mm.
+The wired antenna itself is an circle of Ø36 mm by TODO height . You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/tree/master/antenna_schwegler)
 
 ### 3D preview
 
