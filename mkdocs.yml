@@ -8,7 +8,7 @@ site_description: >-
 repo_name: rfid.m0
 repo_url: https://gitlab.in2p3.fr/rfid.m0
 # Copyright
-copyright: Copyright &copy; 2017 - 2023 IPHC's technical platform MIBE
+copyright: Copyright &copy; 2017 - 2024 IPHC's technical platform MIBE
 
 extra:
 # versionning
