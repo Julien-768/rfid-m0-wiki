@@ -7,14 +7,12 @@ This page describes a simple procedure to check your hardware, either on the fie
 1. Plug-in the battery
 2. Check the SD memory card and the RTC battery are in their slots
 
-<!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Procedure/Battery_connection.png">
 <img src="../assets/images/Procedure/Battery_connection.png" alt= "battery connection" width="375">
 </a>
 <a href="../assets/images/Procedure/External_component.png">
 <img src="../assets/images/Procedure/External_component.png" alt= "external component illustration" width="375">
 </a>
-<!-- markdownlint-enable MD033 -->
 
 ---
 
@@ -26,9 +24,9 @@ We are going to check the SD card and the RTC are in order by checking the LEDs 
 
 1. Press the main switch (with power symbol, pressed = On)
 2. Press the switch button until the red LED turns on. Once done, release it. The red LED should turn OFF after the startup of the device.
-    * If the red LED does not light up at all, check that the battery connector is well plugged-in
-    * If the red LED is blinking 2 times, the memory card is not found or is faulty, reinsert it or replace it.
-    * If the red LED is blinking 4 times, the CR1220 coil cell battery might be faulty, replace it. Then the main board must be [reprogrammed](./programming.md)
+   - If the red LED does not light up at all, check that the battery connector is well plugged-in
+   - If the red LED is blinking 2 times, the memory card is not found or is faulty, reinsert it or replace it.
+   - If the red LED is blinking 4 times, the CR1220 coil cell battery might be faulty, replace it. Then the main board must be [reprogrammed](./programming.md)
 
 ### Infrared beam
 
@@ -38,18 +36,16 @@ We are going to check if the infrared beams are working by checking the RFID rea
 2. After a few seconds, remove your finger and check that the RFID reader light stays on for a few seconds (flashing red light)
 3. Repeat the same operation with the second infrared receiver
 
-*NOTE* As the angle of the IR cells is wide, it is important to properly cover the infrared receiver.
+_NOTE_ As the angle of the IR cells is wide, it is important to properly cover the infrared receiver.
 
 It is possible to differentiate the bigger diameter of the IR receiver from the emitter. In addition, The receiver is mounted on the right side of the antenna.
 
-<!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Procedure/RFID_led.png">
 <img src="../assets/images/Procedure/RFID_led.png" alt= "RFID led" height="250">
 </a>
 <a href="../assets/images/Procedure/IR_receiver.png">
 <img src="../assets/images/Procedure/IR_receiver.png" alt= "IR receiver" width="300">
 </a>
-<!-- markdownlint-enable MD033 -->
 
 ### RFID reader
 
@@ -58,7 +54,7 @@ We are going to check if the RFID reader is able to detect and read a RFID tag, 
 1. Pass your hand with a tag through the antenna
 2. Check that the red LED flashes briefly
 
-*NOTE* This test must be performed within 5 minutes after the system power-on. After this delay, the red LED will be disabled for energy saving reasons.
+_NOTE_ This test must be performed within 5 minutes after the system power-on. After this delay, the red LED will be disabled for energy saving reasons.
 
 ### Device shutdown
 
@@ -74,9 +70,9 @@ We are going to check if the SD card is correctly working (write data) and if th
 1. Once the previous tests are done, turn off the device and insert the SD card into a computer
 2. Check for a text file nammed with the current date (date format : YY_MM_DD.TXT). If it is the case, open it
 3. In the file, check that the different events of the tests are present and that the associated time is correct
-    * If the time is not correct
-        * [Reprogram](./programming.md) the micro-controller to set up the time
-        * check the RTC battery
+   - If the time is not correct
+     - [Reprogram](./programming.md) the micro-controller to set up the time
+     - check the RTC battery
 
 ??? "File content"
 
@@ -98,4 +94,4 @@ We are going to check if the SD card is correctly working (write data) and if th
     2023-5-4;13:4:50.871;MB202303001;inv_mainboard;System;Shutdown : User;
     ```
 
-*NOTE* The time base is expressed in UTC time period
+_NOTE_ The time base is expressed in UTC time period

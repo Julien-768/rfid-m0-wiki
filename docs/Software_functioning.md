@@ -1,4 +1,3 @@
-
 # Functioning of the system
 
 The system checks at regular intervals if the infrared barriers have been broken or restored. If an infrared event has occurred, the RFID sensor is read a number of times (**rfid_attempts** option).
@@ -17,14 +16,14 @@ The system can operate all the day or according to an hourly schedule (**start_t
 
 Be aware only advanced user should activate the capture mode! The **mode_capture** option can take a number from 1 to 4 :
 
-1. *Recording of passages* Following an event on the infrared sensor, RFID reading. No capture.
-2. *Capture any individual* Following an event on the infrared sensor, closing the door.
-3. *Capture of specific tags* Following an event on the infrared sensor, RFID reading. If the tag is one of them described in parameters, closing the door.
-4. *Capture untagged individuals* Following an event on the infrared sensor, RFID reading. If there is no tag, closing the door.
+1. _Recording of passages_ Following an event on the infrared sensor, RFID reading. No capture.
+2. _Capture any individual_ Following an event on the infrared sensor, closing the door.
+3. _Capture of specific tags_ Following an event on the infrared sensor, RFID reading. If the tag is one of them described in parameters, closing the door.
+4. _Capture untagged individuals_ Following an event on the infrared sensor, RFID reading. If there is no tag, closing the door.
 
 When the capture is decided, the door will be closed after the specified delay (**close_time** option) to let time for the individual to pass.
 
-*Note :* For each modes, a security timeout opens the door after a certain duration (**release_time** option)
+_Note :_ For each modes, a security timeout opens the door after a certain duration (**release_time** option)
 
 ## Security of the system
 
@@ -34,43 +33,43 @@ In addition, if the battery voltage passes below BATTERY_MIN_VOLTAGE + 0.1V, the
 
 The door is automatically opened if :
 
-* it has been closed for a certain duration (**release_time** option)
-* system shutdowns in case of under voltage
+- it has been closed for a certain duration (**release_time** option)
+- system shutdowns in case of under voltage
 
 ## Error management
 
 In case of errors, the external red LED turns on and the internal red LED blinks. Acording to the blinking frequency, it's possible to know the error :
 
-* 2 times : Memory card not detected
-* 3 times : Failed to write data on the SD card (memory can be corrupted)
-* 4 times : Real-Time Clock battery has to be replaced. The program has to be [compiled and uploaded](./programming.md) again to reset the error
+- 2 times : Memory card not detected
+- 3 times : Failed to write data on the SD card (memory can be corrupted)
+- 4 times : Real-Time Clock battery has to be replaced. The program has to be [compiled and uploaded](./programming.md) again to reset the error
 
 ## Data description
 
 There are several types of messages written into the SD memory card :
 
-| Data type     | Message content                   | Comment                             |
-|---------------|-----------------------------------|-------------------------------------|
-| System        | Start                             |                                     |
-| System        | RTC is ok                         |                                     |
-| System        | RTC set time to compilation date  |                                     |
-| System        | RTC lost power                    |                                     |
-| System        | RTC has unknow error              |                                     |
-| System        | Sleep mode                        |                                     |
-| System        | Wake up mode                      |                                     |
-| System        | Up                                | Still alive                         |
-| System        | Shutdown : Battery low            |                                     |
-| System        | Shutdown : User                   |                                     |
-| Ax            | RFID tag                          |                                     |
-| IRx           | Broken beam                       |                                     |
-| IRx           | Beam restored                     |                                     |
-| Temperature   | Temperature measurement in °c     | If temp. variation > 0.02°c         |
-| Vbat          | Battery measurement in V          | If batt. variation > 0.1V           |
-| Vbat          | Power saving                      | Battery < BATTERY_MIN_VOLTAGE + 0,1 |
-| Vbat          | Battery restored                  | Battery > BATTERY_MIN_VOLTAGE + 0,2 |
-| Vbat          | Battery check by user             |                                     |
-| -             | UID mainboard & experiment        | First line of each data file        |
-| Door          | Closed                            |                                     |
-| Door          | Open : Init                       |                                     |
-| Door          | Open : Release time               |                                     |
-| Door          | Open : Security                   | High temp, Battery low, Error…      |
+| Data type   | Message content                  | Comment                             |
+| ----------- | -------------------------------- | ----------------------------------- |
+| System      | Start                            |                                     |
+| System      | RTC is ok                        |                                     |
+| System      | RTC set time to compilation date |                                     |
+| System      | RTC lost power                   |                                     |
+| System      | RTC has unknow error             |                                     |
+| System      | Sleep mode                       |                                     |
+| System      | Wake up mode                     |                                     |
+| System      | Up                               | Still alive                         |
+| System      | Shutdown : Battery low           |                                     |
+| System      | Shutdown : User                  |                                     |
+| Ax          | RFID tag                         |                                     |
+| IRx         | Broken beam                      |                                     |
+| IRx         | Beam restored                    |                                     |
+| Temperature | Temperature measurement in °c    | If temp. variation > 0.02°c         |
+| Vbat        | Battery measurement in V         | If batt. variation > 0.1V           |
+| Vbat        | Power saving                     | Battery < BATTERY_MIN_VOLTAGE + 0,1 |
+| Vbat        | Battery restored                 | Battery > BATTERY_MIN_VOLTAGE + 0,2 |
+| Vbat        | Battery check by user            |                                     |
+| -           | UID mainboard & experiment       | First line of each data file        |
+| Door        | Closed                           |                                     |
+| Door        | Open : Init                      |                                     |
+| Door        | Open : Release time              |                                     |
+| Door        | Open : Security                  | High temp, Battery low, Error…      |

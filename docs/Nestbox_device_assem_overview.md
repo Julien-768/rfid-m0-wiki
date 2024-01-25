@@ -4,17 +4,15 @@ This section describes the different steps to follow to assemble a device that m
 
 Firstly, a **nest box antenna is build**. This antenna receives the RFID antenna, able to detect RFID tags, but also two infrared sensors. The manufacturing of this device is based on 3D-printed parts in which electronic components are inserted and glued.
 
-<!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Antennas/schwegler_antenna.jpg">
-<img src="../assets/images/Antennas/schwegler_antenna.jpg" width="400">
+<img alt="wired antenna and infrared beams around the 3D print in the lab" src="../assets/images/Antennas/schwegler_antenna.jpg" width="400">
 </a>
-<!-- markdownlint-enable MD033 -->
 
 Secondly **electronic component are mounted** into the boards. There are three boards that are required :
 
-* A main board
-* A power board in charge of power management
-* A RFID reader based on a Tectus board
+- A main board
+- A power board in charge of power management
+- A RFID reader based on a Tectus board
 
 The RFID board only requires to weld some connectors.
 
@@ -26,8 +24,6 @@ Finally **all the components are installed into the nest box and wired**. This s
 
 Once battery inserted and connected, the device will be ready.
 
-<!-- markdownlint-disable MD033 -->
 <a href="../assets/images/Nest_box_assem/Nest_box_closed.jpg">
 <img src="../assets/images/Nest_box_assem/Nest_box_closed.jpg" alt="Nest box assembled" width="350" >
 </a>
-<!-- markdownlint-enable MD033 -->
