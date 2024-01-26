@@ -1,5 +1,5 @@
+mike
+mkdocs-git-revision-date-localized-plugin
 # Documentation static site generator & deployment tool
 mkdocs-material # This will automatically install compatible versions of all dependencies: MkDocs, Markdown, Pygments and Python Markdown Extensions.
-mkdocs-git-revision-date-localized-plugin
 mkdocs-pdf-export-plugin
-mike

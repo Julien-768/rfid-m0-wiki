@@ -26,4 +26,4 @@ Insert it into a computer and access its contents. Data are stored in text forma
 
 Do not rename SD card files
 
-*NOTE* The time base is expressed in UTC time period.
+_NOTE_ The time base is expressed in UTC time period.

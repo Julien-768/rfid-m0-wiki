@@ -43,7 +43,7 @@ To change the configuration file:
 3. Change the value of the required parameters
 4. Save your modifications and insert back the SD card into the device
 
-*NOTE* If the configuration file is not present into the SD card, the device will automatically create it with default values
+_NOTE_ If the configuration file is not present into the SD card, the device will automatically create it with default values
 
 ## Parameters description
 
@@ -71,4 +71,4 @@ Here is an explanation of the parameters you can tune, possible values to change
 | tag_4            | part of the tag number for the capture of specific individuals                    |                   |
 | tag_5            | part of the tag number for the capture of specific individuals                    |                   |
 
-*Notes :* Be careful to specify a mode compatible with the rest of the configuration. Modes 2 and 4 require at least one infrared sensor activated (**opt_IR_1** or **opt_IR_2** set to true).
+_Notes :_ Be careful to specify a mode compatible with the rest of the configuration. Modes 2 and 4 require at least one infrared sensor activated (**opt_IR_1** or **opt_IR_2** set to true).

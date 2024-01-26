@@ -6,9 +6,9 @@ The aim of this page is to describe how to check the device once just assembled.
 
 Start by following the different steps described in the [User Checking Procedure](Checking_procedure.md). Once the tests realized, check the content of the SD card in order to verify :
 
-* Data are written into the SD memory card
-* All the events are detected and written (IR events, RFID tag value, system start and shut down...)
-* The RTC is up-to-date
+- Data are written into the SD memory card
+- All the events are detected and written (IR events, RFID tag value, system start and shut down...)
+- The RTC is up-to-date
 
 ## Step 2 : Edit the configuration file
 

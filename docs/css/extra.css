@@ -1,23 +1,24 @@
 @page {
-    size: a4 portrait;
-    margin: 20mm 10mm 20mm 10mm;
-    counter-increment: page;
-    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-    white-space: pre;
-    color: grey;
-    @bottom-left {
-        content: '© 2017 - 2023 IPHC - technical platform MIBE';
-    }
-    @top-left {
-        content: string(chapter);
-    }
-    @top-right {
-        content: 'Page ' counter(__pgnum__);
-    }
+  size: a4 portrait;
+  margin: 20mm 10mm 20mm 10mm;
+  counter-increment: page;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  white-space: pre;
+  color: grey;
+  @bottom-left {
+    content: "© 2017 - 2024 IPHC - technical platform MIBE";
+  }
+  @top-left {
+    content: string(chapter);
+  }
+  @top-right {
+    content: "Page " counter(__pgnum__);
+  }
 }
 
 @media print {
-    html, body {
-        height: 99%;
-    }
+  html,
+  body {
+    height: 99%;
+  }
 }

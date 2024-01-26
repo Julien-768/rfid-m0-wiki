@@ -1,28 +1,32 @@
-{% extends "base.html" %}
-
-{% block outdated %}
-You're not viewing the latest version.
+{% extends "base.html" %} {% block outdated %} You're not viewing the latest
+version.
 <a href="{{ '../' ~ base_url }}">
   <strong>Click here to go to the latest version.</strong>
 </a>
-{% endblock %}
+{% endblock %} {% block content %} {{ super() }}
 
-{% block content %}
-{{ super() }}
-
-<script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
-<link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+<script
+  type="text/javascript"
+  src="https://latest.cactus.chat/cactus.js"
+></script>
+<link
+  rel="stylesheet"
+  href="https://latest.cactus.chat/style.css"
+  type="text/css"
+/>
 
 <div id="comment-section">Loading Comments...</div>
 
 <script>
   try {
-    var docCommentSectionId = document.getElementById('comments-section-id').innerHTML
+    var docCommentSectionId = document.getElementById(
+      "comments-section-id",
+    ).innerHTML;
   } catch {
-    var docCommentSectionId = "catch-all"
+    var docCommentSectionId = "catch-all";
   }
   if (docCommentSectionId == null) {
-    docCommentSectionId = "catch-all"
+    docCommentSectionId = "catch-all";
   }
 
   initComments({
@@ -30,10 +34,10 @@ You're not viewing the latest version.
     defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
     siteName: "rfid.m0.wiki",
     commentSectionId: docCommentSectionId,
-    serverName: "cactus.chat"
-  })
-  console.log('docCommentSectionId')
-  console.log(docCommentSectionId)
+    serverName: "cactus.chat",
+  });
+  console.log("docCommentSectionId");
+  console.log(docCommentSectionId);
 </script>
 
 {% endblock %}

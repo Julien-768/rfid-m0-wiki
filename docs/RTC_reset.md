@@ -6,10 +6,10 @@ When the programming operation cannot be done (example: in the field without com
 
 The procedure to do it :
 
-* Turn on the device
-* Wait the LED blinks 4 times (indication that an issue occurs with the clock)
-* Press the switch button at least 2 seconds : The LED should blink two times to indicate you that the reset is done
-* Turn off the device (On / Off button) and restart it
+- Turn on the device
+- Wait the LED blinks 4 times (indication that an issue occurs with the clock)
+- Press the switch button at least 2 seconds : The LED should blink two times to indicate you that the reset is done
+- Turn off the device (On / Off button) and restart it
 
 Note : This procedure is only considered if an error with the clock occurs (blink 4 times). If there is no error, a long press will turn off the device (normal behavior).
 
