@@ -1,4 +1,9 @@
 repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "v4.0.0-alpha.8" # Use the sha or tag you want to point at
+    hooks:
+      - id: prettier
+
   # - repo: local
   #   hooks:
   #     - id: eslint
@@ -14,9 +19,10 @@ repos:
     hooks:
       - id: check-json
         description: checks json files for parseable syntax.
-      - id: pretty-format-json
-        description: sets a standard for formatting json files.
-        args: [--autofix, --no-sort-keys]
+        # - id: pretty-format-json
+        #   description: sets a standard for formatting json files.
+        # NOT COMPATIBLE WITH PRETTIER, PRETTIER DOES BETTER
+        # args: [--autofix, --no-sort-keys]
       - id: check-toml
         description: checks toml files for parseable syntax.
       - id: check-yaml
@@ -47,13 +53,12 @@ repos:
       - id: html-attributes-blacklist
         description: interdire les éléments et attributs nuisant à l'accessibilité, selon les recommendations d'Access42
 
-  - repo: https://github.com/motet-a/jinjalint
-    rev: "" # select a tag / sha to point at
-    hooks:
-      - id: jinjalint
-        types: [file] # restore the default `types` matching
-        files: \docs\.(html|sls|md)$
-
+  # - repo: https://github.com/motet-a/jinjalint
+  #   rev: 01e0a4d8
+  #   hooks:
+  #     - id: jinjalint
+  #       types: [file] # restore the default `types` matching
+  #       files: \docs\.(html|sls|md)$
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.38.0
     hooks:
@@ -72,7 +77,7 @@ repos:
 
   # Using this mirror lets us use mypyc-compiled black, which is about 2x faster
   - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 23.12.1
+    rev: 24.1.0
     hooks:
       - id: black
         # It is recommended to specify the latest version of Python
