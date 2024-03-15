@@ -12,7 +12,14 @@
 ## Programming
 
 1. Open the code folder in Visual Studio Code. Give some time for the dependencies to be automatically downloaded once the code repository is cloned if it is a first time use.
-2. Comment / uncomment if necessary the line "#define LIION_BATTERY" at the beginning of the code (main.cpp file in the src folder)
+2. Set hard defined options by commenting / uncommenting if necessary the line starting by
+
+   ```c
+   #define V2_0_0_PINOUT		// Comment to use pinout before v2.0.0 (before august 2023)
+   #define LIION_BATTERY		// Comment to use lead battery
+   #define RTC					// Comment to not use the RTC
+   ```
+
 3. Connect the Feather M0 to the computer using a USB cable
 4. Click on [PlatformIO: Clean](https://docs.platformio.org/en/stable/integration/ide/vscode.html#platformio-toolbar) or Clean via the [PIO Menu](https://docs.platformio.org/en/stable/_images/platformio-ide-vscode-task-explorer-refresh.png). This will refresh the compilation date to update the RTC if needed.
 5. Click on 'PlatformIO: Upload' and then open the 'PlatformIO: Serial Monitor' or 'Upload and Monitor' via the [PIO Menu](https://docs.platformio.org/en/stable/_images/platformio-ide-vscode-task-explorer-refresh.png) to view the initialisation messages

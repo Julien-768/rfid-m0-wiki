@@ -27,8 +27,8 @@ Refers to the [dedicated page](./Antenna_schwegler.md) for the antenna descripti
 | Black  | GND           |
 
 - **Stick the IR** into the antenna :
-  - Position the IR emitter on the left side, seated in the hole and block it with glue gun
-  - Position the IR receiver on the right side, face to the hole and block it with glue gun.
+  - Position the IR Emitting Diode on the left side, seated in the hole and block it with glue gun
+  - Position the IR receiver module on the right side, face to the hole and block it with glue gun.
 
 <a href="../assets/images/Antennas/schwegler_antenna.jpg">
 <img

@@ -55,7 +55,7 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 - Wire the START button with two pairs of wires : Each pair have to be connected on the NO & COM pins.
   _Note_ It's advised to **wind the wires of each pairs together** in order to correctly wire them next into the main board
 - Install the "Support_inf" plate into the case
-- Insert the antenna connector into the main board screw terminal block and tight. **Ensure the IR receiver #1 (green wire) is positioned at the top**
+- Insert the antenna connector into the main board screw terminal block and tight. **Ensure the IR receiver module #1 (green wire) is positioned at the top**
   _Note_ The antenna connector has to be screwed into the main board **before the "Support_PCB" plate fixation** into the case, for a better access to the screws
 - Screw the red led into the 2 ways screw terminal block of the main board
 

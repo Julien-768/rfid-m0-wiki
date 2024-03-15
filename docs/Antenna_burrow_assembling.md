@@ -17,9 +17,9 @@ Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description 
 - [Cable a coil antenna](./Assembling_antenna.md) for a 192uH impedance (~30 spires) around the antenna base
 - **Cable the IR** emitters and receivers (provide 15cm of wire) by ensuring to [respect the cable colors](#wire_color_table)
 - **Stick the IR** into the antenna :
-  - Position the IR emitter on the left side, seated in the hole and block it with glue gun
-  - Position the IR receiver on the right side, face to the hole and block it with glue gun.
-  - Apply a polyurethane glue coat in the IR receiver hole (Araldite 2028-1 Spray Gun) to **form a bulb** on the inside of the antenna. This bulb will avoid mud accumulation before sensor.
+  - Position the IR Emitting Diode on the left side, seated in the hole and block it with glue gun
+  - Position the IR receiver module on the right side, face to the hole and block it with glue gun.
+  - Apply a polyurethane glue coat in the IR receiver module hole (Araldite 2028-1 Spray Gun) to **form a bulb** on the inside of the antenna. This bulb will avoid mud accumulation before sensor.
 
 <a href="../assets/images/Antennas/Burrow_ant_base.png">
 <img src="../assets/images/Antennas/Burrow_ant_base.png" alt="Burrow antenna base" height="400" >
