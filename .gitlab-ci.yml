@@ -5,6 +5,8 @@ before_script:
 
 pages:
   stage: deploy
+  tags:
+    - iphc
   variables:
     PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
     PAGES_BRANCH: gl-pages
