@@ -130,7 +130,7 @@ nav:
           - Assembly: Software_assembly.md
 
   - Hardware:
-      - Rodent species case: Rodent_species_case.md
+      - Technical specifications: Technical_specifications.md
       - Burrow antenna: Antenna_Burrow.md
       - Nest box antenna: Antenna_schwegler.md
 

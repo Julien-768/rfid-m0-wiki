@@ -12,7 +12,7 @@ The main board has different voltage levels :
 
 - 5V : Provided by the PW connector, the 5V is distributed to the Feather M0, the RFID module, the servomotor and the 3.3V voltage regulator
 - 3V (permanent) : Provided by the internal Feather M0 regulator, this 3V powers the RTC module
-- 3V (controlled) : Provided by the 3.3V regulator, this voltage powers the IR emitter & receiver and the temperature sensor (RTD)
+- 3V (controlled) : Provided by the 3.3V regulator, this voltage powers the IR Emitting Diode & receiver and the temperature sensor (RTD)
 
 As the Feather is a 3V3-logic level, all the inputs / outputs are **3V3-logic based**.
 

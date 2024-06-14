@@ -30,31 +30,31 @@ We are going to check the SD card and the RTC are in order by checking the LEDs 
 
 ### Infrared beam
 
+_Please note_ as the angle of the IR cells is wide, it is important to properly cover the infrared receiver.
+
 We are going to check if the infrared beams are working by checking the RFID reader's LED. The RFID reader only tries to read tags after an infrared event is detected, and this causes its LED to blink.
 
 1. Once the device is started and the red LED is off, set your finger on one of the infrared receivers. Check that the RFID reader light turns on for a few seconds (flashing red light)
 2. After a few seconds, remove your finger and check that the RFID reader light stays on for a few seconds (flashing red light)
 3. Repeat the same operation with the second infrared receiver
 
-_NOTE_ As the angle of the IR cells is wide, it is important to properly cover the infrared receiver.
-
-It is possible to differentiate the bigger diameter of the IR receiver from the emitter. In addition, The receiver is mounted on the right side of the antenna.
+It is possible to differentiate the bigger diameter of the IR receiver module from the emitter. In addition, The receiver is mounted on the right side of the antenna.
 
 <a href="../assets/images/Procedure/RFID_led.png">
 <img src="../assets/images/Procedure/RFID_led.png" alt= "RFID led" height="250">
 </a>
 <a href="../assets/images/Procedure/IR_receiver.png">
-<img src="../assets/images/Procedure/IR_receiver.png" alt= "IR receiver" width="300">
+<img src="../assets/images/Procedure/IR_receiver.png" alt= "IR receiver module" width="300">
 </a>
 
 ### RFID reader
+
+_Please note_ this test must be performed within 5 minutes after the system power-on. After this delay, the red LED will be disabled for energy saving reasons.
 
 We are going to check if the RFID reader is able to detect and read a RFID tag, by passing one into the antenna and checking the red LED.
 
 1. Pass your hand with a tag through the antenna
 2. Check that the red LED flashes briefly
-
-_NOTE_ This test must be performed within 5 minutes after the system power-on. After this delay, the red LED will be disabled for energy saving reasons.
 
 ### Device shutdown
 
@@ -64,6 +64,8 @@ _NOTE_ This test must be performed within 5 minutes after the system power-on. A
 4. Disconnect the battery
 
 ### SD card content and date / time
+
+_Please note_ the time base is expressed in UTC time period
 
 We are going to check if the SD card is correctly working (write data) and if the real-time clock is up-to-date by checking the content of the saved files.
 
@@ -93,5 +95,3 @@ We are going to check if the SD card is correctly working (write data) and if th
     2023-5-4;13:4:44.267;MB202303001;inv_mainboard;Vbat;3.62V;
     2023-5-4;13:4:50.871;MB202303001;inv_mainboard;System;Shutdown : User;
     ```
-
-_NOTE_ The time base is expressed in UTC time period
