@@ -1,113 +1,122 @@
-# Make the coil antenna and its metal sheath
+# Make the Coil Antenna and its Metal Sheath
 
-The antenna consists of two parts :
+The antenna consists of two main parts:
 
-- One part that forms the inner edges : IR sensors are inserted inside and the RFID antenna is cabled
+- **Antenna Base**: Houses the IR sensors and cabling for the RFID antenna.
+- **Antenna Cover**: Screws onto the Antenna Base and uses a waterproof seal to ensure a secure fit.
 
-- One part that forms the outer edges and screws into the first, with a waterproof seal to ensure the seal between the parts
+When the Antenna Base and Cover are assembled and the cable is connected, resin casting is applied to protect the sensors.
 
-When the two parts are assembled together and the cable is connected, a resin casting is carried out to protect the sensors.
+## Step 1: Prepare the Antenna Base
 
-## Step 1 : Make the antenna base
+Refer to the [dedicated page](./Antenna_Burrow.md) for a full description of the antenna and its specifications.
 
-Refers to the [dedicated page](./Antenna_Burrow.md) for the antenna description with its specifications.
-
-- **3D print** the part [« Antenna.stl »](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/antenna.stl)
-- Apply a **first coat of epoxy resin** for impregnation on the inside walls that will receive the resin casting. Use the long-setting resin (24h) to have time to spread resin into the walls (Weight ratio for preparation : 5 resin - 1 hardener)
-- [Cable a coil antenna](./Assembling_antenna.md) for a 192uH impedance (~30 spires) around the antenna base
-- **Cable the IR** emitters and receivers (provide 15cm of wire) by ensuring to [respect the cable colors](#wire_color_table)
-- **Stick the IR** into the antenna :
-  - Position the IR Emitting Diode on the left side, seated in the hole and block it with glue gun
-  - Position the IR receiver module on the right side, face to the hole and block it with glue gun.
-  - Apply a polyurethane glue coat in the IR receiver module hole (Araldite 2028-1 Spray Gun) to **form a bulb** on the inside of the antenna. This bulb will avoid mud accumulation before sensor.
+- **3D Print** the part [“Antenna.stl”](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/antenna.stl).
+- Apply a **first coat of epoxy resin** to the interior walls of the Antenna Base for impregnation, which will help secure the resin casting. Use a long-setting resin (24 hours) to allow time to fully spread resin along the walls. (Preparation weight ratio: 5 parts resin to 1 part hardener).
+- **Wind a Coil Antenna**: Follow the [antenna assembly guide](./Assembling_antenna.md) and wind approximately 30 turns around the Antenna Base to achieve an impedance of 192uH.
+- **Connect the IR Emitters and Receivers**: Attach wires (15 cm) to each component, ensuring you follow the [wire color table](#wire_color_table).
+- **Secure the IR Components into the Antenna Base**:
+  - Position the **IR Emitting Diode** on the left side of the Antenna Base in its designated hole and secure it with a glue gun.
+  - Position the **IR Receiver Module** on the right side in its hole, facing outward, and secure it with a glue gun.
+  - Apply a polyurethane glue coat (Araldite 2028-1 Spray Gun) inside the IR receiver hole to form a **protective bulb** around the IR Receiver Module. This bulb prevents mud from accumulating over the sensor.
 
 <a href="../assets/images/Antennas/Burrow_ant_base.png">
-<img src="../assets/images/Antennas/Burrow_ant_base.png" alt="Burrow antenna base" height="400" >
+<img src="../assets/images/Antennas/Burrow_ant_base.png" alt="Burrow antenna base" height="400">
 </a>
 
-## Step 2 : Make the antenna cover
+## Step 2: Prepare the Antenna Cover
 
-- 3D print the part [« Cover.stl »](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/cover.stl)
-- Apply a **first coat of epoxy resin** for impregnation on the inside walls that will receive the resin casting. Use the long-setting resin (24h) to have time to spread resin into the walls (Weight ratio for preparation : 5 resin - 1 hardener)
-- **Screw** the short pipe + O-ring with brass nut on cover
+- **3D Print** the part [“Cover.stl”](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/cover.stl).
+- Apply a **first coat of epoxy resin** to the interior walls of the Antenna Cover for impregnation, just as for the Antenna Base. Use the same long-setting resin (24 hours) and preparation ratio (5 parts resin to 1 part hardener).
+- **Attach the Short Pipe**: Secure the Short Pipe to the Antenna Cover using an O-ring and a brass nut to create a waterproof seal.
 
 <a href="../assets/images/Antennas/Burrow_ant_cover.png">
-<img src="../assets/images/Antennas/Burrow_ant_cover.png" alt="Burrow antenna cover" height="400" >
+<img src="../assets/images/Antennas/Burrow_ant_cover.png" alt="Burrow antenna cover" height="400">
 </a>
 
-## Step 3 : Wire the antenna
+## Step 3: Wire the Antenna Assembly
 
-- **Connect the antenna wires** to the interface board by ensuring to respect the wire position into the terminal block
+1. **Connect the Antenna Wires**:
 
-<a href="../assets/images/Antennas/Burrow_ant_cable.jpg">
-<img src="../assets/images/Antennas/Burrow_ant_cable.jpg" alt="Burrow antenna wire" width="500" >
-</a>
+   - Connect each antenna wire to the interface board’s terminal block, ensuring correct color-positioning for each wire according to the following color associations:
 
-- **Prepare the Ethernet cable**: Strip and tin both ends of wires
-- **Screw wires** to the terminal block by respecting the following color association :
+   <a name="wire_color_table"></a>
 
-<a name="wire_color_table"></a>
+   | Color        | Function      |
+   | ------------ | ------------- |
+   | Green        | Receiver IR 1 |
+   | White/Green  | Receiver IR 2 |
+   | Blue         | Emitter IR 1  |
+   | White/Blue   | Emitter IR 2  |
+   | Brown        | +3.3V         |
+   | White/Brown  | GND           |
+   | White/Orange | Antenna +     |
+   | Orange       | Antenna -     |
+   | Shield       | Linked to GND |
 
-| Color        | Function      |
-| ------------ | ------------- |
-| Green        | Receiver IR 1 |
-| White/Green  | Receiver IR 2 |
-| Blue         | Emitter IR 1  |
-| White/Blue   | Emitter IR 2  |
-| Brown        | +3.3V         |
-| White/Brown  | GND           |
-| White/Orange | Antenna +     |
-| Orange       | Antenna -     |
-| Shield       | Linked to GND |
+   <a href="../assets/images/Antennas/Burrow_ant_cable.jpg">
+   <img src="../assets/images/Antennas/Burrow_ant_cable.jpg" alt="Burrow antenna wire" width="500" >
+   </a>
 
-- **Check the antenna** by measuring the electrical resistance with multimeter:
+2. **Prepare the Ethernet Cable**:
 
-| Side +      | Side -       | Electrical resistance [Ohm] |
-| ----------- | ------------ | --------------------------- |
-| Orange      | White/Orange | ~ 6 Ohm                     |
-| Brown       | White/Brown  | ~ 6 MOhm                    |
-| Green       | White/Brown  | ~ 12 MOhm                   |
-| White/Green | White/Brown  | ~ 12 MOhm                   |
-| Brown       | Blue         | ~ 18 MOhm                   |
-| Brown       | White/Blue   | ~ 18 MOhm                   |
+   - Strip and tin both ends of the Ethernet cable wires.
+   - Screw each wire into the terminal block, following the color associations above.
 
-- **Install the foam seal** inside the short pipe to ensure seal between cable and pipe
-- **Pass the cable** through the cover inlet (so into the seal + pipe + nut)
-- Pass the cable **in the stainless steel sheath**
-- **Screw** the stainless steel sheath into the short pipe
-- **Cut the ethernet cable** by letting 20cm of cable exceed
-- **Pass the cable** extremity through the long pipe and screw the stainless steel sheath on it
-- **Add the O-ring** on the long pipe, then the brass nut
-- **Weld** the end of the cables to male connectors. Ensure to respect the same order than in the terminal block. The male connectors have to be grouped by 4, in order to pass through the brass nut. The shield has to be linked to the ground wire.
+3. **Check Electrical Resistance**:
+
+   - Measure the resistance between specified points to confirm wiring accuracy. Record the following values for reference:
+
+   | Side +      | Side -       | Electrical Resistance (Ohm) |
+   | ----------- | ------------ | --------------------------- |
+   | Orange      | White/Orange | ~6 Ω                        |
+   | Brown       | White/Brown  | ~6 MΩ                       |
+   | Green       | White/Brown  | ~12 MΩ                      |
+   | White/Green | White/Brown  | ~12 MΩ                      |
+   | Brown       | Blue         | ~18 MΩ                      |
+   | Brown       | White/Blue   | ~18 MΩ                      |
+
+4. **Install the Foam Seal**:
+
+   - Insert the foam seal inside the Short Pipe to waterproof the connection.
+   - Pass the cable through the Antenna Cover inlet (seal, Short Pipe, and brass nut).
+
+5. **Assemble the Cable Sheath**:
+
+   - Pass the cable through the **Stainless Steel Sheath** and screw it into the Short Pipe.
+   - Cut the Ethernet cable to leave 20 cm of excess.
+   - Pass the cable through the Long Pipe, and screw the Stainless Steel Sheath onto it.
+   - **Attach the O-ring** to the Long Pipe, then secure with a brass nut.
+   - **Solder Cable Ends to Male Connectors**: Solder wires to the male connectors in the same order as in the terminal block. Group connectors in sets of four to fit through the brass nut. Ensure the shield wire is connected to ground.
 
 <a href="../assets/images/Antennas/Antenna_extremity.jpg">
-<img src="../assets/images/Antennas/Antenna_extremity.jpg" alt="Antenna extremity" width="500" >
+<img src="../assets/images/Antennas/Antenna_extremity.jpg" alt="Antenna extremity" width="500">
 </a>
 
-## Step 4 : Pour the resin
+## Step 4: Pour and Cure the Resin
 
-- **Apply silicone** (LOCTITE SI 595 Superflex transparent) over the entire base/cover junction
-- **Screw** the cover onto the base with self-tapping screws (6mm)
-- **Apply silicone** into the large nut
+1. **Seal the Cover-Base Junction**:
 
-<!-- markdownlint-disable MD036 -->
+   - Apply a continuous coat of **LOCTITE SI 595 Superflex transparent silicone** around the cover-base junction to ensure waterproofing.
+   - Screw the Antenna Cover onto the Antenna Base using 6mm self-tapping screws. Apply additional silicone as needed to seal any gaps.
 
-_Wait for complete drying before further handling_
+2. **Prepare the Antenna for Resin Pouring**:
 
-<!-- markdownlint-enable MD036 -->
+   - Use modeling clay to cover the IR Emitters and IR Receivers on the inner side of the coil, preventing resin from covering these components.
+   - Ensure all cables are positioned inside the antenna. Secure any loose cables with a glue gun to keep them from protruding.
 
-- Apply special resin modelling clay to the IR transmitters and receivers (inner side of the coil) to prevent the resin from passing over the components
-- Ensure there is no cable protruding over the antenna. If it's the case, hold it inside with glue gun
-- Install the antenna on **flat position** and hold the cable high
+3. **Position the Antenna**:
 
-<a href="../assets/images/Antennas/Burrow_ant_preparation.jpg">
-<img src="../assets/images/Antennas/Burrow_ant_preparation.jpg" alt="Burrow antenna preparation" width="400" >
-</a>
+   - Place the antenna flat and level. Keep the cable upright to prevent shifting as resin cures.
 
-- **Pour a first 20g of epoxy** resin to check the tightness (Weight ratio : 2 resin - 1 hardener - 1% of white pigment)
-- **Check there is no leaks** between parts or over the sensors. If it's the case, clean immediatly
-- Once the resin dried, **pour a 130g resin** to complete the antenna (Weight ratio : 2 resin - 1 hardener - 1% of white pigment)
-- Let the resin dry a couple of hours. Then clean the antenna (remove modelling clay and excess of silicon)
+4. **Pour Resin in Two Stages**:
+
+   - **First Pour**: Mix a **20g batch of epoxy resin** (ratio: 2 parts resin to 1 part hardener, with 1% white pigment) to check for leaks.
+   - Once the first layer is dry, pour a final **130g batch** of resin with the same ratio to fill the antenna. Allow 24 hours for curing.
+
+5. **Final Clean-Up**:
+   - Once the resin is fully cured, remove any remaining modeling clay and excess silicone. Verify the integrity of all seals.
 
 <a href="../assets/images/Antennas/Burrow_ant_resin.jpg">
-<img src="../assets/images/Antennas/Burrow_ant_resin.jpg" alt="Antenna resined" height="400" >
+<img src="../assets/images/Antennas/Burrow_ant_resin.jpg" alt="Antenna resined" height="400">
+</a>

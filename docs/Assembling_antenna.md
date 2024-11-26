@@ -47,17 +47,17 @@ If you are not used to the method, we strongly recommand to browse for some vide
 - When the wrapping is done, check the inductance of the coil with an inductance meter. Ensure to select the right frequency (as close as possible to the antenna frequency range).
   The theoretical quality factor of the antenna has to be checked too (Q option on the inductance meter). The Q quality factor can be calculated with the following equation :
 
-  $$
-  Q = \frac{2 \cdot \pi \cdot f \cdot L}{1000 \cdot R}
-  $$
+$$
+Q = \frac{2 \cdot \pi \cdot f \cdot L}{1000 \cdot R}
+$$
 
-  with Q the quality factor, f the coil frequency in kHz, L the coil inductance in µH, and R the coil resistance in Ohm
+with Q the quality factor, f the coil frequency in kHz, L the coil inductance in µH, and R the coil resistance in Ohm
 
 - Once the coil is validated, use the glue gun to fix the coil to the structure and wires together
 - Prepare the enamelled wire for soldering few centimeters out of the coil. Solder standard wire on it, use heat shrink for insulation. Twist the cable for the antenna tail not to radiate.
 
 <a href="../assets/images/Antennas/Nest_box_antenna_wiring">
-<img alt="Nestbox antenna wired around a 3D printed part" src="../assets/images/Antennas/Nest_box_antenna_wiring" width="500">
+<img alt="Nestbox antenna wired around a 3D printed part" src="../assets/images/Antennas/Nest_box_antenna_wiring.jpg" width="500">
 </a>
 
 - Glue the welded parts close inside the 3D printed part
