@@ -3,7 +3,11 @@
 This antenna is designed for use on 3D printed door for [Schwegler nest box 2M](https://www.schwegler-natur.de/portfolio_1408366639/nisthoehle-2m/?lang=en), it is suitable with the Tectus RFID reader TITAN 4004 (also know as TLB-30-USB).
 
 <a href="../assets/images/Antennas/schwegler_antenna.jpg">
+<<<<<<< Updated upstream
 <img alt="wired antenna and infrared beams around the 3D print in the lab" src="../assets/images/Antennas/schwegler_antenna.jpg" height="400" width="400">
+=======
+<img alt="wired antenna and infrared beams around the 3D print in the lab" src="../assets/images/Antennas/schwegler_antenna.jpg" height="400" width="400" class="center">
+>>>>>>> Stashed changes
 </a>
 
 ## Radiating pattern

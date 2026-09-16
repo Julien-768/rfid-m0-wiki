@@ -6,8 +6,13 @@ Optionally the nest box door can be closed to capture targeted individuals : Non
 
 The entire system is contained in a door compatible with [Schwegler nest box 2M](https://www.schwegler-natur.de/portfolio_1408366639/nisthoehle-2m/?lang=en)
 
+<<<<<<< Updated upstream
 <a href="../assets/images/User_description/Nest_box_installed.jpg">
 <img src="../assets/images/User_description/Nest_box_installed.jpg" alt= "Nest box installed" width="300">
+=======
+<a href="../assets/images/User_description/Nest_box_installed.jpg" >
+<img src="../assets/images/User_description/Nest_box_installed.jpg" alt= "Nest box installed" width="300" class="center">
+>>>>>>> Stashed changes
 </a>
 
 ## Mechanical specifications
@@ -18,7 +23,11 @@ The manufactured door is approximatly 210 mm heigh, 122 mm large and 34 mm deep.
 
 ### 3D preview
 
+<<<<<<< Updated upstream
 <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgitlab.in2p3.fr%2Frfid.m0%2Frfid.m0.meca%2F-%2Fraw%2Fmaster%2Fantenna_schwegler%2F3D_print%2FFake_device%2FAssembly.stl%3Finline%3Dfalse&orientation=bottom&shading=flat&bgcolor=transparent" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+=======
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgitlab.in2p3.fr%2Frfid.m0%2Frfid.m0.meca%2F-%2Fraw%2Fmaster%2Fantenna_schwegler%2F3D_print%2FFake_device%2FAssembly.stl%3Finline%3Dfalse&orientation=bottom&shading=flat&bgcolor=transparent" style="border:0;margin:0;width:100%;height:601px;"></iframe>
+>>>>>>> Stashed changes
 
 ## System Components and Features
 
