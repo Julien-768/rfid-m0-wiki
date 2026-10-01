@@ -3,12 +3,12 @@
 include:
 - project: "iphc/ci-templates"
   file: "/templates/mike/template.yml"
-  ref: "latest" # or a specific tag/commit
+  ref: "develop" # or a specific tag/commit
   inputs:
     CI_PUSH_TOKEN: $CI_PUSH_TOKEN # Define this variable in GitLab CI/CD settings
 - project: "iphc/ci-templates"
   file: "/templates/pyhton/template.yml"
-  ref: "latest" # or a specific tag/commit
+  ref: "develop" # or a specific tag/commit
 
 stages:
 - test
