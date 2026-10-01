@@ -7,7 +7,7 @@ include:
   inputs:
     CI_PUSH_TOKEN: $CI_PUSH_TOKEN # Define this variable in GitLab CI/CD settings
 - project: "iphc/ci-templates"
-  file: "/templates/pyhton/template.yml"
+  file: "/templates/python/template.yml"
   ref: "develop" # or a specific tag/commit
 
 stages:
