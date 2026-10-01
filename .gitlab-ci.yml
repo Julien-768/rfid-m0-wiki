@@ -1,19 +1,20 @@
 # .gitlab-ci.yml
 
+stages:
+- test
+- pages
+- sync_to_github
+
 include:
 - project: "iphc/ci-templates"
   file: "/templates/mike/template.yml"
   ref: "develop" # or a specific tag/commit
   inputs:
     CI_PUSH_TOKEN: $CI_PUSH_TOKEN # Define this variable in GitLab CI/CD settings
+
 - project: "iphc/ci-templates"
   file: "/templates/python/template.yml"
   ref: "develop" # or a specific tag/commit
-
-stages:
-- test
-- pages
-- sync_to_github
 
 # Override rules to keep original rules and restrict to 'develop' branch
 pages:
