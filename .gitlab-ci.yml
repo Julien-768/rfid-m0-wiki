@@ -1,6 +1,7 @@
 # .gitlab-ci.yml
 
 stages:
+- lint
 - test
 - pages
 - sync_to_github
