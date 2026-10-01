@@ -1,74 +1,97 @@
 # Software configuration
 
-The software is customizable by the user to active sensors, working time and behavior.
+The device configuration is split into two files:
 
-## Configuration file
+* `hw_assem.cfg`: hardware and device identification parameters.
+* `config.cfg`: functional and operating parameters.
 
-The software options are editable in the configuration file "CONFIG.cfg" located on the SD card.
+These files allow the device to be adapted to the specific hardware and application requirements.
 
-??? "Configuration file with default values"
+## Hardware configuration — `hw_assem.cfg`
 
-    ```
-    {
-    "opt_IR_1":true,
-    "opt_IR_2":true,
-    "opt_temp_prec":false,
-    "delay_temp":60,
-    "tag_type":"FDX",
-    "rfid_attempts":10,
-    "delay_tag_save":1,
-    "mode_time_period":false,
-    "start_time":5,
-    "stop_time":23,
-    "delay_loop":10,
-    "release_time":10,
-    "close_time":1,
-    "mode_capture":1,
-    "tag_1":"01101728E6",
-    "tag_2":"01101728E6",
-    "tag_3":"01101728E6",
-    "tag_4":"01101728E6",
-    "tag_5":"01101728E6"
-    }
-    ```
+The `hw_assem.cfg` file contains hardware identification and device specification parameters.
 
-The file is written as a [JSON string](https://developers.squarespace.com/what-is-json), take care to keep quotes and commas intacts when modifying the file.
+| Parameter name      | Description                                                                             | Default / example     |
+| ------------------- | --------------------------------------------------------------------------------------- | --------------------- |
+| `uid_mainboard`     | Unique identifier of the mainboard (FeatherM0), automatically retrieved by the software | Device-specific       |
+| `uid_light_sensor1` | Unique identifier of light sensor 1, automatically retrieved by the software            | Installation-specific |
+| `uid_light_sensor2` | Unique identifier of light sensor 2, automatically retrieved by the software            | Installation-specific |
+| `uid_software`      | Unique software identifier used to identify the specific firmware version installed     | Installation-specific |
+| `uid_experiment`    | Unique identifier of the experiment or project                                          | Installation-specific |
+| `device_sn`         | Device serial number used to uniquely identify the physical unit                        | Empty                 |
+| `battery_type`      | Type of battery used by the device                                                      | `liion_1s`            |
+| `rtc_type`          | Real-Time Clock module used by the device                                               | `ds3231`              |
 
-## How to edit the file
+The `uid_light_sensor1`, `uid_light_sensor2`, `uid_software`, `uid_experiment` and `device_sn` parameters are specific to each installation and should be configured according to the deployed device.
 
-To change the configuration file:
+## Functional configuration — `config.cfg`
 
-1. Take the SD card from the device and insert it into a computer
-2. Look for CONFIG.cfg file and open it
-3. Change the value of the required parameters
-4. Save your modifications and insert back the SD card into the device
+The `config.cfg` file contains the parameters controlling the functional behavior of the device.
 
-_NOTE_ If the configuration file is not present into the SD card, the device will automatically create it with default values
+| Parameter name           | Description                                                                               | Values / default          |
+| ------------------------ | ----------------------------------------------------------------------------------------- | ------------------------- |
+| `use_buffer`             | Enables or disables the use of a temporary data buffer before writing data to the SD card | `{true, false}` — `false` |
+| `enable_ir1`             | Enables or disables infrared sensor 1                                                     | `{true, false}` — `true`  |
+| `enable_ir2`             | Enables or disables infrared sensor 2                                                     | `{true, false}` — `true`  |
+| `enable_rfid`            | Enables or disables the RFID reader                                                       | `{true, false}` — `true`  |
+| `rfid_mode`              | Defines how and when the RFID reader is activated                                         | `{0, 1, 2}` — `1`         |
+| `enable_vbat`            | Enables or disables battery voltage measurement                                           | `{true, false}` — `true`  |
+| `acquisition_interval_s` | Interval between two consecutive data acquisitions, in seconds                            | `[1..xx]` — `60`          |
+| `schedule_start_hour`    | Operating schedule start hour                                                             | `[0..23]` — `10`          |
+| `schedule_start_minute`  | Operating schedule start minute                                                           | `[0..59]` — `00`          |
+| `schedule_end_hour`      | Operating schedule end hour                                                               | `[0..23]` — `18`          |
+| `schedule_end_minute`    | Operating schedule end minute                                                             | `[0..59]` — `30`          |
 
-## Parameters description
+The `schedule_start_*` and `schedule_end_*` parameters define the automatic operating period of the device. With the default values shown above, the operating period is **10:00 to 18:30**.
 
-Here is an explanation of the parameters you can tune, possible values to change in the configuration file are described.
+## RFID mode
 
-| Parameter name   | Associated feature                                                                | Values            |
-| ---------------- | --------------------------------------------------------------------------------- | ----------------- |
-| opt_IR_1         | activation of infrared beam 1                                                     | {true , false}    |
-| opt_IR_2         | activation of infrared beam 2                                                     | {true , false}    |
-| opt_temp_prec    | activation of temperature sensor                                                  | {true , false}    |
-| delay_temp       | delay (in second) between two consecutive temperature sensor checks               | [1..xx]           |
-| tag_type         | TAG type supported                                                                | {"FDX", "EM4102"} |
-| rfid_attempts    | how many times the RFID will check for the presence of a TAG after an IR event    | [1..xx]           |
-| delay_tag_save   | delay (in second) between two consecutives records of the same TAG on the antenna | [1..xx]           |
-| mode_time_period | activation only between start_time and stop_time hours                            | {true ; false}    |
-| start_time       | start hour of the system in mode_day_only (UTC time)                              | [0..23]           |
-| stop_time        | stop of the system in mode_day_only (UTC time)                                    | [0..23]           |
-| delay_loop       | delay (in millisecond) between two consecutive sensor checks                      | [1..10000]        |
-| release_time     | time in seconds for a release after any capture (security)                        | [0..xx]           |
-| close_time       | time in seconds to wait before closing the door                                   | [0..xx]           |
-| mode_capture     | capture mode selection                                                            | {1,2,3,4}         |
-| tag_1            | part of the tag number for the capture of specific individuals                    |                   |
-| tag_2            | part of the tag number for the capture of specific individuals                    |                   |
-| tag_3            | part of the tag number for the capture of specific individuals                    |                   |
-| tag_4            | part of the tag number for the capture of specific individuals                    |                   |
-| tag_5            | part of the tag number for the capture of specific individuals                    |                   |
+The `rfid_mode` parameter defines how and when the RFID reader is activated.
 
-_Notes :_ Be careful to specify a mode compatible with the rest of the configuration. Modes 2 and 4 require at least one infrared sensor activated (**opt_IR_1** or **opt_IR_2** set to true).
+| Value | Mode        | Behavior                                                                                                                                                                                                           | Power consumption |
+| ----: | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
+|   `0` | Disabled    | The RFID reader is switched off. No tag detection is performed.                                                                                                                                                    | Very low          |
+|   `1` | Continuous  | The RFID reader remains continuously active and detects tags continuously.                                                                                                                                         | High              |
+|   `2` | On IR event | The RFID reader is activated temporarily following a detection by an infrared sensor.This mode is suitable for relatively large or slow-moving animals that take sufficient time to pass through the RFID antenna. | Moderate          |
+
+### Mode 0 — Disabled
+
+The RFID reader is switched off and no RFID tag detection is performed.
+
+This mode can be used when RFID functionality is not required.
+
+### Mode 1 — Continuous
+
+The RFID reader remains continuously active and can detect tags at any time.
+
+This mode provides continuous RFID availability but results in higher power consumption.
+
+### Mode 2 — On IR event
+
+The RFID reader is activated temporarily following an event detected by an infrared sensor.
+
+This mode reduces power consumption by activating the RFID reader only when an IR event occurs.
+
+**Note:** Mode `2` requires at least one infrared sensor to be enabled (`enable_ir1` or `enable_ir2`).
+
+## RFID activation timing
+
+In mode `2`, the RFID reader is activated for a limited period following an IR event.
+
+The default activation period is between **2 and 5 seconds**. A **1-second debounce period** is used to avoid repeated detections of the same tag.
+
+These timings are predefined and do not need to be modified through the configuration file.
+
+## Editing the configuration files
+
+To modify a configuration file:
+
+1. Remove the SD card from the device and insert it into a computer.
+2. Locate the required configuration file (`hw_assem.cfg` or `config.cfg`).
+3. Open the file with a text editor.
+4. Modify the required parameters.
+5. Save the file and reinsert the SD card into the device.
+
+*NOTE:* Take care to preserve the file syntax when modifying configuration parameters. Incorrect formatting or invalid values may prevent the device from loading the configuration correctly.
+
+If a required configuration file is not present on the SD card, the device can automatically create it with its default values.

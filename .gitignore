@@ -70,3 +70,5 @@ ENV/
 site*/
 site/
 *site/
+.ai/
+.tmp/
