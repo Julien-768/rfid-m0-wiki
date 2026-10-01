@@ -5,6 +5,8 @@
 
 import math
 
+from elliptic_integral import complete_elliptic_integrals
+
 #################################################
 # Input
 #################################################
@@ -27,57 +29,31 @@ NB_SPIRES = 26
 # l is the length / thickness of the coil in m
 # k is Nagaoka's coefficient, computed from diameter/length
 
-# returns: Nagaoka's coefficient, aka: field non-uniformity coefficient
-# parameter: u = diameter/length
-# comments: this function uses the arithmetic-geometric mean method to compute
-# the 2 elliptic integrals K and E in Nagoaka's formula and thus determine
-# Nagoaka's coefficient
-
 DIAMETER = 2 * RADIUS
 
 
 def nagaoka(u):
+    """Calculate Nagaoka's coefficient for coil inductance calculation.
+
+    Args:
+        u (float): Diameter/length ratio.
+
+    Returns:
+        float: Nagaoka's coefficient.
+    """
     if u == 0:
         return 1
-    else:
-        uu = u * u  # (diameter/length)²
-        m = uu / (1 + uu)  # square of modulus
-        m2 = 4 * math.sqrt(1 + uu)
-        a = 1  # arithmetic mean
-        b = math.sqrt(1 - m)  # geometric mean
-        c = a - b
-        ci = 1
-        cs = c * c / 2 + m
-        co = c
 
-        while c < co:
-            ao = (a + b) / 2
-            b = math.sqrt(a * b)
-            a = ao
-            co = c
-            c = a - b
-            cs = cs + ci * c * c  # Sum for n = 0 to infinity of (2^n * c²)
-            ci = 2 * ci
+    m2, _, km_e, e = complete_elliptic_integrals(u)
 
-        cs = cs / 2
-        K = math.pi / (a + a)  # elliptic integral K = pi/(2a)
-        KmE = K * cs  # K - E
-        E = K * (1 - cs)  # elliptic integral E
-
-        return (m2 / uu * (KmE) + m2 * E - 4 * u) / (3 * math.pi)
+    return (m2 / (u * u) * km_e + m2 * e - 4 * u) / (3 * math.pi)
 
 
 k = nagaoka(DIAMETER / COIL_LENGTH)
+
 # Inductor in µHenries
 Ls = (
-    k
-    * 4
-    * pow(math.pi, 2)
-    / 10000000
-    * pow(RADIUS, 2)
-    * pow(NB_SPIRES, 2)
-    / COIL_LENGTH
-    * 1000000
+    k * 4 * pow(math.pi, 2) / 10000000 * pow(RADIUS, 2) * pow(NB_SPIRES, 2) / COIL_LENGTH * 1000000
 )  # µ0 = 4π×10-7
 
 print(f"Nagaoka coefficient is {k}")
