@@ -17,13 +17,17 @@ include:
   ref: "develop" # or a specific tag/commit
 
 # Override rules to keep original rules and restrict to 'develop' branch
-pages:
+
+# Trigger deployment manually or via tags
+mike_pages:
+  extends: .mike-pages-template
   rules:
-  - if: '$CI_COMMIT_MESSAGE =~ /publication/ && $CI_COMMIT_BRANCH == "develop"'
+  - if: '$CI_COMMIT_MESSAGE =~ /publication/'''
+  - if: $CI_COMMIT_BRANCH == "develop"'
 
 variables:
   GIT_DEPTH: 0
-  GITHUB_REPOSITORY: "Julien-768/rfid-m0-code"
+  GITHUB_REPOSITORY: "Julien-768/rfid-m0-wiki"
 
 sync_to_github:
   image: alpine:latest
