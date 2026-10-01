@@ -109,7 +109,7 @@ if ITERATION != 2000:
     print(f"|- Radius is \t\t\t{RADIUS_IN_MM:.2f} mm")
     print(f"|- Wire diameter is \t\t{WIRE_DIAMETER:.2f} mm")
     if CONSTANT_COIL_LENGTH:
-        print(f"|- Coil lenght is constraint at {COIL_LENGTH * 1000 :.2f} mm")
+        print(f"|- Coil lenght is constraint at {COIL_LENGTH * 1000:.2f} mm")
     print(f"|- Target inductance is \t{TARGET_INDUCTANCE_UH:.0f} µH")
     print(f"{ITERATION} iterations realized :")
     print(f"|- Nagaoka coefficient is \t{k}")
@@ -117,9 +117,10 @@ if ITERATION != 2000:
     print(f"|- Inductance is\t\t \t{Ls:.2f} µH")
     print(f"|- Wire length is\t \t{WIRE_LENGTH:.2f} m")
     if CONSTANT_COIL_LENGTH:
-        print(f"|- Ideal coil lenght would be \t{WIRE_DIAMETER * NB_SPIRES :.2f} mm")
+        print(f"|- Ideal coil lenght would be \t \
+            {WIRE_DIAMETER * NB_SPIRES:.2f} mm")
     else:
-        print(f"|- Coil lenght is\t \t{COIL_LENGTH * 1000 :.2f} mm")
+        print(f"|- Coil lenght is\t \t{COIL_LENGTH * 1000:.2f} mm")
     print(f"|- One turn would add\t \t{Inductance_by_spire:.2f} µH")
 else:
     print("No result found")
