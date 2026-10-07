@@ -1,11 +1,11 @@
-var feedback = document.forms.feedback
-feedback.addEventListener("submit", function(ev) {
-  ev.preventDefault()
+var feedback = document.forms.feedback;
+feedback.addEventListener("submit", function (ev) {
+  ev.preventDefault();
 
   /* Retrieve page and feedback value */
-  var page = document.location.pathname
-  var data = ev.submitter.getAttribute("data-md-value")
+  var page = document.location.pathname;
+  var data = ev.submitter.getAttribute("data-md-value");
 
   /* Send feedback value */
-  console.log(page, data)
-})
+  console.log(page, data);
+});

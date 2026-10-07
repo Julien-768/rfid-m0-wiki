@@ -12,7 +12,6 @@ The system stores its data on a Micro-SD card.
 Several powering options are proposed :
 
 - Lithium powered
-
   - 3.6V 20Ah 72Wh Li-ion battery (Weight ~0.3kg - Cost ~80€ )
   - 3.6V 20Ah 72Wh Li-ion battery (Weight ~0.3kg - Cost ~80€ ) + a solar panel
 

@@ -2,8 +2,8 @@
 
 The device configuration is split into two files:
 
-* `hw_assem.cfg`: hardware and device identification parameters.
-* `config.cfg`: functional and operating parameters.
+- `hw_assem.cfg`: hardware and device identification parameters.
+- `config.cfg`: functional and operating parameters.
 
 These files allow the device to be adapted to the specific hardware and application requirements.
 
@@ -92,6 +92,6 @@ To modify a configuration file:
 4. Modify the required parameters.
 5. Save the file and reinsert the SD card into the device.
 
-*NOTE:* Take care to preserve the file syntax when modifying configuration parameters. Incorrect formatting or invalid values may prevent the device from loading the configuration correctly.
+_NOTE:_ Take care to preserve the file syntax when modifying configuration parameters. Incorrect formatting or invalid values may prevent the device from loading the configuration correctly.
 
 If a required configuration file is not present on the SD card, the device can automatically create it with its default values.
