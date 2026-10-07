@@ -12,8 +12,10 @@ The entire system is contained in a case for easy transport and installation.
 <<<<<<< Updated upstream
 
 ## System constitution
+
 =======
->>>>>>> Stashed changes
+
+> > > > > > > Stashed changes
 
 The system consists of a terrier antenna and a case.
 The antenna incorporates two infrared transmitters / receivers as well as an RFID antenna.

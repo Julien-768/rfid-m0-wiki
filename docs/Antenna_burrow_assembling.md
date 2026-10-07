@@ -37,7 +37,6 @@ Refer to the [dedicated page](./Antenna_Burrow.md) for a full description of the
 ## Step 3: Wire the Antenna Assembly
 
 1. **Connect the Antenna Wires**:
-
    - Connect each antenna wire to the interface board’s terminal block, ensuring correct color-positioning for each wire according to the following color associations:
 
    <a name="wire_color_table"></a>
@@ -59,12 +58,10 @@ Refer to the [dedicated page](./Antenna_Burrow.md) for a full description of the
    </a>
 
 2. **Prepare the Ethernet Cable**:
-
    - Strip and tin both ends of the Ethernet cable wires.
    - Screw each wire into the terminal block, following the color associations above.
 
 3. **Check Electrical Resistance**:
-
    - Measure the resistance between specified points to confirm wiring accuracy. Record the following values for reference:
 
    | Side +      | Side -       | Electrical Resistance (Ohm) |
@@ -77,12 +74,10 @@ Refer to the [dedicated page](./Antenna_Burrow.md) for a full description of the
    | Brown       | White/Blue   | ~18 MΩ                      |
 
 4. **Install the Foam Seal**:
-
    - Insert the foam seal inside the Short Pipe to waterproof the connection.
    - Pass the cable through the Antenna Cover inlet (seal, Short Pipe, and brass nut).
 
 5. **Assemble the Cable Sheath**:
-
    - Pass the cable through the **Stainless Steel Sheath** and screw it into the Short Pipe.
    - Cut the Ethernet cable to leave 20 cm of excess.
    - Pass the cable through the Long Pipe, and screw the Stainless Steel Sheath onto it.
@@ -96,21 +91,17 @@ Refer to the [dedicated page](./Antenna_Burrow.md) for a full description of the
 ## Step 4: Pour and Cure the Resin
 
 1. **Seal the Cover-Base Junction**:
-
    - Apply a continuous coat of **LOCTITE SI 595 Superflex transparent silicone** around the cover-base junction to ensure waterproofing.
    - Screw the Antenna Cover onto the Antenna Base using 6mm self-tapping screws. Apply additional silicone as needed to seal any gaps.
 
 2. **Prepare the Antenna for Resin Pouring**:
-
    - Use modeling clay to cover the IR Emitters and IR Receivers on the inner side of the coil, preventing resin from covering these components.
    - Ensure all cables are positioned inside the antenna. Secure any loose cables with a glue gun to keep them from protruding.
 
 3. **Position the Antenna**:
-
    - Place the antenna flat and level. Keep the cable upright to prevent shifting as resin cures.
 
 4. **Pour Resin in Two Stages**:
-
    - **First Pour**: Mix a **20g batch of epoxy resin** (ratio: 2 parts resin to 1 part hardener, with 1% white pigment) to check for leaks.
    - Once the first layer is dry, pour a final **130g batch** of resin with the same ratio to fill the antenna. Allow 24 hours for curing.
 
