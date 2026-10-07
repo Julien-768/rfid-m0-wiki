@@ -89,10 +89,8 @@ if ITERATION != 2000:
     print(f"|- Inductance is\t\t \t{Ls:.2f} µH")
     print(f"|- Wire length is\t \t{WIRE_LENGTH:.2f} m")
     if CONSTANT_COIL_LENGTH:
-        print(
-            f"|- Ideal coil lenght would be \t \
-            {WIRE_DIAMETER * NB_SPIRES:.2f} mm"
-        )
+        print(f"|- Ideal coil lenght would be \t \
+            {WIRE_DIAMETER * NB_SPIRES:.2f} mm")
     else:
         print(f"|- Coil lenght is\t \t{COIL_LENGTH * 1000:.2f} mm")
     print(f"|- One turn would add\t \t{Inductance_by_spire:.2f} µH")
