@@ -1,14 +1,44 @@
 # .gitlab-ci.yml
 
-include:
-  - local: "ci-templates/mike.gitlab-ci.yml"
-  # - local: 'ci-templates/mkdocs.gitlab-ci.yml'
-
 stages:
-  - test
-  - pages
+- lint
+- test
+- pages
+- sync_to_github
+
+include:
+- project: "iphc/ci-templates"
+  file: "/templates/mike/template.yml"
+  ref: "develop" # or a specific tag/commit
+  inputs:
+    CI_PUSH_TOKEN: $CI_PUSH_TOKEN # Define this variable in GitLab CI/CD settings
+
+- project: "iphc/ci-templates"
+  file: "/templates/python/template.yml"
+  ref: "develop" # or a specific tag/commit
 
 # Override rules to keep original rules and restrict to 'develop' branch
-pages:
+
+# Trigger deployment manually or via tags
+mike_pages:
+  extends: .mike-pages-template
   rules:
-    - if: '$CI_COMMIT_MESSAGE =~ /publication/ && $CI_COMMIT_BRANCH == "develop"'
+  - if: '$CI_COMMIT_MESSAGE =~ /publication/'
+  - if: '$CI_COMMIT_BRANCH == "develop"'
+
+variables:
+  GIT_DEPTH: 0
+  GITHUB_REPOSITORY: "Julien-768/rfid-m0-wiki"
+
+sync_to_github:
+  image: alpine:latest
+
+  script:
+  - apk add --no-cache git
+  - git remote add github "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+  - git push github "HEAD:refs/heads/${CI_COMMIT_BRANCH}"
+
+  only:
+  - main
+  - develop
+  - test_github_sync
