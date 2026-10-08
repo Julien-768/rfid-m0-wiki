@@ -31,8 +31,6 @@ include:
 variables:
   GIT_DEPTH: 0
   GITHUB_REPOSITORY: "Julien-768/rfid-m0-wiki"
-  MD_PATH: "." # optional root for Markdown linting (default: lint all)
-  MK_PATH: "src" # MkDocs project directory (contains mkdocs.yml + requirements.txt)
 
 sync_to_github:
   image: alpine:latest
