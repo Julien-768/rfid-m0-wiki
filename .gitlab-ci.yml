@@ -26,8 +26,7 @@ include:
 
 - local: "templates/mkdocs/template.yml"
 - local: "templates/mike/template.yml"
-  inputs:
-    MK_PATH: "src" # MkDocs project directory (contains mkdocs.yml + requirements.txt)
+# MkDocs project directory (contains mkdocs.yml + requirements.txt)
 
 variables:
   GIT_DEPTH: 0
