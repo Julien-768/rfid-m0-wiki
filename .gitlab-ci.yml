@@ -7,13 +7,15 @@ stages:
 - sync_to_github
 
 include:
-# - project: "iphc/ci-templates"
-#   file: "/templates/mike/template.yml"
-#   ref: "develop" # or a specific tag/commit
+- project: "iphc/ci-templates"
+  file: "/templates/mike/template.yml"
+  ref: "develop" # or a specific tag/commit
 
 - project: "iphc/ci-templates"
   file: "/templates/python/template.yml"
   ref: "develop" # or a specific tag/commit
+
+# - local: "templates/mike/template.yml"
 
 # Override rules to keep original rules and restrict to 'develop' branch
 
@@ -24,8 +26,6 @@ include:
 #   - if: "$CI_COMMIT_MESSAGE =~ /publication/"
 #   - if: '$CI_COMMIT_BRANCH == "develop"'
 
-- local: "templates/mkdocs/template.yml"
-- local: "templates/mike/template.yml"
 # MkDocs project directory (contains mkdocs.yml + requirements.txt)
 
 variables:
