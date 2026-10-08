@@ -1,12 +1,12 @@
-site_name: rfid.m0
-site_url: https://rfid.m0.pages.in2p3.fr/rfid.m0.wiki
+site_name: rfid.m0.wiki
+site_url: https://rfid-m0.pages.in2p3.fr/rfid.m0.wiki
 site_author: Julien Courtecuisse
 site_description: >-
   Provide information to set up and use the rfid.m0.code
 
 # Repository
-repo_name: rfid.m0
-repo_url: https://gitlab.in2p3.fr/rfid.m0
+repo_name: rfid-m0
+repo_url: https://gitlab.in2p3.fr/rfid-m0
 # Copyright
 copyright: Copyright &copy; 2017 - 2025 IPHC's technical platform MIBE
 
@@ -17,12 +17,12 @@ extra:
     default: latest
   # language
   alternate:
-    - name: Français
-      link: /fr/
-      lang: fr
-    - name: English
-      link: /en/
-      lang: en
+  - name: Français
+    link: /fr/
+    lang: fr
+  - name: English
+    link: /en/
+    lang: en
   # site analytics
   analytics:
     provider: google
@@ -30,22 +30,20 @@ extra:
     feedback:
       title: Was this page helpful?
       ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: >-
-            Thanks for your feedback! Help us improve this page by
-            <a href=" mailto:julien.courtecuisse@iphc.cnrs.fr?subject=%5Brfid_app.wiki%5D%20Feedback&body=Please%20submit%20your%20feedback "
-            target="_blank" rel="noopener">sending us your feedback</a>
-          #TODO fill if not using google analytics
+      - icon: material/emoticon-happy-outline
+        name: This page was helpful
+        data: 1
+        note: >-
+          Thanks for your feedback!
+      - icon: material/emoticon-sad-outline
+        name: This page could be improved
+        data: 0
+        note: >-
+          Thanks for your feedback! Help us improve this page by <a href=" mailto:julien.courtecuisse@iphc.cnrs.fr?subject=%5Brfid_app.wiki%5D%20Feedback&body=Please%20submit%20your%20feedback " target="_blank" rel="noopener">sending us your feedback</a>
+        #TODO fill if not using google analytics
 
 extra_css:
-  - css/extra.css
+- css/extra.css
 
 # Configuration
 theme:
@@ -54,118 +52,118 @@ theme:
   favicon: assets/favicon.ico
   collapse_navigation: false
   features:
-    - content.code.copy
-    - content.code.annotate
-    - navigation.tabs
-    - navigation.footer
+  - content.code.copy
+  - content.code.annotate
+  - navigation.tabs
+  - navigation.footer
 
   custom_dir: overrides
 
   palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      primary: orange
-      scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+  # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    primary: orange
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      primary: orange
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+  # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    primary: orange
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to system preference
   font:
     text: Roboto
     code: Roboto Mono
 
 # Extensions
 markdown_extensions:
-  - admonition
-  - attr_list
-  - md_in_html
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight:
-      anchor_linenums: true
-      linenums: true
-      guess_lang: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.arithmatex:
-      generic: true
+- admonition
+- attr_list
+- md_in_html
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.highlight:
+    anchor_linenums: true
+    linenums: true
+    guess_lang: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.arithmatex:
+    generic: true
 
 extra_javascript:
-  - javascripts/feedback.js
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+- javascripts/feedback.js
+- javascripts/mathjax.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
-  - git-revision-date-localized:
-      fallback_to_build_date: true
-  - search
-  # weasyprint for linux distrobution only
-  # - pdf-export:
-  #     verbose: true
-  #     media_type: print
-  #     # enabled_if_env: ENABLE_PDF_EXPORT
-  #     combined: true
+- git-revision-date-localized:
+    fallback_to_build_date: true
+- search
+# weasyprint for linux distrobution only
+# - pdf-export:
+#     verbose: true
+#     media_type: print
+#     # enabled_if_env: ENABLE_PDF_EXPORT
+#     combined: true
 nav:
-  - Home: index.md
+- Home: index.md
 
-  - User:
-      - Device for rodent species:
-          - Overview: Burrow_device_over.md
-          - First time use: First_time_use.md
-          - Checking procedure: Checking_procedure.md
-      - Device for bird species:
-          - Overview: NestBox_device_over.md
-      - Battery: Battery.md
-      - Software:
-          - Functioning: Software_functioning.md
-          - Configuration: Software_configuration.md
-          - Assembly: Software_assembly.md
+- User:
+  - Device for rodent species:
+    - Overview: Burrow_device_over.md
+    - First time use: First_time_use.md
+    - Checking procedure: Checking_procedure.md
+  - Device for bird species:
+    - Overview: NestBox_device_over.md
+  - Battery: Battery.md
+  - Software:
+    - Functioning: Software_functioning.md
+    - Configuration: Software_configuration.md
+    - Assembly: Software_assembly.md
 
-  - Hardware:
-      - Technical specifications: Technical_specifications.md
-      - Burrow antenna: Antenna_Burrow.md
-      - Nest box antenna: Antenna_schwegler.md
+- Hardware:
+  - Technical specifications: Technical_specifications.md
+  - Burrow antenna: Antenna_Burrow.md
+  - Nest box antenna: Antenna_schwegler.md
 
-  - Developper:
-      - Electronic boards:
-          - Overview: Electronic_overview.md
-          - Main board: Main_board.md
-          - Power supply:
-              - Power management: Power_supply.md
-              - 5V power board: Power-5V.md
-              - 12V power board: Power-12V.md
-          - Multiplexing: Multiplex.md
+- Developper:
+  - Electronic boards:
+    - Overview: Electronic_overview.md
+    - Main board: Main_board.md
+    - Power supply:
+      - Power management: Power_supply.md
+      - 5V power board: Power-5V.md
+      - 12V power board: Power-12V.md
+    - Multiplexing: Multiplex.md
 
-      - Assembly a burrow device:
-          - Overview: Burrow_device_assem_overview.md
-          - Antenna: Antenna_burrow_assembling.md
-          - Electronic: Electronic_assembling.md
-          - Burrow case: Burrow_case.md
-          - Programming: programming.md
-          - Final assembling: Burrow_device_assembling.md
-          - Check the device: Check_burrow_device.md
+  - Assembly a burrow device:
+    - Overview: Burrow_device_assem_overview.md
+    - Antenna: Antenna_burrow_assembling.md
+    - Electronic: Electronic_assembling.md
+    - Burrow case: Burrow_case.md
+    - Programming: programming.md
+    - Final assembling: Burrow_device_assembling.md
+    - Check the device: Check_burrow_device.md
 
-      - Assembly a nest box:
-          - Overview: Nestbox_device_assem_overview.md
-          - Antenna: Antenna_nest_assembling.md
-          - Electronic: Electronic_assembling.md
-          - Programming: programming.md
-          - Final assembling: Nest_box_assembling.md
-      - Manufacturing files: Manufacturing.md
+  - Assembly a nest box:
+    - Overview: Nestbox_device_assem_overview.md
+    - Antenna: Antenna_nest_assembling.md
+    - Electronic: Electronic_assembling.md
+    - Programming: programming.md
+    - Final assembling: Nest_box_assembling.md
+  - Manufacturing files: Manufacturing.md
 
-  - Advanced:
-      - JLINK-bootloader: JLINK-bootloader.md
-      - Modulated infrared: Infrared.md
-      - Reset the RTC: RTC_reset.md
-      - Time synchronization: Time_synchronization.md
-      - Temperature tests: Temperature_test.md
+- Advanced:
+  - JLINK-bootloader: JLINK-bootloader.md
+  - Modulated infrared: Infrared.md
+  - Reset the RTC: RTC_reset.md
+  - Time synchronization: Time_synchronization.md
+  - Temperature tests: Temperature_test.md
 
-  - Credits: Credits.md
+- Credits: Credits.md
