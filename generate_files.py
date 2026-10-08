@@ -1,8 +1,16 @@
+"""
+Module for generating AUTHORS.md and CITATION.cff files from codemeta.json data.
+
+This module reads a codemeta.json file and generates:
+- AUTHORS.md: A markdown file listing authors and contributors.
+- CITATION.cff: A Citation File Format (CFF) file for software citation.
+"""
+
 import json
 
 
 def generate_authors_file(codemeta_data, output_file="AUTHORS.md"):
-    """Génère un fichier AUTHORS.md à partir des données codemeta.json."""
+    """Generates an AUTHORS.md file from codemeta.json data."""
     authors = codemeta_data.get("author", [])
     contributors = codemeta_data.get("contributor", [])
 
@@ -10,7 +18,7 @@ def generate_authors_file(codemeta_data, output_file="AUTHORS.md"):
         f.write("# List of Authors and Contributors\n\n")
 
         if authors:
-            f.write("## Main Authors\n\n")  # Ligne vide ajoutée
+            f.write("## Main Authors\n\n")  # Empty line added
             for author in authors:
                 name = f"{author.get('givenName', '')} {author.get('familyName', '')}"
                 orcid = author.get("orcid", "Not provided")
@@ -21,7 +29,7 @@ def generate_authors_file(codemeta_data, output_file="AUTHORS.md"):
                 f.write(f"  *Role*: {roles}\n\n")
 
         if contributors:
-            f.write("## Contributors\n\n")  # Ligne vide ajoutée
+            f.write("## Contributors\n\n")  # Empty line added
             for contributor in contributors:
                 name = f"{contributor.get('givenName', '')} {contributor.get('familyName', '')}"
                 orcid = contributor.get("orcid", "Not provided")
@@ -31,9 +39,8 @@ def generate_authors_file(codemeta_data, output_file="AUTHORS.md"):
                 f.write(f"  *Affiliation*: {affiliation}\n")
                 f.write(f"  *Role*: {roles}\n\n")
 
-
 def generate_citation_file(codemeta_data, output_file="CITATION.cff"):
-    """Génère un fichier CITATION.cff à partir des données codemeta.json."""
+    """Generates a CITATION.cff file from codemeta.json data."""
     authors = codemeta_data.get("author", [])
     version = codemeta_data.get("version", "1.0.0")
     name = codemeta_data.get("name", "Project Name")
@@ -70,17 +77,16 @@ license:
   description: "{license_description}"
 """)
 
-
 def main():
-    # Charger le fichier codemeta.json
+    """Main entry point of the script."""
+    # Load the codemeta.json file
     with open("codemeta.json", "r", encoding="utf-8") as f:
         codemeta_data = json.load(f)
 
-    # Générer les fichiers
+    # Generate the files
     generate_authors_file(codemeta_data)
     generate_citation_file(codemeta_data)
     print("Files AUTHORS.md and CITATION.cff generated successfully!")
 
-
 if __name__ == "__main__":
-    main()
+    main()    main()    main()
