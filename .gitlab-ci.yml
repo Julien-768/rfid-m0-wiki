@@ -14,7 +14,7 @@ include:
     mk_path: "."
     mkdocs_config_file: "mkdocs.yml"
     pages_stage: "pages"
-    job_execution_mode: "merge_request"
+    job_execution_mode: "both"
     publication_branch: "develop"
     publication_keyword: "publication"
     exclusion_branch: "exclusion-branch"
