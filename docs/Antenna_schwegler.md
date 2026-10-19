@@ -3,11 +3,7 @@
 This antenna is designed for use on 3D printed door for [Schwegler nest box 2M](https://www.schwegler-natur.de/portfolio_1408366639/nisthoehle-2m/?lang=en), it is suitable with the Tectus RFID reader TITAN 4004 (also know as TLB-30-USB).
 
 <a href="../assets/images/Antennas/schwegler_antenna.jpg">
-<<<<<<< Updated upstream
 <img alt="wired antenna and infrared beams around the 3D print in the lab" src="../assets/images/Antennas/schwegler_antenna.jpg" height="400" width="400">
-=======
-<img alt="wired antenna and infrared beams around the 3D print in the lab" src="../assets/images/Antennas/schwegler_antenna.jpg" height="400" width="400" class="center">
->>>>>>> Stashed changes
 </a>
 
 ## Radiating pattern
@@ -28,11 +24,11 @@ The following results are measured on an antenna with a quality factor Q = 23.
 ### Dimensions
 
 The internal diameter a the mechanical part is 32 mm. It is designed for great tits bird species. The depth the bird would have to cross is 34 mm.
-The wired antenna itself is an circle of Ø36 mm by TODO height . You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/tree/master/antenna_schwegler)
+The wired antenna itself is an circle of Ø36 mm by TODO height . You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid-m0/rfid.m0.meca/-/tree/master/antenna_schwegler)
 
 ### 3D preview
 
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/raw/master/antenna_schwegler/Antenna.stl?inline=false" style="border:0;margin:0;width:100%;height:400px;"></iframe>
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https://gitlab.in2p3.fr/rfid-m0/rfid.m0.meca/-/raw/master/antenna_schwegler/Antenna.stl?inline=false" style="border:0;margin:0;width:100%;height:400px;"></iframe>
 
 ## Electronic specifications
 

@@ -8,7 +8,7 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 
 ## Step 1 : Prepare the supports
 
-- 3D print the part ["RFID_support.stl"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/RFID_support.stl)
+- 3D print the part ["RFID_support.stl"](https://gitlab.in2p3.fr/rfid-m0/rfid.m0.meca/-/blob/master/antenna_burrow/RFID_support.stl)
 - Insert 2 x M2 nuts in the RFID support
 - Insert the RFID reader in its support. Be careful to respect the orientation
 
@@ -16,7 +16,7 @@ To follow these steps, it's required to have already realized a [burrow antenna]
 <img src="../assets/images/RFID/RFID_wSupport.jpg" alt="RFID reader in its support" width="400" >
 </a>
 
-- Prepare the PVC fixation parts ["Lower_support"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/Lower_support.pdf) and ["PCB_support"](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/PCB_support.pdf) according to their drawings
+- Prepare the PVC fixation parts ["Lower_support"](https://gitlab.in2p3.fr/rfid-m0/rfid.m0.meca/-/blob/master/antenna_burrow/Lower_support.pdf) and ["PCB_support"](https://gitlab.in2p3.fr/rfid-m0/rfid.m0.meca/-/blob/master/antenna_burrow/PCB_support.pdf) according to their drawings
 - Screw two angle brackets into the "Support_inf" plate with 4 self-tapping screws M3 x 6
 
 <a href="../assets/images/Burrow_assembling/Lower_support.jpg">

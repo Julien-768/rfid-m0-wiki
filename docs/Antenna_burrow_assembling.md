@@ -11,7 +11,7 @@ When the Antenna Base and Cover are assembled and the cable is connected, resin 
 
 Refer to the [dedicated page](./Antenna_Burrow.md) for a full description of the antenna and its specifications.
 
-- **3D Print** the part [“Antenna.stl”](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/antenna.stl).
+- **3D Print** the part [“Antenna.stl”](https://gitlab.in2p3.fr/rfid-m0/rfid.m0.meca/-/blob/master/antenna_burrow/antenna.stl).
 - Apply a **first coat of epoxy resin** to the interior walls of the Antenna Base for impregnation, which will help secure the resin casting. Use a long-setting resin (24 hours) to allow time to fully spread resin along the walls. (Preparation weight ratio: 5 parts resin to 1 part hardener).
 - **Wind a Coil Antenna**: Follow the [antenna assembly guide](./Assembling_antenna.md) and wind approximately 30 turns around the Antenna Base to achieve an impedance of 192uH.
 - **Connect the IR Emitters and Receivers**: Attach wires (15 cm) to each component, ensuring you follow the [wire color table](#wire_color_table).
@@ -26,7 +26,7 @@ Refer to the [dedicated page](./Antenna_Burrow.md) for a full description of the
 
 ## Step 2: Prepare the Antenna Cover
 
-- **3D Print** the part [“Cover.stl”](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/blob/master/antenna_burrow/cover.stl).
+- **3D Print** the part [“Cover.stl”](https://gitlab.in2p3.fr/rfid-m0/rfid.m0.meca/-/blob/master/antenna_burrow/cover.stl).
 - Apply a **first coat of epoxy resin** to the interior walls of the Antenna Cover for impregnation, just as for the Antenna Base. Use the same long-setting resin (24 hours) and preparation ratio (5 parts resin to 1 part hardener).
 - **Attach the Short Pipe**: Secure the Short Pipe to the Antenna Cover using an O-ring and a brass nut to create a waterproof seal.
 

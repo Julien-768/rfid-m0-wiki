@@ -1,21 +1,23 @@
-site_name: rfid.m0
-site_url: https://rfid.m0.pages.in2p3.fr/rfid.m0.wiki
+site_name: rfid.m0.wiki
+site_url: https://rfid-m0.pages.in2p3.fr/rfid.m0.wiki
 site_author: Julien Courtecuisse
 site_description: >-
   Provide information to set up and use the rfid.m0.code
 
 # Repository
-repo_name: rfid.m0
-repo_url: https://gitlab.in2p3.fr/rfid.m0
+repo_name: rfid-m0
+repo_url: https://gitlab.in2p3.fr/rfid-m0
+
 # Copyright
 copyright: Copyright &copy; 2017 - 2025 IPHC's technical platform MIBE
 
 extra:
-  # versionning
+  # Versioning
   version:
     provider: mike
     default: latest
-  # language
+
+  # Language
   alternate:
     - name: Français
       link: /fr/
@@ -23,7 +25,8 @@ extra:
     - name: English
       link: /en/
       lang: en
-  # site analytics
+
+  # Site analytics
   analytics:
     provider: google
     property: G-CK1V1L0NVS
@@ -39,20 +42,18 @@ extra:
           name: This page could be improved
           data: 0
           note: >-
-            Thanks for your feedback! Help us improve this page by
-            <a href=" mailto:julien.courtecuisse@iphc.cnrs.fr?subject=%5Brfid_app.wiki%5D%20Feedback&body=Please%20submit%20your%20feedback "
-            target="_blank" rel="noopener">sending us your feedback</a>
-          #TODO fill if not using google analytics
+            Thanks for your feedback! Help us improve this page by <a href="mailto:julien.courtecuisse@iphc.cnrs.fr?subject=%5Brfid.m0.wiki%5D%20Feedback" target="_blank" rel="noopener"> sending us your feedback</a>
 
 extra_css:
   - css/extra.css
 
-# Configuration
+# Theme
 theme:
   name: material
   logo: assets/images/logo_MIBE.png
   favicon: assets/favicon.ico
   collapse_navigation: false
+
   features:
     - content.code.copy
     - content.code.annotate
@@ -77,11 +78,12 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+
   font:
     text: Roboto
     code: Roboto Mono
 
-# Extensions
+# Markdown extensions
 markdown_extensions:
   - admonition
   - attr_list
@@ -97,22 +99,26 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
+# JavaScript
 extra_javascript:
   - javascripts/feedback.js
   - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js
 
+# Plugins
 plugins:
   - git-revision-date-localized:
       fallback_to_build_date: true
   - search
-  # weasyprint for linux distrobution only
-  # - pdf-export:
-  #     verbose: true
-  #     media_type: print
-  #     # enabled_if_env: ENABLE_PDF_EXPORT
-  #     combined: true
+
+# weasyprint for Linux distribution only
+# - pdf-export:
+#     verbose: true
+#     media_type: print
+#     # enabled_if_env: ENABLE_PDF_EXPORT
+#     combined: true
+
+# Navigation
 nav:
   - Home: index.md
 
@@ -130,9 +136,9 @@ nav:
           - Assembly: Software_assembly.md
 
   - Hardware:
-      - Technical specifications: Technical_specifications.md
-      - Burrow antenna: Antenna_Burrow.md
       - Nest box antenna: Antenna_schwegler.md
+      - Burrow antenna: Antenna_Burrow.md
+      - Technical specifications: Technical_specifications.md
 
   - Developper:
       - Electronic boards:
