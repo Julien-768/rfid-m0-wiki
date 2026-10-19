@@ -19,7 +19,7 @@ The read range is 700 mm (typical values) with a FDX transponders (8 mm x 1.4 mm
 
 ### Dimension
 
-The antenna is a circle of Ø91 mm by 7 mm height. You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid.m0/rfid.m0.meca/-/tree/master/antenna_burrow)
+The antenna is a circle of Ø91 mm by 7 mm height. You can access the [mechanical schematic on the repository](https://gitlab.in2p3.fr/rfid-m0/rfid.m0.meca/-/tree/master/antenna_burrow)
 
 ### 3D preview
 
