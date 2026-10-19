@@ -4,9 +4,13 @@ stages:
 - lint
 - test
 - pages
-- sync_to_github
+- deploy
 
 include:
+- project: "iphc/ci-templates"
+  file: "/templates/python/template.yml"
+  ref: "develop" # or a specific tag/commit
+
 - project: "iphc/ci-templates"
   file: "/templates/mike/template.yml"
   ref: "develop"
@@ -16,29 +20,15 @@ include:
     pages_stage: "pages"
     job_execution_mode: "both"
     publication_branch: "develop"
-    publication_keyword: "publication"
+    publication_keyword: "(^Merge branch .+ into .?develop.?)|(publication)"
     exclusion_branch: "exclusion-branch"
     mike_branch: "pages/mike"
 
+# --- Deploy stage ---
 - project: "iphc/ci-templates"
-  file: "/templates/python/template.yml"
-  ref: "develop" # or a specific tag/commit
-
-# MkDocs project directory (contains mkdocs.yml + requirements.txt)
-
-variables:
-  GIT_DEPTH: 0
-  GITHUB_REPOSITORY: "Julien-768/rfid-m0-wiki"
-
-sync_to_github:
-  image: alpine:latest
-
-  script:
-  - apk add --no-cache git
-  - git remote add github "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-  - git push github "HEAD:refs/heads/${CI_COMMIT_BRANCH}"
-
-  only:
-  - main
-  - develop
-  - test_github_sync
+  file: "templates/github-sync/template.yml"
+  ref: "develop"
+  inputs:
+    branches: "develop|main|github"
+    github_repo: "Julien-768/rfid-m0-wiki"
+    stage: deploy
