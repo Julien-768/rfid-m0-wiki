@@ -18,7 +18,10 @@ The manufactured door is approximately 210 mm high, 122 mm wide, and 34 mm deep.
 
 ### 3D preview
 
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fgitlab.in2p3.fr%2Frfid.m0%2Frfid.m0.meca%2F-%2Fraw%2Fmaster%2Fantenna_schwegler%2F3D_print%2FFake_device%2FAssembly.stl%3Finline%3Dfalse&orientation=bottom&shading=flat&bgcolor=transparent" style="border:0;margin:0;width:100%;height:601px;"></iframe>
+<iframe id="vs_iframe"
+  src="https://www.viewstl.com/?embedded&url=https://gitlab.in2p3.fr/rfid-m0/rfid.m0.meca/-/raw/master/antenna_schwegler/3D_print/Fake_device/Assembly.stl%3Finline%3Dfalse&orientation=bottom&bgcolor=transparent"
+  style="border:0;margin:0;width:100%;height:601px;">
+  </iframe>
 
 ## System Components and Features
 
