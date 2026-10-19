@@ -136,9 +136,9 @@ nav:
     - Assembly: Software_assembly.md
 
 - Hardware:
-  - Technical specifications: Technical_specifications.md
-  - Burrow antenna: Antenna_Burrow.md
   - Nest box antenna: Antenna_schwegler.md
+  - Burrow antenna: Antenna_Burrow.md
+  - Technical specifications: Technical_specifications.md
 
 - Developper:
   - Electronic boards:
